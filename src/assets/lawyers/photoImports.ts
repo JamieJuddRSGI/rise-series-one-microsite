@@ -1,5 +1,5 @@
 // Helper to expose bundled URLs for images under `src/assets/lawyers/**`
-// Uses Vite's `import.meta.glob` with `{ as: 'url', eager: true }` so
+// Uses Vite's `import.meta.glob` with `{ query: '?url', import: 'default', eager: true }` so
 // URLs are available synchronously at runtime in both dev and build.
 
 type ImageMap = Record<string, string>;
@@ -10,7 +10,7 @@ const images: ImageMap = {};
 // We use `any` casts because TS does not know about import.meta.glob in all configs.
 try {
   // @ts-ignore - import.meta.glob is provided by Vite at build time
-  const _g = (import.meta as any).glob('/src/assets/lawyers/**', { as: 'url', eager: true }) as Record<string, string> | undefined;
+  const _g = (import.meta as any).glob('/src/assets/lawyers/**', { query: '?url', import: 'default', eager: true }) as Record<string, string> | undefined;
   if (_g) {
     Object.assign(images, _g);
   }

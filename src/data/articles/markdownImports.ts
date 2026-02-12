@@ -1,5 +1,5 @@
 // Helper to expose raw markdown content for articles under `src/data/articles/**`
-// Uses Vite's `import.meta.glob` with `{ as: 'raw', eager: true }` so
+// Uses Vite's `import.meta.glob` with `{ query: '?raw', import: 'default', eager: true }` so
 // content is available synchronously at runtime in both dev and build.
 
 import matter from 'gray-matter';
@@ -12,7 +12,7 @@ const markdownFiles: MarkdownMap = {};
 // We use `any` casts because TS does not know about import.meta.glob in all configs.
 try {
   // @ts-ignore - import.meta.glob is provided by Vite at build time
-  const _g = (import.meta as any).glob('/src/data/articles/*.md', { as: 'raw', eager: true }) as Record<string, string> | undefined;
+  const _g = (import.meta as any).glob('/src/data/articles/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string> | undefined;
   if (_g) {
     Object.assign(markdownFiles, _g);
   }
