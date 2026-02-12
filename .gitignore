@@ -1,0 +1,7 @@
+node_modules
+supabase/functions/user-credentials.ts
+build
+
+*.temp
+*.tmp
+~$*

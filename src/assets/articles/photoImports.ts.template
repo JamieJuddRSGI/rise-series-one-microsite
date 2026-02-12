@@ -1,0 +1,18 @@
+// Import photos here
+import PhotoArt2Img1 from '.article2/IMG01.png';
+import PhotoArt2Img2 from '.article2/IMG02.png';
+
+
+// Example of how to add more photos:
+// import otherLawyerPhoto from './IND00XXX.jpg' or './IND00XXX.png';
+
+// Map of lawyer IDs to their photos
+export const lawyerPhotos: Record<string, string> = {
+'IND00092': PhotoIND00092,
+'IND00130': PhotoIND00130,
+};
+
+// Helper function to get a lawyer's photo or return undefined
+export const getArticlePhoto = (lawyerId: string): string | undefined => {
+  return lawyerPhotos[lawyerId];
+};

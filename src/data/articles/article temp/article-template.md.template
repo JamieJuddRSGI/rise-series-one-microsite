@@ -1,0 +1,46 @@
+---
+id: article-template
+title: 'Article title here'
+category: methodology | insights (del 1)
+author: Author here
+date: 'yyyy-mm-dd'
+---
+
+## Subtitles in heading 2 - no title needed
+
+The content of the article goes here in plaintext.
+
+Can use multiple paragraphs
+
+**Bolded content** and *Italics*
+
+Bullet points like this:
+
+- Are also good
+
+Images must be stored at src/assets/articles/{articleId}/, and the articleId (in YAML header) must match the markdown doc title. Then embed like this:
+
+![Technology adoption trends and metrics](IMG01.png)
+
+And dividing lines can also be used
+
+---
+
+like this
+
+Also, link out of the document like this: [Link Text](https://example.com/stats)
+
+Table formats
+
+| Trend | Reputation | Instruction | Sophistication | Experience |
+|-------|------------|-------------|----------------|------------|
+| Technology | Medium | High | Very High | Medium |
+| Pricing Models | Medium | Very High | High | Low |
+| Specialization | High | Medium | High | Very High |
+| Diversity | Very High | Medium | Medium | High |
+| Remote Work | Low | High | High | Low |
+| ESG Focus | High | High | Very High | Medium |
+| Data-Driven | Medium | High | Very High | High |
+
+> **This is a callout:** Lawyers with ESG expertise are seeing unprecedented demand, particularly in corporate and regulatory practices, with year-over-year growth of **34%**.
+

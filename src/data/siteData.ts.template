@@ -1,0 +1,262 @@
+// File containing all data for the site. Designed to be the only file that needs updating in order to update data on the site.
+// Should also be the site of most changes should we decide to duplicate the site to cover a different field.
+// In here is:
+// - TS interface definitions (All setting up readability for other pages):
+//   - ScoreBreakdown (Which of the more detailed subscores are relevant.)
+//   - RecentCases (Matched title and link per RI Deal)
+//   - Lawyer (Defined string containing all info needed for a lawyer's profile. No calculations are done in this object currently, all raw numbers should be imported from Excel)
+//   - Article (At the moment just has two basic types, for metadata and insights. Will maybe need to change this if we host insights on the main site instead).
+// - Consts (Here is where to change the full data for the site)
+//   - lawyers (This is where most of the data lives. An array containing Profiles based off of the Lawyer objects. Note that these contain ScoreBreakdown (breakdown) and RecentCase (recentCases) as their own arrays defined by the other interfaces).
+//   - articles (Here are the contents for some very simple (text only!) insights articles. Can change if we want to do fancier things in future.)
+//   - reportMetadata (one last object, containing any little bits we want to pepper around the site. This is mainly for the splash page.)
+
+export interface ScoreBreakdown {
+  // Reputation sub-scores (3)
+  peerRecommendations: number;
+  directoryRankings: number;
+  mediaProfile: number;
+  
+  // Instruction sub-scores (3)
+  dealVolume: number;
+  dealValue: number;
+  clients: number;
+  
+  // Sophistication sub-scores (4)
+  aiAndTechnology: number;
+  dataDrivenPractice: number;
+  pricingModels: number;
+  valueAdds: number;
+  
+  // Experience sub-scores (9)
+  numberOfReferences: number;
+  expertise: number;
+  service: number;
+  commerciality: number;
+  communication: number;
+  eq: number;
+  strategy: number;
+  network: number;
+  leadership: number;
+}
+
+export interface RecentCase {
+  title: string;
+  url: string;
+}
+
+export interface Lawyer {
+  id: string;
+  name: string;
+  firm: string;
+  specialty: string[];
+  location: string;
+  jobTitle: string;
+  
+  // Main scores
+  totalScore: number;
+  reputationScore: number;
+  instructionScore: number;
+  sophisticationScore: number;
+  experienceScore: number;
+  
+  // Detailed breakdowns
+  breakdown: ScoreBreakdown;
+  
+  // Profile information
+  clientReferences: number;
+  bio: string | string[]; // Can be a single string or array of paragraphs
+  recentCases?: RecentCase[]; // Optional to allow lawyers without highlightable cases
+}
+
+export interface Article {
+  id: string;
+  title: string;
+  category: 'methodology' | 'insights';
+  author: string;
+  date: string;
+  content: string[];
+  summary: string;
+  featureImage?: {
+    src: string;
+    alt: string;
+    caption?: string;
+  };
+  contentImages?: Array<{
+    paragraphIndex: number;
+    src: string;
+    alt: string;
+    caption?: string;
+  }>;
+}
+
+export const lawyers: Lawyer[] = [
+  {
+    id: 'IND00569',
+    name: 'Ashwath Rau',
+    firm: 'AZB & Partners',
+    specialty: ['Private Equity'],
+    location: 'Mumbai',
+    jobTitle: 'Senior Partner',
+    totalScore: 9.6,
+    reputationScore: 9.8,
+    instructionScore: 9.4,
+    sophisticationScore: 9.7,
+    experienceScore: 9.5,
+    breakdown: {
+      peerRecommendations: 9.9,
+      directoryRankings: 9.8,
+      mediaProfile: 9.7,
+      dealVolume: 9.5,
+      dealValue: 9.4,
+      clients: 9.4,
+      aiAndTechnology: 9.8,
+      dataDrivenPractice: 9.7,
+      pricingModels: 9.6,
+      valueAdds: 9.7,
+      numberOfReferences: 38,
+      expertise: 9.6,
+      service: 9.5,
+      commerciality: 9.0,
+      communication: 9.4,
+      eq: 9.5,
+      strategy: 9.5,
+      network: 9.6,
+      leadership: 9.6
+    },
+    clientReferences: 38,
+    bio: ['Ashwath Rau is a leading corporate attorney with extensive experience in mergers and acquisitions, corporate governance, and securities law. He has advised Fortune 500 companies on complex transactions exceeding $10 billion.',
+          'For a second time, Ashwath Rau is a leading corporate attorney with extensive experience in mergers and acquisitions, corporate governance, and securities law. He has advised Fortune 500 companies on complex transactions exceeding $10 billion.', 
+          'For a third time, Ashwath Rau is a leading corporate attorney with extensive experience in mergers and acquisitions, corporate governance, and securities law. He has advised Fortune 500 companies on complex transactions exceeding $10 billion.', 
+          'For a fourth time, Ashwath Rau is a leading corporate attorney with extensive experience in mergers and acquisitions, corporate governance, and securities law. He has advised Fortune 500 companies on complex transactions exceeding $10 billion.'],
+    recentCases: [
+      { title: 'Advised TechCorp on $2.5B acquisition', url: 'https://example.com/techcorp-acquisition' },
+      { title: 'Structured cross-border merger for Global Industries', url: 'https://example.com/global-merger' },
+      { title: 'Corporate restructuring for Fortune 100 manufacturer', url: 'https://example.com/corporate-restructuring' }
+    ]
+  },
+  {
+    id: 'IND00508',
+    name: 'Raghubir Menon',
+    firm: 'Shardul Amarchand Mangaldas & Co.',
+    specialty: ['Venture Capital'],
+    location: 'Bengaluru',
+    jobTitle: 'Partner',
+    totalScore: 8.8,
+    reputationScore: 8.5,
+    instructionScore: 9.4,
+    sophisticationScore: 8.8,
+    experienceScore: 7.5,
+    breakdown: {
+      peerRecommendations: 8.7,
+      directoryRankings: 8.6,
+      mediaProfile: 8.2,
+      dealVolume: 9.6,
+      dealValue: 9.5,
+      clients: 9.2,
+      aiAndTechnology: 9.0,
+      dataDrivenPractice: 8.8,
+      pricingModels: 8.6,
+      valueAdds: 8.7,
+      numberOfReferences: 26,
+      expertise: 7.6,
+      service: 7.5,
+      commerciality: 8.0,
+      communication: 7.7,
+      eq: 7.2,
+      strategy: 7.3,
+      network: 7.5,
+      leadership: 7.4
+    },
+    clientReferences: 26,
+    bio: 'Raghubir Menon specializes in patent litigation and IP strategy for technology companies. His innovative approaches to patent portfolio management have helped clients save millions in litigation costs.',
+    recentCases: [
+      { title: 'Successfully defended major tech company in patent dispute', url: 'https://example.com/patent-defense' },
+      { title: 'Negotiated licensing deal worth $100M', url: 'https://example.com/licensing-deal' },
+      { title: 'Trademark protection for global consumer brand', url: 'https://example.com/trademark-protection' }
+    ]
+  }
+];
+
+export const articles: Article[] = [
+  {
+    id: 'article-1',
+    title: 'Research Methodology: How We Evaluate Legal Excellence',
+    category: 'methodology',
+    author: 'Research Team',
+    date: '2024-10-15',
+    summary: 'An in-depth look at our comprehensive methodology for evaluating and ranking legal professionals across multiple dimensions of excellence.',
+    content: [
+      'Our research methodology combines quantitative metrics with qualitative assessments to provide a comprehensive evaluation of legal professionals. This multi-dimensional approach ensures that our rankings reflect true excellence in the legal field.',
+      'We evaluate lawyers across four key dimensions: Reputation, Instruction, Sophistication, and Experience. Each dimension is weighted based on extensive industry research and feedback from legal professionals.',
+      'Reputation (30%): We assess recognition amongst peers, clients, and other legal directories. This includes peer nominations, client testimonials, and rankings in other respected publications.',
+      'Instruction (25%): We evaluate the quality, clarity, and timeliness of instructions provided to clients. This reflects a lawyer\'s ability to communicate complex legal concepts effectively.',
+      'Sophistication (25%): We analyze the complexity of work undertaken, the caliber of clients served, and the sophistication of matters handled.',
+      'Experience (20%): We consider years of practice, complexity of cases handled, and breadth of expertise across related practice areas.',
+      'Each main indicator is further broken down into three sub-scores, providing a granular view of performance across nine specific dimensions.',
+      'Data is collected over a 12-month period and verified through multiple independent sources. All scores are normalized on a 100-point scale to ensure comparability across practice areas.',
+      'Our research team consists of legal professionals, academic researchers, and industry analysts who bring decades of combined experience to the evaluation process.'
+    ]
+  },
+  {
+    id: 'article-2',
+    title: 'Key Insights: Trends Shaping the Legal Industry in 2024',
+    category: 'insights',
+    author: 'Dr. Emily Stevens',
+    date: '2024-11-01',
+    summary: 'Discover the major trends transforming legal practice, from technology adoption to changing client expectations and new service delivery models.',
+    content: [
+      'The legal industry is experiencing unprecedented transformation driven by technology, changing client demands, and evolving market dynamics. Our research reveals several key trends shaping the future of legal practice.',
+      'Technology Integration: Top-performing lawyers are increasingly leveraging AI and automation tools. Our data shows that lawyers with high sophistication scores use 3-5 legal tech tools regularly, compared to the industry average of 1-2.',
+      'Client-Centric Service Models: The most successful practitioners have shifted from billable hours to value-based pricing and alternative fee arrangements. Instruction scores are 25% higher among lawyers offering flexible billing options.',
+      'Specialization vs. Generalization: While specialization continues to be valuable, lawyers who can navigate multiple related practice areas command premium rates and report higher client retention.',
+      'Diversity and Inclusion: Firms with strong diversity initiatives report 18% higher reputation scores. Diverse teams bring different perspectives that lead to more creative legal solutions.',
+      'Remote Work and Flexibility: The shift to remote work has expanded access to talent and clients. Lawyers who effectively leverage technology for remote collaboration score 15% higher on instruction metrics.',
+      'Sustainability and ESG: Environmental, Social, and Governance (ESG) considerations are increasingly important. Lawyers with ESG expertise are seeing unprecedented demand, particularly in corporate and regulatory practices.',
+      'These trends suggest that the most successful lawyers of tomorrow will combine deep legal expertise with technological proficiency, client empathy, and adaptability to changing market conditions.'
+    ]
+  },
+  {
+    id: 'article-3',
+    title: 'Understanding Our Scoring System',
+    category: 'methodology',
+    author: 'Research Team',
+    date: '2024-10-20',
+    summary: 'A detailed breakdown of how we calculate and normalize scores across different practice areas and experience levels.',
+    content: [
+      'Our scoring system is designed to provide fair, accurate, and meaningful comparisons across diverse legal practices. This article explains the technical details of our scoring methodology.',
+      'Score Normalization: All scores are normalized on a 0-100 scale, with 100 representing the top 1% of practitioners in a given dimension. This allows for meaningful comparisons across different practice areas.',
+      'Practice Area Adjustments: We recognize that different practice areas have different characteristics. For example, litigation requires different skills than transactional work. Our algorithm adjusts for these differences.',
+      'Experience Level Calibration: Lawyers are compared within cohorts based on years of experience. A lawyer with 10 years experience is evaluated differently from one with 25 years.',
+      'Geographic Considerations: Market dynamics vary by region. We adjust expectations based on local market conditions, regulatory environments, and cost of living.',
+      'Data Verification: Every score is backed by multiple data points. We require minimum thresholds of verified data before publishing any score. Typically, this means 10+ independent data sources per lawyer.',
+      'Annual Updates: Scores are recalculated annually to reflect current performance. We track year-over-year trends to identify rising stars and sustained excellence.',
+      'Transparency: While individual data points remain confidential to protect privacy, our methodology is open and has been peer-reviewed by academic researchers and industry experts.',
+      'Our goal is to provide actionable insights that help clients make informed decisions while recognizing true excellence in the legal profession.'
+    ]
+  },
+  {
+    id: 'article-4',
+    title: 'Practice Area Spotlight: Private Equity & Venture Capital',
+    category: 'insights',
+    author: 'Sarah Mitchell',
+    date: '2024-11-05',
+    summary: 'An analysis of the private equity and venture capital legal market, highlighting key trends and top performers.',
+    content: [
+      'The private equity and venture capital sectors continue to show remarkable resilience and growth, creating significant opportunities for specialized legal practitioners.',
+      'Our analysis reveals that lawyers specializing in PE/VC transactions score 12% higher on sophistication metrics compared to general corporate lawyers, reflecting the complexity of these deals.',
+      'Top-performing PE/VC lawyers demonstrate several key characteristics: deep industry knowledge, strong relationships with financial sponsors, and the ability to execute complex transactions efficiently.',
+      'The rise of growth equity and late-stage venture capital has created demand for lawyers who understand both traditional PE structuring and venture-style terms and conditions.',
+      'Cross-border transactions remain a significant driver of activity, with lawyers skilled in multi-jurisdictional deals commanding premium rates.',
+      'Technology adoption among PE/VC lawyers is notably high, with virtual data rooms, AI-powered due diligence tools, and sophisticated deal management platforms becoming standard.',
+      'Looking ahead, we expect continued growth in sectors like fintech, healthcare technology, and sustainable energy, creating opportunities for lawyers with domain expertise in these areas.'
+    ]
+  }
+];
+
+export const reportMetadata = {
+  title: 'Resight India: Private Capital Report 2025',
+  publishDate: 'November 2025',
+  year: '2025',
+  totalLawyers: lawyers.length
+};
