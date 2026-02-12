@@ -69,5 +69,8 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills';
     server: {
       port: 3000,
       open: false,
+      hmr: {
+        protocol: 'ws',
+      },
     },
   });
