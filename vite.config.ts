@@ -1,8 +1,9 @@
 
-  import { defineConfig } from 'vite';
-  import react from '@vitejs/plugin-react-swc';
-  import path from 'path';
-  import { nodePolyfills } from 'vite-plugin-node-polyfills';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import path from 'path';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
+// v0: open=false to prevent xdg-open in sandbox
 
   export default defineConfig({
     plugins: [
