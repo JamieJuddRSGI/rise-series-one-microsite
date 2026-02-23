@@ -1,6 +1,6 @@
 node_modules
 supabase/functions/user-credentials.ts
-build
+dist
 
 *.temp
 *.tmp
