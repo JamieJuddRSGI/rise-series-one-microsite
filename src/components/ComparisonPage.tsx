@@ -495,7 +495,10 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
             {sharedPracticeAreas.length > 0 && (
               <div className="flex justify-center gap-2 mb-8">
                 {sharedPracticeAreas.length === 1 ? (
-                  <span className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 text-sm cursor-default">
+                  <span
+                    className="px-3 py-1.5 rounded-lg text-white text-sm cursor-default"
+                    style={{ backgroundColor: '#ef3c24' }}
+                  >
                     {sharedPracticeAreas[0]}
                   </span>
                 ) : (
@@ -505,9 +508,10 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
                       onClick={() => setSelectedPracticeArea(pa)}
                       className={`px-3 py-1.5 rounded-lg text-sm transition-colors ${
                         selectedPracticeArea === pa
-                          ? 'bg-amber-500 text-slate-900'
+                          ? 'text-white'
                           : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                       }`}
+                      style={selectedPracticeArea === pa ? { backgroundColor: '#ef3c24' } : undefined}
                     >
                       {pa}
                     </button>

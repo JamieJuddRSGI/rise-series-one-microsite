@@ -1,4 +1,5 @@
 import React from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowRight, TrendingUp, Star, Briefcase, Target, ChevronUp, ChevronDown, MapPin, Scale, TrendingDown, Shield, Network, Globe, Handshake, BrainCog, HandHeart, X } from 'lucide-react';
 import { lawyers, getLawyerPracticeAreas, getLawyerRanking, Lawyer } from '../data/siteData';
 import { motion, AnimatePresence } from 'motion/react';
@@ -419,229 +420,234 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onNavigate }) 
           })}
         </div>
 
-        {/* Lightbox Modal */}
-        <AnimatePresence>
-          {expandedRanking && activeCategory && (
-            <>
+        {/* Lightbox Modal — rendered via portal to avoid stacking context issues */}
+        {createPortal(
+          <AnimatePresence>
+            {expandedRanking && activeCategory && (
               <motion.div
+                key="lightbox"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
-                className="fixed inset-x-0 bottom-0 top-16 bg-black/60 z-40"
-                onClick={() => setExpandedRanking(null)}
-              />
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95, y: 20 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                transition={{ duration: 0.2 }}
-                className="fixed inset-x-0 bottom-0 top-16 z-50 flex items-center justify-center p-4 pointer-events-none"
               >
+                {/* Backdrop */}
                 <div
-                  className="bg-white rounded-lg shadow-xl w-full max-w-6xl max-h-[85vh] overflow-hidden flex flex-col pointer-events-auto"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  {/* Modal Header */}
-                  <div
-                    className={`flex items-center justify-between p-6 border-b ${activeCategory.borderColor} ${activeCategory.bgColor}`}
+                  className="fixed inset-x-0 bottom-0 top-16 bg-black/60 z-40"
+                  onClick={() => setExpandedRanking(null)}
+                />
+                {/* Modal */}
+                <div className="fixed inset-x-0 bottom-0 top-16 z-50 flex items-center justify-center p-4 pointer-events-none">
+                  <motion.div
+                    initial={{ scale: 0.95, y: 20 }}
+                    animate={{ scale: 1, y: 0 }}
+                    exit={{ scale: 0.95, y: 20 }}
+                    transition={{ duration: 0.2 }}
+                    className="bg-white rounded-lg shadow-xl w-full max-w-6xl max-h-[85vh] overflow-hidden flex flex-col pointer-events-auto"
+                    onClick={(e) => e.stopPropagation()}
                   >
-                    <div className="flex items-center space-x-3">
-                      <div
-                        className={`w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center ${activeCategory.color}`}
-                      >
-                        {activeCategory.icon}
-                      </div>
-                      <div>
-                        <h2 className="text-slate-900 text-lg font-semibold">{activeCategory.title} Rankings</h2>
-                        <p className="text-slate-500 text-sm">{lightboxLawyers.length} lawyers ranked</p>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => setExpandedRanking(null)}
-                      className="w-10 h-10 rounded-lg hover:bg-white/80 flex items-center justify-center transition-colors"
+                    {/* Modal Header */}
+                    <div
+                      className={`flex items-center justify-between p-6 border-b ${activeCategory.borderColor} ${activeCategory.bgColor}`}
                     >
-                      <X className="text-slate-500" size={20} />
-                    </button>
-                  </div>
+                      <div className="flex items-center space-x-3">
+                        <div
+                          className={`w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center ${activeCategory.color}`}
+                        >
+                          {activeCategory.icon}
+                        </div>
+                        <div>
+                          <h2 className="text-slate-900 text-lg font-semibold">{activeCategory.title} Rankings</h2>
+                          <p className="text-slate-500 text-sm">{lightboxLawyers.length} lawyers ranked</p>
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => setExpandedRanking(null)}
+                        className="w-10 h-10 rounded-lg hover:bg-white/80 flex items-center justify-center transition-colors"
+                      >
+                        <X className="text-slate-500" size={20} />
+                      </button>
+                    </div>
 
-                  {/* Modal Content */}
-                  <div className="overflow-auto flex-1">
-                    {/* Desktop Table */}
-                    <div className="hidden lg:block">
-                      <table className="w-full">
-                        <thead className="bg-slate-50 border-b border-slate-200 sticky top-0 z-10">
-                          <tr>
-                            <th className="px-6 py-4 text-left text-slate-600">Rank</th>
-                            <th className="px-6 py-4 text-left text-slate-600">Name</th>
-                            <th className="px-6 py-4 text-left text-slate-600">Firm</th>
-                            <th
-                              className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
-                              onClick={() => handleSort('totalScore')}
-                            >
-                              <div className="flex items-center justify-center space-x-1">
-                                <span>Total</span>
-                                <SortIcon field="totalScore" />
-                              </div>
-                            </th>
-                            <th
-                              className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
-                              onClick={() => handleSort('reputationScore')}
-                            >
-                              <div className="flex items-center justify-center space-x-1">
-                                <span>Reputation</span>
-                                <SortIcon field="reputationScore" />
-                              </div>
-                            </th>
-                            <th
-                              className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
-                              onClick={() => handleSort('instructionScore')}
-                            >
-                              <div className="flex items-center justify-center space-x-1">
-                                <span>Instruction</span>
-                                <SortIcon field="instructionScore" />
-                              </div>
-                            </th>
-                            <th
-                              className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
-                              onClick={() => handleSort('sophisticationScore')}
-                            >
-                              <div className="flex items-center justify-center space-x-1">
-                                <span>Sophistication</span>
-                                <SortIcon field="sophisticationScore" />
-                              </div>
-                            </th>
-                            <th
-                              className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
-                              onClick={() => handleSort('experienceScore')}
-                            >
-                              <div className="flex items-center justify-center space-x-1">
-                                <span>Experience</span>
-                                <SortIcon field="experienceScore" />
-                              </div>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-slate-200">
-                          {lightboxLawyers.map((lawyer, index) => {
-                            const rank = index + 1;
-                            return (
-                              <tr
-                                key={lawyer.id}
-                                className="hover:bg-slate-50 transition-colors cursor-pointer"
-                                onClick={() => handleLightboxRowClick(lawyer.id)}
+                    {/* Modal Content */}
+                    <div className="overflow-auto flex-1">
+                      {/* Desktop Table */}
+                      <div className="hidden lg:block">
+                        <table className="w-full">
+                          <thead className="bg-slate-50 border-b border-slate-200 sticky top-0 z-10">
+                            <tr>
+                              <th className="px-6 py-4 text-left text-slate-600">Rank</th>
+                              <th className="px-6 py-4 text-left text-slate-600">Name</th>
+                              <th className="px-6 py-4 text-left text-slate-600">Firm</th>
+                              <th
+                                className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
+                                onClick={() => handleSort('totalScore')}
                               >
-                                <td className="px-6 py-4">
+                                <div className="flex items-center justify-center space-x-1">
+                                  <span>Total</span>
+                                  <SortIcon field="totalScore" />
+                                </div>
+                              </th>
+                              <th
+                                className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
+                                onClick={() => handleSort('reputationScore')}
+                              >
+                                <div className="flex items-center justify-center space-x-1">
+                                  <span>Reputation</span>
+                                  <SortIcon field="reputationScore" />
+                                </div>
+                              </th>
+                              <th
+                                className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
+                                onClick={() => handleSort('instructionScore')}
+                              >
+                                <div className="flex items-center justify-center space-x-1">
+                                  <span>Instruction</span>
+                                  <SortIcon field="instructionScore" />
+                                </div>
+                              </th>
+                              <th
+                                className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
+                                onClick={() => handleSort('sophisticationScore')}
+                              >
+                                <div className="flex items-center justify-center space-x-1">
+                                  <span>Sophistication</span>
+                                  <SortIcon field="sophisticationScore" />
+                                </div>
+                              </th>
+                              <th
+                                className="px-6 py-4 text-center text-slate-600 cursor-pointer hover:bg-slate-100 transition-colors group"
+                                onClick={() => handleSort('experienceScore')}
+                              >
+                                <div className="flex items-center justify-center space-x-1">
+                                  <span>Experience</span>
+                                  <SortIcon field="experienceScore" />
+                                </div>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-slate-200">
+                            {lightboxLawyers.map((lawyer, index) => {
+                              const rank = index + 1;
+                              return (
+                                <tr
+                                  key={lawyer.id}
+                                  className="hover:bg-slate-50 transition-colors cursor-pointer"
+                                  onClick={() => handleLightboxRowClick(lawyer.id)}
+                                >
+                                  <td className="px-6 py-4">
+                                    <div
+                                      className={`w-10 h-10 rounded-lg ${getRankBg(rank)} border flex items-center justify-center`}
+                                    >
+                                      <span className={getRankColor(rank)}>{rank}</span>
+                                    </div>
+                                  </td>
+                                  <td className="px-6 py-4">
+                                    <div className="text-slate-900">{lawyer.name}</div>
+                                    <div className="text-slate-500 text-sm">{lawyer.jobTitle}</div>
+                                  </td>
+                                  <td className="px-6 py-4">
+                                    <div className="text-slate-600">{lawyer.firm}</div>
+                                    <div className="text-slate-500 text-sm flex items-center">
+                                      <MapPin size={12} className="mr-1" />
+                                      {lawyer.location}
+                                    </div>
+                                  </td>
+                                  <td className="px-6 py-4">
+                                    <div className="text-center">
+                                      <div className={`${getRankColor(rank)} inline-block`}>
+                                        {getCategoryScore(lawyer, 'totalScore', activeCategory.practiceArea).toFixed(1)}
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td className="px-6 py-4 text-center text-slate-600">
+                                    {getCategoryScore(lawyer, 'reputationScore', activeCategory.practiceArea).toFixed(1)}
+                                  </td>
+                                  <td className="px-6 py-4 text-center text-slate-600">
+                                    {getCategoryScore(lawyer, 'instructionScore', activeCategory.practiceArea).toFixed(1)}
+                                  </td>
+                                  <td className="px-6 py-4 text-center text-slate-600">
+                                    {lawyer.sophisticationScore.toFixed(1)}
+                                  </td>
+                                  <td className="px-6 py-4 text-center text-slate-600">
+                                    {lawyer.breakdown.numberOfReferences === 0
+                                      ? '–'
+                                      : lawyer.experienceScore.toFixed(1)}
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+
+                      {/* Mobile Cards */}
+                      <div className="lg:hidden divide-y divide-slate-200">
+                        {lightboxLawyers.map((lawyer, index) => {
+                          const rank = index + 1;
+                          return (
+                            <div
+                              key={lawyer.id}
+                              className="p-6 cursor-pointer hover:bg-slate-50 transition-colors"
+                              onClick={() => handleLightboxRowClick(lawyer.id)}
+                            >
+                              <div className="flex items-start justify-between mb-4">
+                                <div className="flex items-start space-x-3">
                                   <div
-                                    className={`w-10 h-10 rounded-lg ${getRankBg(rank)} border flex items-center justify-center`}
+                                    className={`w-10 h-10 rounded-lg ${getRankBg(rank)} border flex items-center justify-center flex-shrink-0`}
                                   >
                                     <span className={getRankColor(rank)}>{rank}</span>
                                   </div>
-                                </td>
-                                <td className="px-6 py-4">
-                                  <div className="text-slate-900">{lawyer.name}</div>
-                                  <div className="text-slate-500 text-sm">{lawyer.jobTitle}</div>
-                                </td>
-                                <td className="px-6 py-4">
-                                  <div className="text-slate-600">{lawyer.firm}</div>
-                                  <div className="text-slate-500 text-sm flex items-center">
-                                    <MapPin size={12} className="mr-1" />
-                                    {lawyer.location}
-                                  </div>
-                                </td>
-                                <td className="px-6 py-4">
-                                  <div className="text-center">
-                                    <div className={`${getRankColor(rank)} inline-block`}>
-                                      {getCategoryScore(lawyer, 'totalScore', activeCategory.practiceArea).toFixed(1)}
+                                  <div>
+                                    <div className="text-slate-900">{lawyer.name}</div>
+                                    <div className="text-slate-600 text-sm">{lawyer.jobTitle}</div>
+                                    <div className="text-slate-600">{lawyer.firm}</div>
+                                    <div className="text-slate-500 text-sm flex items-center">
+                                      <MapPin size={12} className="mr-1" />
+                                      {lawyer.location}
                                     </div>
+                                    <div className="text-slate-500">{getLawyerPracticeAreas(lawyer).join(', ')}</div>
                                   </div>
-                                </td>
-                                <td className="px-6 py-4 text-center text-slate-600">
-                                  {getCategoryScore(lawyer, 'reputationScore', activeCategory.practiceArea).toFixed(1)}
-                                </td>
-                                <td className="px-6 py-4 text-center text-slate-600">
-                                  {getCategoryScore(lawyer, 'instructionScore', activeCategory.practiceArea).toFixed(1)}
-                                </td>
-                                <td className="px-6 py-4 text-center text-slate-600">
-                                  {lawyer.sophisticationScore.toFixed(1)}
-                                </td>
-                                <td className="px-6 py-4 text-center text-slate-600">
-                                  {lawyer.breakdown.numberOfReferences === 0
-                                    ? '–'
-                                    : lawyer.experienceScore.toFixed(1)}
-                                </td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
-
-                    {/* Mobile Cards */}
-                    <div className="lg:hidden divide-y divide-slate-200">
-                      {lightboxLawyers.map((lawyer, index) => {
-                        const rank = index + 1;
-                        return (
-                          <div
-                            key={lawyer.id}
-                            className="p-6 cursor-pointer hover:bg-slate-50 transition-colors"
-                            onClick={() => handleLightboxRowClick(lawyer.id)}
-                          >
-                            <div className="flex items-start justify-between mb-4">
-                              <div className="flex items-start space-x-3">
-                                <div
-                                  className={`w-10 h-10 rounded-lg ${getRankBg(rank)} border flex items-center justify-center flex-shrink-0`}
-                                >
-                                  <span className={getRankColor(rank)}>{rank}</span>
                                 </div>
-                                <div>
-                                  <div className="text-slate-900">{lawyer.name}</div>
-                                  <div className="text-slate-600 text-sm">{lawyer.jobTitle}</div>
-                                  <div className="text-slate-600">{lawyer.firm}</div>
-                                  <div className="text-slate-500 text-sm flex items-center">
-                                    <MapPin size={12} className="mr-1" />
-                                    {lawyer.location}
+                              </div>
+                              <div className="grid grid-cols-4 gap-2">
+                                <div className="text-center">
+                                  <div className="text-slate-600 mb-1">
+                                    {getCategoryScore(lawyer, 'reputationScore', activeCategory.practiceArea).toFixed(1)}
                                   </div>
-                                  <div className="text-slate-500">{getLawyerPracticeAreas(lawyer).join(', ')}</div>
+                                  <div className="text-slate-500">Rep.</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="text-slate-600 mb-1">
+                                    {getCategoryScore(lawyer, 'instructionScore', activeCategory.practiceArea).toFixed(1)}
+                                  </div>
+                                  <div className="text-slate-500">Inst.</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="text-slate-600 mb-1">{lawyer.sophisticationScore.toFixed(1)}</div>
+                                  <div className="text-slate-500">Soph.</div>
+                                </div>
+                                <div className="text-center">
+                                  <div className="text-slate-600 mb-1">
+                                    {lawyer.breakdown.numberOfReferences === 0
+                                      ? '–'
+                                      : lawyer.experienceScore.toFixed(1)}
+                                  </div>
+                                  <div className="text-slate-500">Exp.</div>
                                 </div>
                               </div>
                             </div>
-                            <div className="grid grid-cols-4 gap-2">
-                              <div className="text-center">
-                                <div className="text-slate-600 mb-1">
-                                  {getCategoryScore(lawyer, 'reputationScore', activeCategory.practiceArea).toFixed(1)}
-                                </div>
-                                <div className="text-slate-500">Rep.</div>
-                              </div>
-                              <div className="text-center">
-                                <div className="text-slate-600 mb-1">
-                                  {getCategoryScore(lawyer, 'instructionScore', activeCategory.practiceArea).toFixed(1)}
-                                </div>
-                                <div className="text-slate-500">Inst.</div>
-                              </div>
-                              <div className="text-center">
-                                <div className="text-slate-600 mb-1">{lawyer.sophisticationScore.toFixed(1)}</div>
-                                <div className="text-slate-500">Soph.</div>
-                              </div>
-                              <div className="text-center">
-                                <div className="text-slate-600 mb-1">
-                                  {lawyer.breakdown.numberOfReferences === 0
-                                    ? '–'
-                                    : lawyer.experienceScore.toFixed(1)}
-                                </div>
-                                <div className="text-slate-500">Exp.</div>
-                              </div>
-                            </div>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </div>
               </motion.div>
-            </>
-          )}
-        </AnimatePresence>
+            )}
+          </AnimatePresence>,
+          document.body,
+        )}
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-lg p-8 text-white">

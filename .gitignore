@@ -1,6 +1,8 @@
 node_modules
 supabase/functions/user-credentials.ts
 dist
+RISE Site Update/
+build/
 
 *.temp
 *.tmp
