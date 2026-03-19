@@ -601,12 +601,73 @@ export const rawPracticeData = [
         dealVolume: 1.8,
         dealValue: 3.2,
         clients: 8.46
+      },
+      {
+        id: 'TEST001',
+        totalScore: 7.2,
+        reputationScore: 5.8,
+        instructionScore: 6.3,
+        peerRecommendations: 2.5,
+        directoryRankings: 1.5,
+        mediaProfile: 5.0,
+        dealVolume: 4.0,
+        dealValue: 3.2,
+        clients: 5.1
+      },
+      {
+        id: 'TEST002',
+        totalScore: 6.6,
+        reputationScore: 5.2,
+        instructionScore: 5.8,
+        peerRecommendations: 1.8,
+        directoryRankings: 1.4,
+        mediaProfile: 4.2,
+        dealVolume: 3.5,
+        dealValue: 2.8,
+        clients: 4.5
       }
     ]
   },
   {
     practiceArea: 'Arbitration',
-    data: []
+    data: [
+      {
+        id: 'TEST001',
+        totalScore: 6.8,
+        reputationScore: 5.5,
+        instructionScore: 5.9,
+        peerRecommendations: 2.1,
+        directoryRankings: 1.8,
+        mediaProfile: 4.2,
+        dealVolume: 3.5,
+        dealValue: 2.8,
+        clients: 4.1
+      },
+      {
+        id: 'TEST002',
+        totalScore: 7.1,
+        reputationScore: 6.2,
+        instructionScore: 5.5,
+        peerRecommendations: 2.8,
+        directoryRankings: 2.2,
+        mediaProfile: 5.1,
+        dealVolume: 2.9,
+        dealValue: 2.4,
+        clients: 3.8
+      },
+      {
+        id: 'TEST003',
+        totalScore: 6.5,
+        reputationScore: 5.8,
+        instructionScore: 5.2,
+        peerRecommendations: 2.5,
+        directoryRankings: 2.0,
+        mediaProfile: 4.8,
+        dealVolume: 2.6,
+        dealValue: 2.1,
+        clients: 3.5
+      }
+    ]
   },
   {
     practiceArea: 'Equity Capital Markets',
@@ -618,15 +679,90 @@ export const rawPracticeData = [
   },
   {
     practiceArea: 'Competition',
-    data: []
+    data: [
+      {
+        id: 'TEST001',
+        totalScore: 6.4,
+        reputationScore: 4.8,
+        instructionScore: 5.6,
+        peerRecommendations: 1.5,
+        directoryRankings: 1.2,
+        mediaProfile: 3.9,
+        dealVolume: 3.2,
+        dealValue: 2.5,
+        clients: 4.5
+      },
+      {
+        id: 'TEST002',
+        totalScore: 6.9,
+        reputationScore: 5.6,
+        instructionScore: 6.1,
+        peerRecommendations: 2.2,
+        directoryRankings: 1.9,
+        mediaProfile: 4.5,
+        dealVolume: 3.8,
+        dealValue: 3.1,
+        clients: 4.8
+      },
+      {
+        id: 'TEST003',
+        totalScore: 7.0,
+        reputationScore: 6.1,
+        instructionScore: 5.8,
+        peerRecommendations: 2.8,
+        directoryRankings: 2.4,
+        mediaProfile: 5.5,
+        dealVolume: 3.0,
+        dealValue: 2.6,
+        clients: 4.0
+      },
+      {
+        id: 'TEST004',
+        totalScore: 7.3,
+        reputationScore: 6.5,
+        instructionScore: 6.0,
+        peerRecommendations: 3.0,
+        directoryRankings: 2.8,
+        mediaProfile: 5.8,
+        dealVolume: 3.5,
+        dealValue: 2.9,
+        clients: 4.2
+      }
+    ]
   },
   {
     practiceArea: 'Cyber',
-    data: []
+    data: [
+      {
+        id: 'TEST004',
+        totalScore: 7.6,
+        reputationScore: 6.8,
+        instructionScore: 6.4,
+        peerRecommendations: 3.2,
+        directoryRankings: 3.0,
+        mediaProfile: 6.2,
+        dealVolume: 3.8,
+        dealValue: 3.2,
+        clients: 5.0
+      }
+    ]
   },
   {
     practiceArea: 'Infrastructure',
-    data: []
+    data: [
+      {
+        id: 'TEST004',
+        totalScore: 7.1,
+        reputationScore: 6.0,
+        instructionScore: 5.8,
+        peerRecommendations: 2.5,
+        directoryRankings: 2.2,
+        mediaProfile: 5.0,
+        dealVolume: 3.2,
+        dealValue: 2.8,
+        clients: 4.5
+      }
+    ]
   },
   {
     practiceArea: 'International Trade',

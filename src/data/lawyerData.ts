@@ -2211,5 +2211,140 @@ export const lawyers: BaseLawyer[] = [
         url: 'https://resightindia.com/law-firms/indian/news/NEWS01499'
       }
     ]
+  },
+  {
+    id: 'TEST001',
+    name: 'Aarav Mehta',
+    firm: 'TestFirm LLP',
+    specialty: [
+      'Private Capital',
+      'Arbitration',
+      'Competition'
+    ],
+    location: 'Mumbai',
+    jobTitle: 'Senior Partner',
+    sophisticationScore: 8.5,
+    experienceScore: 7.2,
+    breakdown: {
+      aiAndTechnology: 9,
+      dataDrivenPractice: 8.5,
+      pricingModels: 8,
+      valueAdds: 7.5,
+      numberOfReferences: 5,
+      expertise: 8,
+      service: 7.5,
+      commerciality: 7,
+      communication: 7.5,
+      eq: 7,
+      strategy: 7,
+      network: 6.5,
+      leadership: 7
+    },
+    bio: [
+      'Aarav Mehta is a test lawyer with a multi-practice portfolio spanning private capital, arbitration and competition law. He advises leading institutional investors on complex cross-border transactions.',
+      'Known for his pragmatic approach to dispute resolution, Aarav regularly acts in high-value commercial arbitrations under ICC and SIAC rules.'
+    ],
+    recentCases: []
+  },
+  {
+    id: 'TEST002',
+    name: 'Priya Sharma',
+    firm: 'TestFirm LLP',
+    specialty: [
+      'Private Capital',
+      'Arbitration',
+      'Competition'
+    ],
+    location: 'Delhi',
+    jobTitle: 'Partner',
+    sophisticationScore: 7.8,
+    experienceScore: 8.1,
+    breakdown: {
+      aiAndTechnology: 7.5,
+      dataDrivenPractice: 8,
+      pricingModels: 7,
+      valueAdds: 8.5,
+      numberOfReferences: 6,
+      expertise: 8.5,
+      service: 8,
+      commerciality: 8.5,
+      communication: 8,
+      eq: 8,
+      strategy: 7.5,
+      network: 8,
+      leadership: 8.5
+    },
+    bio: [
+      'Priya Sharma brings a versatile practice across private capital, arbitration and competition matters. Her clients include private equity sponsors and multinational corporations facing regulatory challenges.',
+      'She has developed a strong reputation in competition enforcement proceedings before the CCI, frequently advising on merger control filings and cartel investigations.'
+    ],
+    recentCases: []
+  },
+  {
+    id: 'TEST003',
+    name: 'Rohan Desai',
+    firm: 'Chambers & Partners Test',
+    specialty: [
+      'Arbitration',
+      'Competition'
+    ],
+    location: 'Mumbai',
+    jobTitle: 'Partner, Disputes',
+    sophisticationScore: 6.9,
+    experienceScore: 7.5,
+    breakdown: {
+      aiAndTechnology: 7,
+      dataDrivenPractice: 7,
+      pricingModels: 6.5,
+      valueAdds: 7,
+      numberOfReferences: 4,
+      expertise: 8,
+      service: 7.5,
+      commerciality: 7,
+      communication: 8,
+      eq: 7.5,
+      strategy: 7,
+      network: 7.5,
+      leadership: 7
+    },
+    bio: [
+      'Rohan Desai specialises in arbitration and competition law. He regularly represents clients in complex commercial disputes and has acted as counsel in more than 30 international arbitrations.',
+      'His competition practice focuses on abuse of dominance and horizontal agreements, with particular expertise in the technology and telecoms sectors.'
+    ],
+    recentCases: []
+  },
+  {
+    id: 'TEST004',
+    name: 'Kavita Nair',
+    firm: 'Nair & Associates',
+    specialty: [
+      'Competition',
+      'Cyber',
+      'Infrastructure'
+    ],
+    location: 'Bengaluru',
+    jobTitle: 'Managing Partner',
+    sophisticationScore: 9.2,
+    experienceScore: 6.8,
+    breakdown: {
+      aiAndTechnology: 9.5,
+      dataDrivenPractice: 9,
+      pricingModels: 9,
+      valueAdds: 9,
+      numberOfReferences: 3,
+      expertise: 7.5,
+      service: 7,
+      commerciality: 6.5,
+      communication: 7,
+      eq: 6.5,
+      strategy: 6.5,
+      network: 6,
+      leadership: 7
+    },
+    bio: [
+      'Kavita Nair leads a cutting-edge practice at the intersection of competition, cybersecurity and infrastructure law. She advises government agencies and private operators on data privacy compliance and critical infrastructure regulation.',
+      'Her technology-forward approach to legal practice includes proprietary AI tools for regulatory analysis and a data-driven methodology for competition assessments.'
+    ],
+    recentCases: []
   }
 ];
