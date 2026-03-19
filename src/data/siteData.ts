@@ -1,33 +1,19 @@
-// File containing all data for the site. Designed to be the only file that needs updating in order to update data on the site.
-// Should also be the site of most changes should we decide to duplicate the site to cover a different field.
-// In here is:
-// - TS interface definitions (All setting up readability for other pages):
-//   - ScoreBreakdown (Which of the more detailed subscores are relevant.)
-//   - RecentCases (Matched title and link per RI Deal)
-//   - Lawyer (Defined string containing all info needed for a lawyer's profile. No calculations are done in this object currently, all raw numbers should be imported from Excel)
-//   - Article (At the moment just has two basic types, for metadata and insights. Will maybe need to change this if we host insights on the main site instead).
-// - Consts (Here is where to change the full data for the site)
-//   - lawyers (This is where most of the data lives. An array containing Profiles based off of the Lawyer objects. Note that these contain ScoreBreakdown (breakdown) and RecentCase (recentCases) as their own arrays defined by the other interfaces).
-//   - articles (Here are the contents for some very simple (text only!) insights articles. Can change if we want to do fancier things in future.)
-//   - reportMetadata (one last object, containing any little bits we want to pepper around the site. This is mainly for the splash page.)
+// Data layer for the site. Merges per-lawyer constant data (lawyerData.ts)
+// with per-practice-area scores (rawPracticeData.ts) to produce enriched
+// Lawyer objects consumed by all components.
+
+import { lawyers as baseLawyers } from './lawyerData';
+import { rawPracticeData } from './rawPracticeData';
+
+// --- Type Definitions ---
 
 export interface ScoreBreakdown {
-  // Reputation sub-scores (3)
-  peerRecommendations: number;
-  directoryRankings: number;
-  mediaProfile: number;
-  
-  // Instruction sub-scores (3)
-  dealVolume: number;
-  dealValue: number;
-  clients: number;
-  
   // Sophistication sub-scores (4)
   aiAndTechnology: number;
   dataDrivenPractice: number;
   pricingModels: number;
   valueAdds: number;
-  
+
   // Experience sub-scores (9)
   numberOfReferences: number;
   expertise: number;
@@ -45,27 +31,56 @@ export interface RecentCase {
   url: string;
 }
 
-export interface Lawyer {
+export interface BaseLawyer {
   id: string;
   name: string;
   firm: string;
   specialty: string[];
   location: string;
   jobTitle: string;
-  
-  // Main scores
+  sophisticationScore: number;
+  experienceScore: number;
+  breakdown: ScoreBreakdown;
+  bio: string | string[];
+  recentCases?: RecentCase[];
+}
+
+export interface PracticeAreaScores {
+  practiceArea: string;
   totalScore: number;
   reputationScore: number;
   instructionScore: number;
-  sophisticationScore: number;
-  experienceScore: number;
-  
-  // Detailed breakdowns
-  breakdown: ScoreBreakdown;
-  
-  // Profile information
-  bio: string | string[]; // Can be a single string or array of paragraphs
-  recentCases?: RecentCase[]; // Optional to allow lawyers without highlightable cases
+  peerRecommendations: number;
+  directoryRankings: number;
+  mediaProfile: number;
+  dealVolume: number;
+  dealValue: number;
+  clients: number;
+}
+
+export interface LawyerPracticeScore {
+  id: string;
+  totalScore: number;
+  reputationScore: number;
+  instructionScore: number;
+  peerRecommendations: number;
+  directoryRankings: number;
+  mediaProfile: number;
+  dealVolume: number;
+  dealValue: number;
+  clients: number;
+}
+
+export interface PracticeData {
+  practiceArea: string;
+  data: LawyerPracticeScore[];
+}
+
+export interface Lawyer extends BaseLawyer {
+  rankings: PracticeAreaScores[];
+  totalScore: number;
+  reputationScore: number;
+  instructionScore: number;
 }
 
 export interface Article {
@@ -74,57 +89,124 @@ export interface Article {
   category: 'methodology' | 'insights';
   author: string;
   date: string;
-  markdownContent?: string; // Markdown/HTML formatted content - images are embedded directly in markdown
+  markdownContent?: string;
 }
 
-export interface AverageScores {
-  totalScore: number;
-  reputationScore: number;
-  instructionScore: number;
-  sophisticationScore: number;
-  experienceScore: number;
-  breakdown: ScoreBreakdown;
-}
+// --- Practice Area Constants ---
 
-// Import and re-export lawyers from lawyerData
-import { lawyers } from './lawyerData';
-export { lawyers };
+export const PRACTICE_AREAS = [
+  'Private Capital',
+  'Arbitration',
+  'Equity Capital Markets',
+  'Debt Capital Markets',
+  'Competition',
+  'Cyber',
+  'Infrastructure',
+  'International Trade',
+] as const;
 
-// Average scores across all lawyers (hard-coded)
-export const averageScores: AverageScores = {
-  totalScore: 6.83,
-  reputationScore: 5.6,
-  instructionScore: 6.3,
-  sophisticationScore: 8.4,
-  experienceScore: 5.5,
-  breakdown: {
-    peerRecommendations: 1.9,
-    directoryRankings: 3.0,
-    mediaProfile: 3.9,
-    dealVolume: 3.8,
-    dealValue: 4.0,
-    clients: 5.0,
-    aiAndTechnology: 8.1,
-    dataDrivenPractice: 9.0,
-    pricingModels: 7.9,
-    valueAdds: 6.9,
-    numberOfReferences: 2.4,
-    expertise: 7.7,
-    service: 7.7,
-    commerciality: 7.6,
-    communication: 7.7,
-    eq: 7.5,
-    strategy: 7.5,
-    network: 7.4,
-    leadership: 7.6
-  }
+export type PracticeArea = (typeof PRACTICE_AREAS)[number];
+
+// --- Helper Functions ---
+
+export const getLawyerRanking = (
+  lawyer: Lawyer,
+  practiceArea: string,
+): PracticeAreaScores | undefined => {
+  return lawyer.rankings.find((r) => r.practiceArea === practiceArea);
 };
 
-// Import and re-export articles from articleData
+export const getLawyerPracticeAreas = (lawyer: Lawyer): string[] => {
+  return lawyer.rankings.map((r) => r.practiceArea);
+};
+
+export const getHighestScores = (
+  lawyer: Lawyer,
+): { totalScore: number; reputationScore: number; instructionScore: number } => {
+  if (lawyer.rankings.length === 0) {
+    return { totalScore: 0, reputationScore: 0, instructionScore: 0 };
+  }
+  const best = lawyer.rankings.reduce((highest, current) =>
+    current.totalScore > highest.totalScore ? current : highest,
+  );
+  return {
+    totalScore: best.totalScore,
+    reputationScore: best.reputationScore,
+    instructionScore: best.instructionScore,
+  };
+};
+
+export const getScoreForPracticeArea = (
+  lawyer: Lawyer,
+  practiceArea: string | null,
+): { totalScore: number; reputationScore: number; instructionScore: number } => {
+  if (!practiceArea) {
+    return getHighestScores(lawyer);
+  }
+  const ranking = getLawyerRanking(lawyer, practiceArea);
+  if (!ranking) {
+    return getHighestScores(lawyer);
+  }
+  return {
+    totalScore: ranking.totalScore,
+    reputationScore: ranking.reputationScore,
+    instructionScore: ranking.instructionScore,
+  };
+};
+
+// --- Merge Logic ---
+
+const mergeLawyersWithPracticeData = (
+  base: BaseLawyer[],
+  practiceData: PracticeData[],
+): Lawyer[] => {
+  return base.map((baseLawyer) => {
+    const rankings: PracticeAreaScores[] = [];
+    practiceData.forEach((practice) => {
+      const score = practice.data.find((d) => d.id === baseLawyer.id);
+      if (score) {
+        rankings.push({
+          practiceArea: practice.practiceArea,
+          totalScore: score.totalScore,
+          reputationScore: score.reputationScore,
+          instructionScore: score.instructionScore,
+          peerRecommendations: score.peerRecommendations,
+          directoryRankings: score.directoryRankings,
+          mediaProfile: score.mediaProfile,
+          dealVolume: score.dealVolume,
+          dealValue: score.dealValue,
+          clients: score.clients,
+        });
+      }
+    });
+
+    const highest =
+      rankings.length > 0
+        ? rankings.reduce((h, c) => (c.totalScore > h.totalScore ? c : h))
+        : null;
+
+    return {
+      ...baseLawyer,
+      rankings,
+      totalScore: highest?.totalScore ?? 0,
+      reputationScore: highest?.reputationScore ?? 0,
+      instructionScore: highest?.instructionScore ?? 0,
+    };
+  });
+};
+
+// --- Exported Data ---
+
+export const lawyers: Lawyer[] = mergeLawyersWithPracticeData(
+  baseLawyers as BaseLawyer[],
+  rawPracticeData as PracticeData[],
+);
+
 export { articles } from './articleData';
+
 export const reportMetadata = {
   title: 'Resight India: RISE Lawyers in Private Capital',
   publishDate: 'November 2025',
   year: '2025',
-  totalLawyers: lawyers.length
+  totalLawyers: lawyers.length,
 };

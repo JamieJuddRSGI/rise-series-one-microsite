@@ -1,7 +1,8 @@
 """
 Utility to convert `sitedata.xlsx` (first worksheet) into a TypeScript
-array of `Lawyer` objects that match the `Lawyer` interface declared in
-`siteData.ts`.
+array of `BaseLawyer` objects that match the `BaseLawyer` interface declared in
+`siteData.ts`.  Practice-specific scores (total, reputation, instruction and
+their sub-indicators) are handled separately by build_practice_data.py.
 """
 
 from __future__ import annotations
@@ -25,21 +26,14 @@ IDX = {
     "specialty": 3,
     "location": 4,
     "jobTitle": 5,
-    "totalScore": 6,
-    "reputationScore": 7,
-    "instructionScore": 8,
     "sophisticationScore": 9,
     "experienceScore": 10,
     "bio": 30,
 }
 
+# Only sophistication + experience sub-scores; reputation/instruction
+# sub-scores are handled by build_practice_data.py.
 BREAKDOWN_FIELDS = [
-    "peerRecommendations",
-    "directoryRankings",
-    "mediaProfile",
-    "dealVolume",
-    "dealValue",
-    "clients",
     "aiAndTechnology",
     "dataDrivenPractice",
     "pricingModels",
@@ -54,7 +48,7 @@ BREAKDOWN_FIELDS = [
     "network",
     "leadership",
 ]
-BREAKDOWN_OFFSET = 11  # Column L
+BREAKDOWN_OFFSET = 17  # Column R (skipping reputation/instruction sub-scores)
 
 RECENT_CASE_INDEXES = [
     (31, 32),  # title, slug
@@ -139,9 +133,6 @@ def _row_to_lawyer(row_values: List[object]) -> dict:
         "specialty": _parse_specialties(row_values[IDX["specialty"]]),
         "location": _string(row_values[IDX["location"]]),
         "jobTitle": _string(row_values[IDX["jobTitle"]]),
-        "totalScore": _number(row_values[IDX["totalScore"]]),
-        "reputationScore": _number(row_values[IDX["reputationScore"]]),
-        "instructionScore": _number(row_values[IDX["instructionScore"]]),
         "sophisticationScore": _number(row_values[IDX["sophisticationScore"]]),
         "experienceScore": _number(row_values[IDX["experienceScore"]]),
         "breakdown": {},
@@ -227,8 +218,8 @@ def emit_typescript(lawyers: List[dict]) -> str:
 
     array_literal = to_js(lawyers, 0)
     return (
-        "import { Lawyer } from './siteData';\n\n"
-        f"export const lawyers: Lawyer[] = {array_literal};\n"
+        "import { BaseLawyer } from './siteData';\n\n"
+        f"export const lawyers: BaseLawyer[] = {array_literal};\n"
     )
 
 
