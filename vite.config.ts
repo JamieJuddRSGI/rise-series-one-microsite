@@ -1,11 +1,13 @@
 
   import { defineConfig } from 'vite';
+  import tailwindcss from '@tailwindcss/vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
   import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
   export default defineConfig({
     plugins: [
+      tailwindcss(),
       react(),
       nodePolyfills({
         // Enable Buffer polyfill for gray-matter
