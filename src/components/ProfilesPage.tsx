@@ -3,6 +3,7 @@ import { Users, ArrowRight, Search, Filter, Scale, MapPin } from 'lucide-react';
 import { lawyers, PRACTICE_AREAS, getLawyerPracticeAreas, getScoreForPracticeArea, getLawyerRanking } from '../data/siteData';
 import { getLawyerPhoto } from '../assets/lawyers/photoImports';
 import { calculateRankingsWithTies, formatOrdinal } from '../utils/rankings';
+import { formatScoreToTwoDecimals } from '../utils/scoreFormatting';
 
 interface ProfilesPageProps {
   onNavigate: (page: string) => void;
@@ -167,7 +168,8 @@ export const ProfilesPage: React.FC<ProfilesPageProps> = ({ onNavigate }) => {
                         )}
                       </div>
                       <div className="text-center">
-                        <div className={`text-2xl ${getRankColor(rank)}`}>{formatOrdinal(rank)}</div>
+                        <div className="text-2xl text-black">{formatScoreToTwoDecimals(scores.totalScore)}</div>
+                        <div className="text-xs text-slate-500">Total</div>
                       </div>
                     </div>
                   </div>

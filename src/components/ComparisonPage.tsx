@@ -119,21 +119,14 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
     return (
       <div className="flex-1" ref={dropdownRef}>
         {selectedLawyer ? (
-          <div className="p-4 bg-slate-50 rounded-lg border border-slate-200">
-            <div className="flex items-start justify-between">
-              <div className="flex-1">
-                <div className="text-slate-900 mb-1">{selectedLawyer.name}</div>
-                <div className="text-slate-600 text-sm">
-                  {selectedLawyer.jobTitle} · {selectedLawyer.firm}
-                </div>
-                <div className="text-slate-500 text-sm">{selectedLawyer.location}</div>
-                <div className="text-slate-500 text-sm">
-                  {getLawyerPracticeAreas(selectedLawyer).join(', ')}
-                </div>
+          <div className="p-4 bg-slate-700 rounded-lg">
+            <div className="flex items-center justify-between">
+              <div className="text-white text-sm">
+                {selectedLawyer.name} &middot; {selectedLawyer.firm}
               </div>
               <button
                 onClick={handleClear}
-                className="text-slate-400 hover:text-slate-600 transition-colors ml-2"
+                className="text-slate-300 hover:text-white transition-colors ml-2"
                 title="Clear selection"
               >
                 <X size={20} />
@@ -545,13 +538,15 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
                         </div>
                       )}
                       <div>
-                        <h2 className="text-slate-900 mb-1">{lawyer.name}</h2>
-                        <div className="text-slate-600">{lawyer.firm}</div>
-                        <div className="text-slate-500">{getLawyerPracticeAreas(lawyer).join(', ')}</div>
+                        <h3 className="text-slate-900 mb-1">{lawyer.name}</h3>
+                        <div className="text-slate-600 text-sm">{lawyer.jobTitle} &middot; {lawyer.firm}</div>
+                        <div className="text-slate-500 text-sm">{lawyer.location}</div>
+                        <div className="text-blue-600 text-sm">{getLawyerPracticeAreas(lawyer).join(', ')}</div>
                       </div>
                     </div>
-                    <div className="px-4 py-2 rounded-lg border bg-slate-50 border-slate-200">
-                      <div className="text-2xl text-black">{formatOrdinal(practiceRankings.get(id) || 0)}</div>
+                    <div className="px-4 py-2 rounded-lg border bg-slate-50 border-slate-200 text-center">
+                      <div className="text-2xl text-black">{formatScoreToTwoDecimals(getLawyerRanking(lawyer, selectedPracticeArea)?.totalScore ?? 0)}</div>
+                      <div className="text-xs text-slate-500">Total Score</div>
                     </div>
                   </div>
                 </div>

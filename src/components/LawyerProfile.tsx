@@ -4,6 +4,7 @@ import { Lawyer, lawyers, getLawyerPracticeAreas, getLawyerRanking, PracticeArea
 import { getLawyerPhoto } from '../assets/lawyers/photoImports';
 import { calculateRankingsWithTies, getRankingText as getRankingTextUtil, formatOrdinal } from '../utils/rankings';
 import { formatScoreToTwoDecimals, formatScore } from '../utils/scoreFormatting';
+import { motion } from 'motion/react';
 
 interface LawyerProfileProps {
   lawyer: Lawyer;
@@ -44,6 +45,7 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
     };
 
     return {
+      totalScore: paAvg((r) => r.totalScore),
       reputationScore: paAvg((r) => r.reputationScore),
       instructionScore: paAvg((r) => r.instructionScore),
       sophisticationScore: allAvg((l) => l.sophisticationScore),
@@ -110,7 +112,7 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
   }, [lawyer.id, selectedPracticeArea]);
 
   const scoreMetrics = [
-    { label: 'Rank', value: rankings.totalScore, icon: Award, color: 'slate' },
+    { label: 'Total Score', value: currentScores.totalScore, icon: Award, color: 'slate' },
     { label: 'Reputation', value: currentScores.reputationScore, icon: Star, color: 'red' },
     { label: 'Instruction', value: currentScores.instructionScore, icon: Handshake, color: 'emerald' },
     { label: 'Sophistication', value: lawyer.sophisticationScore, icon: BrainCog, color: 'amber' },
@@ -304,19 +306,46 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
             const colors = getColorClasses(metric.color);
 
             let avgScore = 0;
-            if (metric.label === 'Reputation') avgScore = averages.reputationScore;
+            if (metric.label === 'Total Score') avgScore = averages.totalScore;
+            else if (metric.label === 'Reputation') avgScore = averages.reputationScore;
             else if (metric.label === 'Instruction') avgScore = averages.instructionScore;
             else if (metric.label === 'Sophistication') avgScore = averages.sophisticationScore;
             else if (metric.label === 'Experience') avgScore = averages.experienceScore;
 
             if (index === 0) {
+              const totalRank = rankings.totalScore;
+              const isTotalTied = tiedRanks.totalScore.has(totalRank);
               return (
                 <div
                   key={metric.label}
-                  className={`rounded-lg border p-6 ${colors.bg} ${colors.border} flex flex-col items-center justify-center`}
+                  className={`rounded-lg border p-6 ${colors.bg} ${colors.border}`}
                 >
-                  <div className="text-slate-600 mb-2 text-lg">{metric.label}</div>
-                  <div className="text-4xl text-black">{formatOrdinal(metric.value)}</div>
+                  <div className="flex items-center justify-between mb-4">
+                    <Icon className={colors.icon} size={24} />
+                    <div className="text-3xl text-black">
+                      {formatScoreToTwoDecimals(metric.value)}
+                    </div>
+                  </div>
+                  <div className="text-slate-600 mb-2">{metric.label}</div>
+                  <div className="space-y-1.5">
+                    <div className="w-full bg-white rounded-full h-2 relative">
+                      <motion.div
+                        key={`total-bar-${metric.value}-${selectedPracticeArea}`}
+                        initial={{ width: 0 }}
+                        animate={{ width: `${metric.value * 10}%` }}
+                        transition={{ duration: 0.6, ease: 'easeOut' }}
+                        className={`${metric.value >= avgScore ? 'bg-emerald-500' : 'bg-slate-400'} h-2 rounded-full`}
+                      />
+                    </div>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-500">Avg: {avgScore.toFixed(1)}</span>
+                      {shouldShowRankingPill(totalRank) && (
+                        <div className={`px-2 py-0.5 rounded-full flex items-center justify-center ${getRankingPillClasses(totalRank)}`}>
+                          {getRankingText(totalRank, isTotalTied)}
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
               );
             }
