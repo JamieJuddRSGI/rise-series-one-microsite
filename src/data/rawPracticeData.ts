@@ -299,12 +299,12 @@ export const rawPracticeData = [
       {
         id: 'IND00106',
         totalScore: 4.2,
-        reputationScore: 0,
+        reputationScore: 5.5,
         peers: 1.9,
         directories: 1.5,
         newsMedia: 4.4,
         socialMedia: 0,
-        instructionScore: 0,
+        instructionScore: 6.1,
         volume: 3.2,
         value: 5.4,
         clients: 4.38,
@@ -509,12 +509,12 @@ export const rawPracticeData = [
       {
         id: 'IND01232',
         totalScore: 3.5,
-        reputationScore: 0,
+        reputationScore: 5.5,
         peers: 1.3,
         directories: 2.8,
         newsMedia: 5.3,
         socialMedia: 0,
-        instructionScore: 0,
+        instructionScore: 6.2,
         volume: 2.6,
         value: 5.3,
         clients: 4.94,
@@ -621,12 +621,12 @@ export const rawPracticeData = [
       {
         id: 'IND01585',
         totalScore: 3.3,
-        reputationScore: 0,
+        reputationScore: 5.6,
         peers: 1.6,
         directories: 2.7,
         newsMedia: 6.2,
         socialMedia: 0,
-        instructionScore: 0,
+        instructionScore: 4.5,
         volume: 1,
         value: 3,
         clients: 2.29,
@@ -1581,20 +1581,6 @@ export const rawPracticeData = [
         complexity: 7.8
       },
       {
-        id: 'IND00552',
-        totalScore: 5.6,
-        reputationScore: 3,
-        peers: 0,
-        directories: 5.3,
-        newsMedia: 6.8,
-        socialMedia: 8.7,
-        instructionScore: 7.6,
-        volume: 7.6,
-        value: 7.2,
-        clients: 9.2,
-        complexity: 7.2
-      },
-      {
         id: 'IND01744',
         totalScore: 5.5,
         reputationScore: 2.7,
@@ -1697,6 +1683,20 @@ export const rawPracticeData = [
   {
     practiceArea: 'Debt Capital Markets',
     data: [
+      {
+        id: 'IND00552',
+        totalScore: 5.6,
+        reputationScore: 3,
+        peers: 0,
+        directories: 5.3,
+        newsMedia: 6.8,
+        socialMedia: 8.7,
+        instructionScore: 7.6,
+        volume: 7.6,
+        value: 7.2,
+        clients: 9.2,
+        complexity: 7.2
+      },
       {
         id: 'IND00120',
         totalScore: 8.8,
@@ -3274,16 +3274,16 @@ export const rawPracticeData = [
       {
         id: 'IND07689',
         totalScore: 7.2,
-        reputationScore: 0,
-        peers: 0,
-        directories: 0,
-        newsMedia: 0,
-        socialMedia: 0,
-        instructionScore: 0,
-        volume: 0,
+        reputationScore: 6,
+        peers: 3.8,
+        directories: 7.5,
+        newsMedia: 9.5,
+        socialMedia: 9.3,
+        instructionScore: 9.1,
+        volume: 8.2,
         value: 0,
-        clients: 0,
-        complexity: 0
+        clients: 9.4,
+        complexity: 9.3
       },
       {
         id: 'IND07621',

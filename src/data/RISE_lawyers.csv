@@ -72,7 +72,7 @@ IND02634,Capital Markets - Equity,Sandip Bhagat,Partner,Mumbai,S&R Associates,Pl
 IND00229,Capital Markets - Equity,Sudhir Bassi,Executive Director,Mumbai,Khaitan & Co,Placeholder text for bio. Full bio will go here.,7.3,7.3,8,7,8.5,1,10,10,10,10,10,10,10,10,-,-,-,-,-,-
 IND00245,Capital Markets - Equity,Thomas George,Partner,Bengaluru,Khaitan & Co,Placeholder text for bio. Full bio will go here.,7.1,7.3,7,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 IND00601,Capital Markets - Equity,Varoon Chandra,Senior Partner,Mumbai,AZB & Partners,Placeholder text for bio. Full bio will go here.,6.6,6,-,-,9.5,2,10,10,10,10,10,10,10,10,-,-,-,-,-,-
-IND00552,Capital Markets - Equity,Veena Sivaramakrishnan,Partner,Mumbai,Shardul Amarchand Mangaldas & Co,Placeholder text for bio. Full bio will go here.,6.7,6.7,8,6,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+IND00552,Capital Markets - Debt,Veena Sivaramakrishnan,Partner,Mumbai,Shardul Amarchand Mangaldas & Co,Placeholder text for bio. Full bio will go here.,6.7,6.7,8,6,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 IND03138,Capital Markets - Equity,Vijay Parthasarathi,Partner  & Regional Co-Head of Markets,Bengaluru,Trilegal,Placeholder text for bio. Full bio will go here.,6.9,7.3,6,7,7.9,1,10,10,10,10,10,8,8,8,-,-,-,-,-,-
 IND03141,Capital Markets - Equity,Vinay Sirohia,Partner,Bengaluru,Trilegal,Placeholder text for bio. Full bio will go here.,7.1,6.7,6,8,8.5,1,10,10,10,10,10,10,10,10,-,-,-,-,-,-
 IND01774,Capital Markets - Equity,Vishal Yaduvanshi,Co-Head of Capital Markets Practice (North),Delhi,Cyril Amarchand Mangaldas,Placeholder text for bio. Full bio will go here.,5.3,6.7,5,4,7.9,1,10,8,10,10,10,8,8,10,-,-,-,-,-,-
@@ -176,7 +176,7 @@ IND02646,International Trade,Ajinkya Gunjan Mishra,Partner,Delhi,S&R Associates,
 IND02193,International Trade,Ankur Sharma,Partner,Delhi,Lakshmikumaran & Sridharan,Placeholder text for bio. Full bio will go here.,6,4,6,8,6.8,1,6,8,8,8,8,8,8,8,-,-,-,-,-,-
 IND07570,International Trade,Anuradha R V,,Delhi,Clarus Law Associates,Placeholder text for bio. Full bio will go here.,6,2.7,-,9,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 IND01267,International Trade,Ashish Chandra,Partner,Delhi,DSK Legal,Placeholder text for bio. Full bio will go here.,5.2,4,4,7,8.1,1,10,10,10,10,8,10,8,10,-,-,-,-,-,-
-IND07689,International Trade,Atul Sharma,Partner,Delhi,Sarvada Legal,Placeholder text for bio. Full bio will go here.,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+IND07689,International Trade,Atul Sharma,Partner,Delhi,Sarvada Legal,Placeholder text for bio. Full bio will go here.,5.7,5.3,5,8,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 IND00059,International Trade,Ayush Mehrotra,Partner,Delhi,Khaitan & Co,Placeholder text for bio. Full bio will go here.,8,8.7,-,8,8.3,1,10,10,10,10,10,10,8,10,-,-,-,-,-,-
 IND02203,International Trade,Devinder Bagia,Partner,Delhi,Lakshmikumaran & Sridharan,Placeholder text for bio. Full bio will go here.,5.9,4.7,6,7,9.2,2,10,10,9,9,10,9,10,10,-,-,-,-,-,-
 IND00723,International Trade,Dhruv Gupta,Partner,Delhi,Trilegal,Placeholder text for bio. Full bio will go here.,7.5,7.3,7,8,7.2,1,10,6,8,8,10,6,8,10,-,-,-,-,-,-
@@ -248,7 +248,7 @@ IND01232,Private Capital,Gunjan Shah,Associate Partner,Mumbai,Shardul Amarchand 
 
 Considered a senior and leading practitioner in the private equity space, Gunjan had a lower profile in 12 month period of the research than usual. She advises on both public and private deals, specialising in structured products that go beyond straight equity, including debt-like and semi-equity instruments. Her practice encompasses minority investments, buyouts and investments in stressed assets.
 
-Gunjan's ability to innovate with new financial products positions her as a creative problem-solver for funds seeking sophisticated structuring. Crucially, she combines technical mastery of complex capital structures with knowledge of how to deploy these tools to achieve commercial objectives in India's dynamic private capital market.",-,8,8,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+Gunjan's ability to innovate with new financial products positions her as a creative problem-solver for funds seeking sophisticated structuring. Crucially, she combines technical mastery of complex capital structures with knowledge of how to deploy these tools to achieve commercial objectives in India's dynamic private capital market.",8.2,8,8,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 IND00092,Private Capital,Haigreve Khaitan,Partner,Mumbai,Khaitan & Co,"Industry leader and managing partner of Khaitan & Co., Haigreve Khaitan, is one of the most active practising managing partners in the Indian market. His client book includes high-value, globally recognised firms such as EQT, Blackstone, TPG, Temasek and Global Founders Capital, for whom he works on big ticket deals.
 
 Renowned across the market for his law firm leadership and strategy as well as legal practice, Haigreve receives a strong reputation score from peers, clients, directories and in the media. The firm is also unusual in that it acts for insurers in the private capital space.
@@ -282,7 +282,7 @@ IND00106,Private Capital,Kartick Maheshwari,Partner,Mumbai,Khaitan & Co,"Kartick
 
 His client experience reflects near-perfect ratings, with clients awarding perfect scores for expertise, service, commerciality, communication, emotional intelligence, network and leadership. However, the overall score for this indicator is lower because of relatively few reviews received during the research period.
 
-His philosophy centres on finding commercial middle ground rather than adversarial positioning, being available for clients and running an efficient practice. His high sophistication of practice score draws on use of the firm's more advanced tech tools which include the ability to automate client reporting and insights. ",-,9,8,-,8.3,1,10,10,10,10,10,8,10,10,-,-,-,-,-,-
+His philosophy centres on finding commercial middle ground rather than adversarial positioning, being available for clients and running an efficient practice. His high sophistication of practice score draws on use of the firm's more advanced tech tools which include the ability to automate client reporting and insights. ",8.9,9,8,-,8.3,1,10,10,10,10,10,8,10,10,-,-,-,-,-,-
 IND00477,Private Capital,Manish Gupta,Partner,Gurugram,Shardul Amarchand Mangaldas & Co.,"Manish Gupta advises prominent growth and venture capital investors, with repeat mandates from Lightspeed, General Catalyst, Elevation and 3one4. His work includes significant secondary and primary investments in consumer technology and healthcare. His deal record shows experience executing across multi-party cap tables where stakeholder alignment and protection of scaling founders are central.
 
 Consistent engagement from global funds indicates trust in his handling of negotiations and in his ability to move transactions to closing in compressed timelines. His approach balances risk management with commercial outcomes, reflecting confidence from sophisticated sponsors operating in India’s growth-stage market. 
@@ -382,7 +382,7 @@ Shuva founded Anagram Partners in 2021, and working within a smaller firm and te
 
 What distinguishes him within this group is his depth in governance and longer-term strategic input on buyouts, supported by his experience as group general counsel at Tata and reinforced by longstanding institutional relationships across varied transaction types. 
 
-Shuva was also an early mover in adopting AI. The firm has developed AI-tools and workflows to support their transactional work, positioning them alongside or ahead of larger law firms on this metric of practice sophistication. ",-,8,4,-,9.1,2,9,10,10,10,9,10,8,10,-,-,-,-,-,-
+Shuva was also an early mover in adopting AI. The firm has developed AI-tools and workflows to support their transactional work, positioning them alongside or ahead of larger law firms on this metric of practice sophistication. ",7.1,8,4,-,9.1,2,9,10,10,10,9,10,8,10,-,-,-,-,-,-
 IND00218,Private Capital,Siddarth Shah,Partner,Mumbai,Khaitan & Co,"Siddarth Shah operates across the full spectrum of private capital at Khaitan & Co - private equity, venture capital and private credit. His practice spans fund formation and deployment for institutional investors, including advising Kedaara Capital on one of India’s largest domestically-sponsored funds - its $1.73bn fourth fund in GIFT City.
 
 Client relationships span premier international and domestic firms, including Brookfield, ChrysCapital and Kotak Alternatives, alongside sovereign wealth funds and government investors. 

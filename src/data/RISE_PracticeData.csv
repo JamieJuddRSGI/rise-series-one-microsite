@@ -61,7 +61,6 @@ IND02647_Capital Markets - Equity,Equity Capital Markets,IND02647,Pratichi Mishr
 IND01705_Capital Markets - Equity,Equity Capital Markets,IND01705,Abhiroop Lahiri,5.6,2.9,0,4.7,6.8,9.2,7.7,6.9,8,9.4,7
 IND00245_Capital Markets - Equity,Equity Capital Markets,IND00245,Thomas George,5.6,2.7,0,5.8,4.7,7.9,7.7,6.1,7.9,9.7,7.5
 IND02009_Capital Markets - Equity,Equity Capital Markets,IND02009,Pracheta Bhattacharya,5.6,2.2,0,4.7,3.3,7.7,8.5,8.3,8.8,9.8,7.8
-IND00552_Capital Markets - Equity,Equity Capital Markets,IND00552,Veena Sivaramakrishnan,5.6,3,0,5.3,6.8,8.7,7.6,7.6,7.2,9.2,7.2
 IND01744_Capital Markets - Equity,Equity Capital Markets,IND01744,Priyadarshini Rao,5.5,2.7,0,4.7,6,8.3,7.8,5.5,8.5,10,7.5
 IND00140_Capital Markets - Equity,Equity Capital Markets,IND00140,Oishik Bagchi,5.4,2,0,0,7.2,8.8,7.9,7.1,7.9,9.4,7.5
 IND00716_Capital Markets - Equity,Equity Capital Markets,IND00716,Brajendu Bhaskar,5.4,2.3,0,2.9,6.5,7.4,7.8,6.7,7.6,10,7.5
@@ -69,6 +68,7 @@ IND00406_Capital Markets - Equity,Equity Capital Markets,IND00406,Abhiroop Datta
 IND03141_Capital Markets - Equity,Equity Capital Markets,IND03141,Vinay Sirohia,5.1,1.7,0,0,6,8.1,7.6,7.3,8,5.7,8.2
 IND07590_Capital Markets - Equity,Equity Capital Markets,IND07590,Prashant Rajput,4.9,2.7,0,4.7,6.5,8.1,6.1,5.1,6.1,8.1,5.8
 IND00004_Capital Markets - Equity,Equity Capital Markets,IND00004,Aayush Mohata,4.2,2.4,0,2.9,6.2,9,4,6.7,0,4.7,6.5
+IND00552_Capital Markets - Equity,Debt Capital Markets,IND00552,Veena Sivaramakrishnan,5.6,3,0,5.3,6.8,8.7,7.6,7.6,7.2,9.2,7.2
 IND00120_Capital Markets - Debt,Debt Capital Markets,IND00120,Manisha Shroff,8.8,9.3,10,8.2,7.9,9.6,9.2,10,10,8.8,8.8
 IND02109_Capital Markets - Debt,Debt Capital Markets,IND02109,Uttara M. Kolhatkar,7.9,8.5,8.1,8.4,9.5,9.5,8.5,6.5,9.7,10,8
 IND00536_Capital Markets - Debt,Debt Capital Markets,IND00536,Shubhangi Garg,7.5,6.2,5.5,5.5,7.5,9.4,8.5,8.4,8.5,8.6,8.5
@@ -180,7 +180,7 @@ IND02274_International Trade,International Trade,IND02274,V. Lakshmikumaran,9,8.
 IND02203_International Trade,International Trade,IND02203,Devinder Bagia,8,7.5,7.6,6.6,7.4,8.8,9.5,9.5,-,10,9.3
 IND00723_International Trade,International Trade,IND00723,Dhruv Gupta,7.6,6.4,5.5,7.5,6.7,8.8,8.9,9.5,-,8.9,8.7
 IND01511_International Trade,International Trade,IND01511,Parthsarathi Jha,7.5,7,8.3,7.1,0,9.8,8.5,6.7,-,9.6,8.8
-IND07689_International Trade,International Trade,IND07689,Atul Sharma,7.2,-,-,-,-,-,-,-,-,-,-
+IND07689_International Trade,International Trade,IND07689,Atul Sharma,7.2,6,3.8,7.5,9.5,9.3,9.1,8.2,-,9.4,9.3
 IND07621_International Trade,International Trade,IND07621,Reena Khair,6.4,4.1,0,9.2,9.1,9.4,8.5,8.5,-,8.4,8.5
 IND07657_International Trade,International Trade,IND07657,Seetharaman Sampath,6.2,4.1,0,10,9.2,7.2,9.1,8.2,-,9.4,9.3
 IND07570_International Trade,International Trade,IND07570,Anuradha R V,6.1,3.4,0,7.5,6.5,9.1,8.9,8.9,-,9,8.8
@@ -213,7 +213,7 @@ IND00458_Private Capital,Private Capital,IND00458,Iqbal Khan,4.3,6.1,2.5,3.8,8.6
 IND00369_Private Capital,Private Capital,IND00369,Ravindra Bandhakavi,4.3,6.2,1.3,6.9,4.9,-,5.8,4.4,3.8,3.89,-
 IND00060_Private Capital,Private Capital,IND00060,Bharat Anand,4.2,5.1,1.3,0.6,7.7,-,6.1,4.2,3,4.84,-
 IND00132_Private Capital,Private Capital,IND00132,Nikhil Narayanan,4.2,5.5,1.9,0,0,-,5.3,2.8,5.7,2.5,-
-IND00106_Private Capital,Private Capital,IND00106,Kartick Maheshwari,4.2,-,1.9,1.5,4.4,-,-,3.2,5.4,4.38,-
+IND00106_Private Capital,Private Capital,IND00106,Kartick Maheshwari,4.2,5.5,1.9,1.5,4.4,-,6.1,3.2,5.4,4.38,-
 IND00463_Private Capital,Private Capital,IND00463,Jay Gandhi,4.2,5.5,0.9,3.6,4.4,-,6.6,2.6,5.3,4.91,-
 IND00594_Private Capital,Private Capital,IND00594,Roxanne Anderson,4.1,5.4,1.9,0.8,3.8,-,6.3,0.2,1.6,6.68,-
 IND00356_Private Capital,Private Capital,IND00356,Nivedita Rao,4.1,5.2,1.9,0.8,3.8,-,6.4,1.4,3.2,6.68,-
@@ -228,7 +228,7 @@ IND00074_Private Capital,Private Capital,IND00074,Divaspathi Singh,3.9,4.2,0.9,0
 IND02476_Private Capital,Private Capital,IND02476,Nishchal Joshipura,3.7,5.2,0.3,3.2,7.8,-,6,2,4.4,4.87,-
 IND04763_Private Capital,Private Capital,IND04763,Pranav Sharma,3.6,5.5,1.3,2.7,4.4,-,5,2.6,2.1,3.16,-
 IND00813_Private Capital,Private Capital,IND00813,Yogesh Singh,3.6,3.6,0.3,0.6,0,-,5.7,4,4.3,3.53,-
-IND01232_Private Capital,Private Capital,IND01232,Gunjan Shah,3.5,-,1.3,2.8,5.3,-,-,2.6,5.3,4.94,-
+IND01232_Private Capital,Private Capital,IND01232,Gunjan Shah,3.5,5.5,1.3,2.8,5.3,-,6.2,2.6,5.3,4.94,-
 IND00765_Private Capital,Private Capital,IND00765,Pranav Atit,3.5,4.8,0.3,2.1,4.4,-,4.9,2.2,3.2,2.62,-
 IND01707_Private Capital,Private Capital,IND01707,Winnie Sherkhar,3.5,5.1,0,3.6,0,-,5.8,10,2.1,2.21,-
 IND00582_Private Capital,Private Capital,IND00582,Nanditha Gopal,3.5,5,0.3,2.4,4.4,-,5.6,2.4,1.6,5.07,-
@@ -236,7 +236,7 @@ IND03027_Private Capital,Private Capital,IND03027,Siddhart Srivastava,3.5,4,0,1.
 IND01737_Private Capital,Private Capital,IND01737,Minhaz Lokhandwala,3.5,3.9,0.3,1,5.6,-,6.6,8.4,2.5,4.74,-
 IND00261_Private Capital,Private Capital,IND00261,Vivek Mamani,3.4,4.2,0,2.1,3.4,-,4.7,5,3,1.13,-
 IND00696_Private Capital,Private Capital,IND00696,Aditya Jha,3.3,5.3,0.9,2.8,3.8,-,5.7,6,4.3,2.69,-
-IND01585_Private Capital,Private Capital,IND01585,Shuva Mandal,3.3,-,1.6,2.7,6.2,-,-,1,3,2.29,-
+IND01585_Private Capital,Private Capital,IND01585,Shuva Mandal,3.3,5.6,1.6,2.7,6.2,-,4.5,1,3,2.29,-
 IND02506_Private Capital,Private Capital,IND02506,Sharda Balaji,3.3,4.5,0,2.4,8.2,-,5.6,0,0,6.68,-
 IND00066_Private Capital,Private Capital,IND00066,Deepak Jodhani,3.2,4.3,0.6,0.8,4.9,-,4.9,2.2,3.2,2.73,-
 IND00398_Private Capital,Private Capital,IND00398,Subhalakshmi Naskar,3.1,4.2,0.9,0,3.4,-,6.4,1.4,1.6,7.27,-

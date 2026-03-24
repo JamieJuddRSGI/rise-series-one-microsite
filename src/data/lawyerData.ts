@@ -3149,7 +3149,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Veena Sivaramakrishnan',
     firm: 'Shardul Amarchand Mangaldas & Co',
     specialty: [
-      'Equity Capital Markets'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -7628,12 +7628,12 @@ export const lawyers: BaseLawyer[] = [
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
-    sophisticationScore: 0,
+    sophisticationScore: 5.7,
     experienceScore: 0,
     breakdown: {
-      techAndData: 0,
-      pricing: 0,
-      talentDevelopment: 0,
+      techAndData: 5.3,
+      pricing: 5,
+      talentDevelopment: 8,
       numberOfReferences: 0,
       service: 0,
       expertise: 0,
@@ -8597,7 +8597,7 @@ export const lawyers: BaseLawyer[] = [
     ],
     location: 'Mumbai',
     jobTitle: 'Associate Partner',
-    sophisticationScore: 0,
+    sophisticationScore: 8.2,
     experienceScore: 0,
     breakdown: {
       techAndData: 8,
@@ -8869,7 +8869,7 @@ export const lawyers: BaseLawyer[] = [
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
-    sophisticationScore: 0,
+    sophisticationScore: 8.9,
     experienceScore: 8.3,
     breakdown: {
       techAndData: 9,
@@ -9767,7 +9767,7 @@ export const lawyers: BaseLawyer[] = [
     ],
     location: 'Mumbai',
     jobTitle: 'Chairman and Managing Partner',
-    sophisticationScore: 0,
+    sophisticationScore: 7.1,
     experienceScore: 9.1,
     breakdown: {
       techAndData: 8,
