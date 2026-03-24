@@ -1253,7 +1253,8 @@ export const lawyers: BaseLawyer[] = [
     name: 'Gunita Pahwa',
     firm: 'S&A Law Offices',
     specialty: [
-      'Arbitration; Infrastructure'
+      'Arbitration',
+      'Infrastructure'
     ],
     location: 'Gurugram',
     jobTitle: 'Joint Managing Partner',
@@ -1296,7 +1297,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Aditya Bhargava',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1339,7 +1340,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Manisha Shroff',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1382,7 +1383,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Niloufer Lam',
     firm: 'NL LEGAL',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Founding Partner',
@@ -1425,7 +1426,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Priyanka Kumar',
     firm: 'TT&A',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1468,7 +1469,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Rahul Gulati',
     firm: 'TT&A',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1511,7 +1512,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Satadru Goswami',
     firm: 'Saraf and Partners',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1554,7 +1555,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Shubhangi Garg',
     firm: 'Shardul Amarchand Mangaldas & Co',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -1597,7 +1598,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Uttara M. Kolhatkar',
     firm: 'JSA Advocates & Solicitors',
     specialty: [
-      'Capital Markets - Debt'
+      'Debt Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1640,7 +1641,9 @@ export const lawyers: BaseLawyer[] = [
     name: 'Subhalakshmi Naskar',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Debt; Infrastructure; Private Capital'
+      'Debt Capital Markets',
+      'Infrastructure',
+      'Private Capital'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1683,7 +1686,8 @@ export const lawyers: BaseLawyer[] = [
     name: 'Pranav Sharma',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Debt; Private Capital'
+      'Debt Capital Markets',
+      'Private Capital'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1726,7 +1730,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Aashima Johur',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -1769,7 +1773,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Aayush Mohata',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1812,7 +1816,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Abhimanyu Bhattacharya',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1855,7 +1859,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Abhinav Kumar',
     firm: 'TT&A',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -1898,7 +1902,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Abhinav Maker',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -1941,7 +1945,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Abhiroop Datta',
     firm: 'Shardul Amarchand Mangaldas & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -1984,7 +1988,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Abhiroop Lahiri',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -2027,7 +2031,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Aditya George Cheriyan',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2070,7 +2074,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Albin Thomas',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2113,7 +2117,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Arka Mookerjee',
     firm: 'JSA Advocates & Solicitors',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2156,7 +2160,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Bhakta Patnaik',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2199,7 +2203,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Brajendu Bhaskar',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2242,7 +2246,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Gautham Srinivas',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -2285,7 +2289,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Gokul Rajan',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner - Regional Head Markets Practice (North)',
@@ -2328,7 +2332,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Jabarati Chandra',
     firm: 'S&R Associates',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2371,7 +2375,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Jitesh Shahani',
     firm: 'S&R Associates',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2414,7 +2418,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Juhi Singh',
     firm: 'S&R Associates',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -2457,7 +2461,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Lionel D\'Almeida',
     firm: 'AZB & Partners',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Senior Partner',
@@ -2500,7 +2504,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Madhurima Mukherjee (Saha)',
     firm: 'JSA Advocates & Solicitors',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -2543,7 +2547,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Manan Lahoty',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2586,7 +2590,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Nikhil Naredi',
     firm: 'Shardul Amarchand Mangaldas & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2629,7 +2633,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Oishik Bagchi',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2672,7 +2676,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Pracheta Bhattacharya',
     firm: 'JSA Advocates & Solicitors',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2715,7 +2719,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Prashaant Vikram Rajput',
     firm: 'Economic Laws Practice',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2758,7 +2762,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Prashant Gupta',
     firm: 'Shardul Amarchand Mangaldas & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'National Practice Head  of Capital Markets',
@@ -2801,7 +2805,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Priyadarshini Rao',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2844,7 +2848,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Ravi Dubey',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2887,7 +2891,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Reuben Chacko',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Bengaluru',
     jobTitle: 'Partner  - Regional Co-head Markets Practice (South)',
@@ -2930,7 +2934,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Richa Choudhary',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -2973,7 +2977,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Sandip Bhagat',
     firm: 'S&R Associates',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -3016,7 +3020,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Sudhir Bassi',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Executive Director',
@@ -3059,7 +3063,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Thomas George',
     firm: 'Khaitan & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Bengaluru',
     jobTitle: 'Partner',
@@ -3102,7 +3106,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Varoon Chandra',
     firm: 'AZB & Partners',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Senior Partner',
@@ -3145,7 +3149,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Veena Sivaramakrishnan',
     firm: 'Shardul Amarchand Mangaldas & Co',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -3188,7 +3192,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Vijay Parthasarathi',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Bengaluru',
     jobTitle: 'Partner  & Regional Co-Head of Markets',
@@ -3231,7 +3235,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Vinay Sirohia',
     firm: 'Trilegal',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Bengaluru',
     jobTitle: 'Partner',
@@ -3274,7 +3278,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Vishal Yaduvanshi',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Delhi',
     jobTitle: 'Co-Head of Capital Markets Practice (North)',
@@ -3317,7 +3321,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Vishnu Dutt U',
     firm: 'Bharucha & Partners',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -3360,7 +3364,7 @@ export const lawyers: BaseLawyer[] = [
     name: 'Yash J. Ashar',
     firm: 'Cyril Amarchand Mangaldas',
     specialty: [
-      'Capital Markets - Equity'
+      'Equity Capital Markets'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner & Head of Capital Markets',
@@ -3403,7 +3407,8 @@ export const lawyers: BaseLawyer[] = [
     name: 'Pratichi Mishra',
     firm: 'S&R Associates',
     specialty: [
-      'Capital Markets - Equity; Infrastructure'
+      'Equity Capital Markets',
+      'Infrastructure'
     ],
     location: 'Mumbai',
     jobTitle: 'Partner',
@@ -5080,7 +5085,8 @@ export const lawyers: BaseLawyer[] = [
     name: 'Anu Monga',
     firm: 'AnantLaw',
     specialty: [
-      'Competition; International Trade'
+      'Competition',
+      'International Trade'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',
@@ -5123,7 +5129,8 @@ export const lawyers: BaseLawyer[] = [
     name: 'Parthsarathi Jha',
     firm: 'Economic Laws Practice',
     specialty: [
-      'Competition; International Trade'
+      'Competition',
+      'International Trade'
     ],
     location: 'Delhi',
     jobTitle: 'Partner',

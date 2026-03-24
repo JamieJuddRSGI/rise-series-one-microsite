@@ -42,6 +42,8 @@ SPECIALTY_TO_PRACTICE: Dict[str, str] = {
     "private equity": "Private Capital",
     "private credit": "Private Capital",
     "venture capital": "Private Capital",
+    "capital markets - debt": "Debt Capital Markets",
+    "capital markets - equity": "Equity Capital Markets",
 }
 
 
@@ -100,9 +102,11 @@ def build_lawyers(df: pd.DataFrame) -> List[dict]:
         if not rid:
             continue
 
-        practice_area = _map_practice_area(_string(row.get("Rankings", "")))
-        if practice_area and practice_area not in specialties_by_id[rid]:
-            specialties_by_id[rid].append(practice_area)
+        raw_rankings = _string(row.get("Rankings", ""))
+        for part in raw_rankings.split(";"):
+            pa = _map_practice_area(part.strip())
+            if pa and pa not in specialties_by_id[rid]:
+                specialties_by_id[rid].append(pa)
 
         if rid in lawyers_by_id:
             continue

@@ -30,15 +30,17 @@ export const ProfilesPage: React.FC<ProfilesPageProps> = ({ onNavigate }) => {
     ).rankings;
   }, [selectedPractice]);
 
-  const filteredLawyers = lawyers.filter((lawyer) => {
-    const matchesSearch =
-      lawyer.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      lawyer.firm.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesPractice =
-      selectedPractice === 'all' || getLawyerPracticeAreas(lawyer).includes(selectedPractice);
-    const matchesLocation = selectedLocation === 'all' || lawyer.location === selectedLocation;
-    return matchesSearch && matchesPractice && matchesLocation;
-  });
+  const filteredLawyers = lawyers
+    .filter((lawyer) => {
+      const matchesSearch =
+        lawyer.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        lawyer.firm.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesPractice =
+        selectedPractice === 'all' || getLawyerPracticeAreas(lawyer).includes(selectedPractice);
+      const matchesLocation = selectedLocation === 'all' || lawyer.location === selectedLocation;
+      return matchesSearch && matchesPractice && matchesLocation;
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   const getRankColor = (rank: number) => {
     if (rank <= 10) return 'text-emerald-600';

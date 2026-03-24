@@ -96,14 +96,16 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
       return getLawyerPracticeAreas(l).some((pa) => otherPAs.includes(pa));
     });
 
-    const filteredLawyers = availableLawyers.filter((lawyer) => {
-      const searchLower = searchTerm.toLowerCase();
-      return (
-        lawyer.name.toLowerCase().includes(searchLower) ||
-        lawyer.firm.toLowerCase().includes(searchLower) ||
-        (lawyer.specialty || []).some((s) => s.toLowerCase().includes(searchLower))
-      );
-    });
+    const filteredLawyers = availableLawyers
+      .filter((lawyer) => {
+        const searchLower = searchTerm.toLowerCase();
+        return (
+          lawyer.name.toLowerCase().includes(searchLower) ||
+          lawyer.firm.toLowerCase().includes(searchLower) ||
+          (lawyer.specialty || []).some((s) => s.toLowerCase().includes(searchLower))
+        );
+      })
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     const handleSelect = (lawyerId: string) => {
       onChange(lawyerId);
