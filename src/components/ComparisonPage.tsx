@@ -199,16 +199,20 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
         getMainScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.reputationScore ?? 0,
         breakdowns: [
           {
-            label: 'Peer and Client Recommendations',
-            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.peerRecommendations ?? 0,
+            label: 'Peers',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.peers ?? 0,
           },
           {
-            label: 'Directory Rankings',
-            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.directoryRankings ?? 0,
+            label: 'Directories',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.directories ?? 0,
           },
           {
-            label: 'Media Profile',
-            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.mediaProfile ?? 0,
+            label: 'News Media',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.newsMedia ?? 0,
+          },
+          {
+            label: 'Social Media',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.socialMedia ?? 0,
           },
         ],
       },
@@ -219,16 +223,20 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
         getMainScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.instructionScore ?? 0,
         breakdowns: [
           {
-            label: 'Deal Volume',
-            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.dealVolume ?? 0,
+            label: 'Volume',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.volume ?? 0,
           },
           {
-            label: 'Deal Value',
-            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.dealValue ?? 0,
+            label: 'Value',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.value ?? 0,
           },
           {
             label: 'Clients',
             getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.clients ?? 0,
+          },
+          {
+            label: 'Complexity',
+            getScore: (l: Lawyer) => (l === l1 ? r1 : r2)?.complexity ?? 0,
           },
         ],
       },
@@ -238,10 +246,9 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
         bgColor: 'bg-yellow-50',
         getMainScore: (l: Lawyer) => l.sophisticationScore,
         breakdowns: [
-          { label: 'AI and Technology', getScore: (l: Lawyer) => l.breakdown.aiAndTechnology },
-          { label: 'Data-driven Practice', getScore: (l: Lawyer) => l.breakdown.dataDrivenPractice },
-          { label: 'Pricing Models', getScore: (l: Lawyer) => l.breakdown.pricingModels },
-          { label: 'Value Adds', getScore: (l: Lawyer) => l.breakdown.valueAdds },
+          { label: 'Tech and Data', getScore: (l: Lawyer) => l.breakdown.techAndData },
+          { label: 'Pricing', getScore: (l: Lawyer) => l.breakdown.pricing },
+          { label: 'Talent Development', getScore: (l: Lawyer) => l.breakdown.talentDevelopment },
         ],
       },
       {
@@ -250,8 +257,8 @@ export const ComparisonPage: React.FC<ComparisonPageProps> = ({
         bgColor: 'bg-purple-50',
         getMainScore: (l: Lawyer) => l.experienceScore,
         breakdowns: [
-          { label: 'Expertise', getScore: (l: Lawyer) => l.breakdown.expertise },
           { label: 'Service', getScore: (l: Lawyer) => l.breakdown.service },
+          { label: 'Expertise', getScore: (l: Lawyer) => l.breakdown.expertise },
           { label: 'Commerciality', getScore: (l: Lawyer) => l.breakdown.commerciality },
           { label: 'Communication', getScore: (l: Lawyer) => l.breakdown.communication },
           { label: 'EQ', getScore: (l: Lawyer) => l.breakdown.eq },

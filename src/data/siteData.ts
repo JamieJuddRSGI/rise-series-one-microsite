@@ -8,16 +8,15 @@ import { rawPracticeData } from './rawPracticeData';
 // --- Type Definitions ---
 
 export interface ScoreBreakdown {
-  // Sophistication sub-scores (4)
-  aiAndTechnology: number;
-  dataDrivenPractice: number;
-  pricingModels: number;
-  valueAdds: number;
+  // Sophistication sub-scores (3)
+  techAndData: number;
+  pricing: number;
+  talentDevelopment: number;
 
   // Experience sub-scores (9)
   numberOfReferences: number;
-  expertise: number;
   service: number;
+  expertise: number;
   commerciality: number;
   communication: number;
   eq: number;
@@ -50,12 +49,14 @@ export interface PracticeAreaScores {
   totalScore: number;
   reputationScore: number;
   instructionScore: number;
-  peerRecommendations: number;
-  directoryRankings: number;
-  mediaProfile: number;
-  dealVolume: number;
-  dealValue: number;
+  peers: number;
+  directories: number;
+  newsMedia: number;
+  socialMedia: number;
+  volume: number;
+  value: number;
   clients: number;
+  complexity: number;
 }
 
 export interface LawyerPracticeScore {
@@ -63,12 +64,14 @@ export interface LawyerPracticeScore {
   totalScore: number;
   reputationScore: number;
   instructionScore: number;
-  peerRecommendations: number;
-  directoryRankings: number;
-  mediaProfile: number;
-  dealVolume: number;
-  dealValue: number;
+  peers: number;
+  directories: number;
+  newsMedia: number;
+  socialMedia: number;
+  volume: number;
+  value: number;
   clients: number;
+  complexity: number;
 }
 
 export interface PracticeData {
@@ -170,12 +173,14 @@ const mergeLawyersWithPracticeData = (
           totalScore: score.totalScore,
           reputationScore: score.reputationScore,
           instructionScore: score.instructionScore,
-          peerRecommendations: score.peerRecommendations,
-          directoryRankings: score.directoryRankings,
-          mediaProfile: score.mediaProfile,
-          dealVolume: score.dealVolume,
-          dealValue: score.dealValue,
+          peers: score.peers,
+          directories: score.directories,
+          newsMedia: score.newsMedia,
+          socialMedia: score.socialMedia,
+          volume: score.volume,
+          value: score.value,
           clients: score.clients,
+          complexity: score.complexity,
         });
       }
     });

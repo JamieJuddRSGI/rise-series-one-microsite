@@ -51,18 +51,19 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
       sophisticationScore: allAvg((l) => l.sophisticationScore),
       experienceScore: allAvg((l) => l.experienceScore),
       breakdown: {
-        peerRecommendations: paAvg((r) => r.peerRecommendations),
-        directoryRankings: paAvg((r) => r.directoryRankings),
-        mediaProfile: paAvg((r) => r.mediaProfile),
-        dealVolume: paAvg((r) => r.dealVolume),
-        dealValue: paAvg((r) => r.dealValue),
+        peers: paAvg((r) => r.peers),
+        directories: paAvg((r) => r.directories),
+        newsMedia: paAvg((r) => r.newsMedia),
+        socialMedia: paAvg((r) => r.socialMedia),
+        volume: paAvg((r) => r.volume),
+        value: paAvg((r) => r.value),
         clients: paAvg((r) => r.clients),
-        aiAndTechnology: allAvg((l) => l.breakdown.aiAndTechnology),
-        dataDrivenPractice: allAvg((l) => l.breakdown.dataDrivenPractice),
-        pricingModels: allAvg((l) => l.breakdown.pricingModels),
-        valueAdds: allAvg((l) => l.breakdown.valueAdds),
-        expertise: allAvg((l) => l.breakdown.expertise),
+        complexity: paAvg((r) => r.complexity),
+        techAndData: allAvg((l) => l.breakdown.techAndData),
+        pricing: allAvg((l) => l.breakdown.pricing),
+        talentDevelopment: allAvg((l) => l.breakdown.talentDevelopment),
         service: allAvg((l) => l.breakdown.service),
+        expertise: allAvg((l) => l.breakdown.expertise),
         commerciality: allAvg((l) => l.breakdown.commerciality),
         communication: allAvg((l) => l.breakdown.communication),
         eq: allAvg((l) => l.breakdown.eq),
@@ -126,9 +127,10 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
       score: currentScores.reputationScore,
       color: 'red',
       items: [
-        { label: 'Peer and Client Recommendations', value: currentRanking?.peerRecommendations ?? 0 },
-        { label: 'Directory Rankings', value: currentRanking?.directoryRankings ?? 0 },
-        { label: 'Media Profile', value: currentRanking?.mediaProfile ?? 0 },
+        { label: 'Peers', value: currentRanking?.peers ?? 0 },
+        { label: 'Directories', value: currentRanking?.directories ?? 0 },
+        { label: 'News Media', value: currentRanking?.newsMedia ?? 0 },
+        { label: 'Social Media', value: currentRanking?.socialMedia ?? 0 },
       ],
     },
     {
@@ -137,9 +139,10 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
       score: currentScores.instructionScore,
       color: 'green',
       items: [
-        { label: 'Deal Volume', value: currentRanking?.dealVolume ?? 0 },
-        { label: 'Deal Value', value: currentRanking?.dealValue ?? 0 },
+        { label: 'Volume', value: currentRanking?.volume ?? 0 },
+        { label: 'Value', value: currentRanking?.value ?? 0 },
         { label: 'Clients', value: currentRanking?.clients ?? 0 },
+        { label: 'Complexity', value: currentRanking?.complexity ?? 0 },
       ],
     },
     {
@@ -148,10 +151,9 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
       score: lawyer.sophisticationScore,
       color: 'yellow',
       items: [
-        { label: 'AI and Technology', value: lawyer.breakdown.aiAndTechnology },
-        { label: 'Data-driven Practice', value: lawyer.breakdown.dataDrivenPractice },
-        { label: 'Pricing Models', value: lawyer.breakdown.pricingModels },
-        { label: 'Value Added Services', value: lawyer.breakdown.valueAdds },
+        { label: 'Tech and Data', value: lawyer.breakdown.techAndData },
+        { label: 'Pricing', value: lawyer.breakdown.pricing },
+        { label: 'Talent Development', value: lawyer.breakdown.talentDevelopment },
       ],
     },
     {
@@ -160,8 +162,8 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
       score: lawyer.experienceScore,
       color: 'purple',
       items: [
-        { label: 'Expertise', value: lawyer.breakdown.expertise },
         { label: 'Service', value: lawyer.breakdown.service },
+        { label: 'Expertise', value: lawyer.breakdown.expertise },
         { label: 'Commerciality', value: lawyer.breakdown.commerciality },
         { label: 'Communication', value: lawyer.breakdown.communication },
         { label: 'EQ', value: lawyer.breakdown.eq },
@@ -558,21 +560,22 @@ export const LawyerProfile: React.FC<LawyerProfileProps> = ({ lawyer, onNavigate
                       {section.items.map((item, idx) => {
                         let itemAvg = 0;
                         if (section.id === 'reputation') {
-                          if (idx === 0) itemAvg = averages.breakdown.peerRecommendations;
-                          else if (idx === 1) itemAvg = averages.breakdown.directoryRankings;
-                          else if (idx === 2) itemAvg = averages.breakdown.mediaProfile;
+                          if (idx === 0) itemAvg = averages.breakdown.peers;
+                          else if (idx === 1) itemAvg = averages.breakdown.directories;
+                          else if (idx === 2) itemAvg = averages.breakdown.newsMedia;
+                          else if (idx === 3) itemAvg = averages.breakdown.socialMedia;
                         } else if (section.id === 'instruction') {
-                          if (idx === 0) itemAvg = averages.breakdown.dealVolume;
-                          else if (idx === 1) itemAvg = averages.breakdown.dealValue;
+                          if (idx === 0) itemAvg = averages.breakdown.volume;
+                          else if (idx === 1) itemAvg = averages.breakdown.value;
                           else if (idx === 2) itemAvg = averages.breakdown.clients;
+                          else if (idx === 3) itemAvg = averages.breakdown.complexity;
                         } else if (section.id === 'sophistication') {
-                          if (idx === 0) itemAvg = averages.breakdown.aiAndTechnology;
-                          else if (idx === 1) itemAvg = averages.breakdown.dataDrivenPractice;
-                          else if (idx === 2) itemAvg = averages.breakdown.pricingModels;
-                          else if (idx === 3) itemAvg = averages.breakdown.valueAdds;
+                          if (idx === 0) itemAvg = averages.breakdown.techAndData;
+                          else if (idx === 1) itemAvg = averages.breakdown.pricing;
+                          else if (idx === 2) itemAvg = averages.breakdown.talentDevelopment;
                         } else if (section.id === 'experience') {
-                          if (idx === 0) itemAvg = averages.breakdown.expertise;
-                          else if (idx === 1) itemAvg = averages.breakdown.service;
+                          if (idx === 0) itemAvg = averages.breakdown.service;
+                          else if (idx === 1) itemAvg = averages.breakdown.expertise;
                           else if (idx === 2) itemAvg = averages.breakdown.commerciality;
                           else if (idx === 3) itemAvg = averages.breakdown.communication;
                           else if (idx === 4) itemAvg = averages.breakdown.eq;
