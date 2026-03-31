@@ -1,6 +1,6 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
-import { ArrowRight, TrendingUp, Star, Briefcase, Target, ChevronUp, ChevronDown, MapPin, Scale, TrendingDown, Shield, Network, Globe, Handshake, BrainCog, HandHeart, X } from 'lucide-react';
+import { ArrowRight, TrendingUp, Star, Briefcase, Target, ChevronUp, ChevronDown, MapPin, Scale, TrendingDown, Shield, Globe, Handshake, BrainCog, HandHeart, X } from 'lucide-react';
 import { lawyers, getLawyerPracticeAreas, getLawyerRanking, Lawyer } from '../data/siteData';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -169,16 +169,6 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onNavigate }) 
       borderColor: 'border-cyan-200',
     },
     {
-      id: 'infrastructure',
-      title: 'Infrastructure',
-      practiceArea: 'Infrastructure',
-      description: 'Infrastructure development and project finance specialists',
-      icon: <Network className="w-5 h-5" />,
-      color: 'text-amber-600',
-      bgColor: 'bg-amber-50',
-      borderColor: 'border-amber-200',
-    },
-    {
       id: 'international-trade',
       title: 'International Trade',
       practiceArea: 'International Trade',
@@ -275,7 +265,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onNavigate }) 
             <span>Comparative Rankings</span>
           </div>
           <p className="text-slate-600 text-xl mb-4">
-            Explore {lawyers.length} top legal professionals across eight distinct practice area rankings
+            Explore {lawyers.length} top legal professionals across seven distinct practice area rankings
           </p>
           <p className="text-slate-500">
             Click on any category card to expand and view the complete rankings with sortable columns

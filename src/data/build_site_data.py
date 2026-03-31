@@ -34,7 +34,6 @@ PRACTICE_AREAS = [
     "Debt Capital Markets",
     "Competition",
     "Cyber",
-    "Infrastructure",
     "International Trade",
 ]
 
