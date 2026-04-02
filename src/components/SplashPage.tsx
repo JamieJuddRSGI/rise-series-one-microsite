@@ -19,13 +19,8 @@ export const SplashPage: React.FC<SplashPageProps> = ({ onNavigate}) => {
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
         <div className="text-center">
-          <div className="inline-block mb-4">
-            <div className="bg-[#ef3c24]/10 border border-[#ef3c24]/20 rounded-full px-4 py-2" style={{ color: '#ef3c24' }}>
-              {reportMetadata.publishDate}
-            </div>
-          </div>
           <div className="mb-6 flex justify-center items-center">
-            <img src={riseLogo} alt="RISE Logo" className="h-auto mx-auto" style={{ width: '50%', maxWidth: '50%' }} />
+            <img src={riseLogo} alt="RISE Logo" className="h-auto mx-auto" style={{ width: '40%', maxWidth: '40%' }} />
           </div>
           <h1 className="mb-6 max-w-4xl mx-auto" style={{ color: '#000000' }}>
             {reportMetadata.title}
