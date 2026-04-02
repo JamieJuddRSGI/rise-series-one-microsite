@@ -35,7 +35,7 @@ const INDICATORS = [
     hoverBorder: 'hover:border-red-200',
     panelBg: 'bg-red-50/50',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      "'Reputation' captures a lawyer's standing in the market and their broader professional voice. This indicator covers peer recommendations, client endorsements, directory recognition, and news and media profile, reflecting both how a lawyer is regarded by those they work alongside and how actively they shape thinking in their field.",
   },
   {
     key: 'instruction',
@@ -49,7 +49,7 @@ const INDICATORS = [
     hoverBorder: 'hover:border-emerald-200',
     panelBg: 'bg-emerald-50/50',
     description:
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.',
+      "'Instructions' measures the quality and weight of a lawyer's actual practice. This indicator draws on a portfolio of work from the last year to assess the volume, value and complexity of matters handled, alongside the strength of their client base, offering a data-driven picture of a lawyer's market share and the calibre of matters they are trusted to handle.",
   },
   {
     key: 'sophistication',
@@ -63,7 +63,7 @@ const INDICATORS = [
     hoverBorder: 'hover:border-amber-200',
     panelBg: 'bg-amber-50/50',
     description:
-      'Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam.',
+      "'Sophistication' examines how a lawyer approaches the business of law itself. This indicator looks beyond legal expertise to assess how they are integrating data and AI, managing knowledge, leading teams, and providing value for their clients – capturing the operational and strategic intelligence behind their practice.",
   },
   {
     key: 'experience',
@@ -77,7 +77,7 @@ const INDICATORS = [
     hoverBorder: 'hover:border-purple-200',
     panelBg: 'bg-purple-50/50',
     description:
-      'Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.',
+      "'Experience' captures the shift of law firms from providers of services to providers of experiences: what is a lawyer really like to work with? This indicator covers eight sub-indicators that reflect how client demands are changing, highlighting softer skills of emotional intelligence as well as the capacity if the lawyer to commercially strategise.",
   },
 ];
 
