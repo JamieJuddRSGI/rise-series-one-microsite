@@ -264,9 +264,6 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({ onNavigate }) 
             <TrendingUp size={20} />
             <span>Comparative Rankings</span>
           </div>
-          <p className="text-slate-600 text-xl mb-4">
-            Explore {lawyers.length} top legal professionals across seven distinct practice area rankings
-          </p>
           <p className="text-slate-500">
             Click on any category card to expand and view the complete rankings with sortable columns
           </p>

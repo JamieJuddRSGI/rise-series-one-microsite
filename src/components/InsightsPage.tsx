@@ -19,9 +19,6 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
             <FileText size={20} />
             <span>Insights & Methodology</span>
           </div>
-          <p className="text-slate-600 text-xl">
-            Explore our research methodology, industry analysis, and actionable insights for private capital practices.
-          </p>
         </div>
 
         {/* Methodology Section */}

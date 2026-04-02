@@ -57,9 +57,6 @@ export const ProfilesPage: React.FC<ProfilesPageProps> = ({ onNavigate }) => {
             <Users size={20} />
             <span>Lawyer Profiles</span>
           </div>
-          <p className="text-slate-600 text-xl max-w-3xl">
-            Browse the profiles of India's Private Capital RISE Lawyers.
-          </p>
         </div>
 
         {/* Filters */}
