@@ -1749,7 +1749,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Aashima Johur at Cyril Amarchand Mangaldas has built her practice around new-age, technology-focused, asset-light companies, working almost exclusively as issuer counsel, a positioning that gives her deeper insight into non-traditional capital structures, employee incentive schemes, and promoter arrangements than a bank-side practice typically produces. Experience and instruction scores are her strongest RISE metric, but she also scores well on some sophistication sub-indicators such as pricing flexibility, and she switches between fixed fees and hourly rates in ways appropriate to client and matter. For pre-IPO advisory work - where the firm entrenches itself with potential issuers up to a year before the formal process begins to assess IPO readiness and identify areas requiring \"cleaning up\" - the firm tends to work on an hourly basis. <br><br>Johur also scores strongly on the complexity of her mandates in line with her focus on new age companies. Her matters have received a lot of media attention. For example, the Lenskart IPO generated significant social media discussion about valuation and promoter incentives, requiring the team to address public perception and justify the commercial arrangements.'
+      'Aashima Johur at Cyril Amarchand Mangaldas has built her practice around new-age, technology-focused, asset-light companies, working almost exclusively as issuer counsel, a positioning that gives her deeper insight into non-traditional capital structures, employee incentive schemes, and promoter arrangements than a bank-side practice typically produces. Experience and instruction scores are her strongest RISE metric, but she also scores well on some sophistication sub-indicators such as pricing flexibility, and she switches between fixed fees and hourly rates in ways appropriate to client and matter. For pre-IPO advisory work - where the firm entrenches itself with potential issuers up to a year before the formal process begins to assess IPO readiness and identify areas requiring \"cleaning up\" - the firm tends to work on an hourly basis.',
+      'Johur also scores strongly on the complexity of her mandates in line with her focus on new age companies. Her matters have received a lot of media attention. For example, the Lenskart IPO generated significant social media discussion about valuation and promoter incentives, requiring the team to address public perception and justify the commercial arrangements.'
     ],
     recentCases: [
       {
@@ -2007,7 +2008,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Instruction and experience scores are Abhiroop Lahiri\'s strongest RISE metrics. He joined CAM from IndusLaw in 2024, with a client base that spans small finance banks including Ujjivan and Jana, PE and VC houses exiting through IPOs, and new-age technology companies. <br><br>Lahiri\'s social media presence is a notable sub-indicator, reflecting a market profile that extends beyond transactions. His practice is deliberately broad across issuer, bank, and selling shareholder mandates, and his healthcare work, including the Doctor Agrawal IPO and Niva Bupa representing Bupa UK\'s exit, illustrates his range. Everstone Capital is a  particularly valued client, where he acts as promoter counsel across multiple listings in pharma, QSR, and industrial parks.'
+      'Instruction and experience scores are Abhiroop Lahiri\'s strongest RISE metrics. He joined CAM from IndusLaw in 2024, with a client base that spans small finance banks including Ujjivan and Jana, PE and VC houses exiting through IPOs, and new-age technology companies.',
+      'Lahiri\'s social media presence is a notable sub-indicator, reflecting a market profile that extends beyond transactions. His practice is deliberately broad across issuer, bank, and selling shareholder mandates, and his healthcare work, including the Doctor Agrawal IPO and Niva Bupa representing Bupa UK\'s exit, illustrates his range. Everstone Capital is a  particularly valued client, where he acts as promoter counsel across multiple listings in pharma, QSR, and industrial parks.'
     ],
     recentCases: [
       {
@@ -2093,7 +2095,10 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Albin Thomas\'s instruction scores are his strongest RISE metric, built on a practice that spans both ECM and DCM and a track record of first-of-their-kind transactions that generates repeat work.<br><br>The Mahindra Finance rights issue, one of the first executed under the new streamlined SEBI regime, and the ROADIS high-yield bond, the first tollway high-yield bond in India, are good illustrations of his work. <br><br>Thomas\' AI and data usage is the sophistication standout: his team captures SEBI observations on filed offer documents into a structured database, creating ready-made prompts for drafting teams on what the regulator has been scrutinising in the past six months. <br><br>Clients include Mahindra Group, IIFL Capital, and Jefferies.'
+      'Albin Thomas\'s instruction scores are his strongest RISE metric, built on a practice that spans both ECM and DCM and a track record of first-of-their-kind transactions that generates repeat work.',
+      'The Mahindra Finance rights issue, one of the first executed under the new streamlined SEBI regime, and the ROADIS high-yield bond, the first tollway high-yield bond in India, are good illustrations of his work.',
+      'Thomas\' AI and data usage is the sophistication standout: his team captures SEBI observations on filed offer documents into a structured database, creating ready-made prompts for drafting teams on what the regulator has been scrutinising in the past six months.',
+      'Clients include Mahindra Group, IIFL Capital, and Jefferies.'
     ],
     recentCases: [
       {
@@ -2136,7 +2141,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Around 90 % of Arka Mookerjee\'s work at JSA Advocates & Solicitors is independently generated, a figure that is unusual at his level and reflected by his instruction scores in the RISE rating. <br><br>His client roster spans Temasek, for whom he handles all Indian exits, alongside Axis, Kotak, Citi, and JPMorgan. A significant portion of his practice covers government infrastructure mandates. The Raajmarg Infra Investment Trust, the first government-sponsored InvIT in the roads sector, required an entirely new structure to monetise completed road assets outside a standard disinvestment framework, a transaction that illustrates both the complexity and the novelty of his practice.'
+      'Around 90 % of Arka Mookerjee\'s work at JSA Advocates & Solicitors is independently generated, a figure that is unusual at his level and reflected by his instruction scores in the RISE rating.',
+      'His client roster spans Temasek, for whom he handles all Indian exits, alongside Axis, Kotak, Citi, and JPMorgan. A significant portion of his practice covers government infrastructure mandates. The Raajmarg Infra Investment Trust, the first government-sponsored InvIT in the roads sector, required an entirely new structure to monetise completed road assets outside a standard disinvestment framework, a transaction that illustrates both the complexity and the novelty of his practice.'
     ],
     recentCases: [
       {
@@ -2222,7 +2228,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Brajendu Bhaskar\'s client list at Trilegal is his standout sub-indicator among strong instruction and sophistication scores. Client relationships include ICICI Securities, JM Financial, JPMorgan, and Kotak among others. <br><br>The Lenskart IPO is a good illustration of Bhaskar\'s work standard: a new-age tech company returning market confidence after the post-Paytm lull, with complexity driven by sophisticated investors, a dense cap table, and commercially sensitive negotiations where shareholder rights survive the listing. <br><br>Earlier time at A&O in London gives him useful perspective on international markets that he brings to domestic clients. His team are growing in their AI skills, for example, analysing  international offering documents  to find comparisons for Indian deals where no domestic precedent exists.'
+      'Brajendu Bhaskar\'s client list at Trilegal is his standout sub-indicator among strong instruction and sophistication scores. Client relationships include ICICI Securities, JM Financial, JPMorgan, and Kotak among others.',
+      'The Lenskart IPO is a good illustration of Bhaskar\'s work standard: a new-age tech company returning market confidence after the post-Paytm lull, with complexity driven by sophisticated investors, a dense cap table, and commercially sensitive negotiations where shareholder rights survive the listing.',
+      'Earlier time at A&O in London gives him useful perspective on international markets that he brings to domestic clients. His team are growing in their AI skills, for example, analysing  international offering documents  to find comparisons for Indian deals where no domestic precedent exists.'
     ],
     recentCases: [
       {
@@ -2437,7 +2445,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'The ICICI Prudential AMC IPO, where Juhi Singh represented Prudential as sole selling shareholder in a 100% offer for sale alongside a substantial pre-IPO involving over 28 investors, is the kind of transaction her experience and instruction scores are built on. She also has a high score for the quality of her client base. <br><br>Singh\'s approach to training her junior lawyers is the sophistication standout: an open-door policy, informal check-ins, and detailed DRHP walkthrough sessions focuses lawyers on understanding substance rather than mechanical drafting. She practitioners who are able to reason through a problem rather than just locating a precedent. <br><br>Her practice is sector-agnostic, but with a recent concentration across tech, manufacturing, healthcare, pharma, insurance, and BFSI.'
+      'The ICICI Prudential AMC IPO, where Juhi Singh represented Prudential as sole selling shareholder in a 100% offer for sale alongside a substantial pre-IPO involving over 28 investors, is the kind of transaction her experience and instruction scores are built on. She also has a high score for the quality of her client base.',
+      'Singh\'s approach to training her junior lawyers is the sophistication standout: an open-door policy, informal check-ins, and detailed DRHP walkthrough sessions focuses lawyers on understanding substance rather than mechanical drafting. She practitioners who are able to reason through a problem rather than just locating a precedent.',
+      'Her practice is sector-agnostic, but with a recent concentration across tech, manufacturing, healthcare, pharma, insurance, and BFSI.'
     ],
     recentCases: [
       {
@@ -2609,7 +2619,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Nikhil Naredi at Shardul Amarchand Mangaldas & Co. leads the firm\'s Mumbai capital markets team alongside Prashant Gupta in Delhi. His reputation scores are his strongest RISE metric. <br><br>Highly regarded by peers, he draws repeat mandates from investment banks and PE houses, including Blackstone and Warburg Pincus portfolio companies. <br><br>Marquee transactions include the Hyundai Motors IPO and the ICICI Prudential Mutual Fund IPO, notable for coordinating one of India\'s largest syndicates with 18 underwriters. His team holds mandates on two large REIT and InvIT transactions, including a circa $500mn Blackstone portfolio deal currently in progress.'
+      'Nikhil Naredi at Shardul Amarchand Mangaldas & Co. leads the firm\'s Mumbai capital markets team alongside Prashant Gupta in Delhi. His reputation scores are his strongest RISE metric.',
+      'Highly regarded by peers, he draws repeat mandates from investment banks and PE houses, including Blackstone and Warburg Pincus portfolio companies.',
+      'Marquee transactions include the Hyundai Motors IPO and the ICICI Prudential Mutual Fund IPO, notable for coordinating one of India\'s largest syndicates with 18 underwriters. His team holds mandates on two large REIT and InvIT transactions, including a circa $500mn Blackstone portfolio deal currently in progress.'
     ],
     recentCases: [
       {
@@ -2695,7 +2707,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Pracheta Bhattacharya\'s instruction scores are his strongest RISE metric at JSA, with client base and deal value among the strongest sub-indicators, built on relationships with IIFL, Axis, Kotak, and other domestic and international merchant banks. <br><br>Bhattacharya\'s practice spans equity capital markets with InvITs and REITs as a core specialism, an unusual combination that few practitioners in this cohort have developed to the same depth. <br><br>What distinguishes his current client profile is a deliberate concentration on government-linked infrastructure mandates, including the Ministry of Coal and Ministry of Roads, at a moment when disinvestment targets are becoming more aggressive. The NHAI fundraise at approximately $560mn illustrates that positioning.'
+      'Pracheta Bhattacharya\'s instruction scores are his strongest RISE metric at JSA, with client base and deal value among the strongest sub-indicators, built on relationships with IIFL, Axis, Kotak, and other domestic and international merchant banks.',
+      'Bhattacharya\'s practice spans equity capital markets with InvITs and REITs as a core specialism, an unusual combination that few practitioners in this cohort have developed to the same depth.',
+      'What distinguishes his current client profile is a deliberate concentration on government-linked infrastructure mandates, including the Ministry of Coal and Ministry of Roads, at a moment when disinvestment targets are becoming more aggressive. The NHAI fundraise at approximately $560mn illustrates that positioning.'
     ],
     recentCases: [
       {
@@ -2781,7 +2795,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Prashant Gupta  is the number one ranked equity capital markets RISE lawyer in this year\'s cohort. He received more peer recommendations than any other practitioner. The majority (80%) of his book of work is on deals above $250mn, and he acts as issuer counsel on large marquee technology and internet transactions, as well as for global multinationals. <br><br>The complexity on these technology and internet mandates tends to come from regulator scepticism toward loss-making companies, fragmented cap tables, and shareholders who all want different things. <br><br>His issuer counsel role on one of India\'s largest IPOs for  Hyundai at approximately $3bn illustrates the level at which he operates.'
+      'Prashant Gupta  is the number one ranked equity capital markets RISE lawyer in this year\'s cohort. He received more peer recommendations than any other practitioner. The majority (80%) of his book of work is on deals above $250mn, and he acts as issuer counsel on large marquee technology and internet transactions, as well as for global multinationals.',
+      'The complexity on these technology and internet mandates tends to come from regulator scepticism toward loss-making companies, fragmented cap tables, and shareholders who all want different things.',
+      'His issuer counsel role on one of India\'s largest IPOs for  Hyundai at approximately $3bn illustrates the level at which he operates.'
     ],
     recentCases: [
       {
@@ -2824,7 +2840,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Priyadarshini Rao\'s client score is among the highest in this cohort at Cyril Amarchand Mangaldas. Her base includes ICICI Prudential AMC, ICICI Bank, Blackstone, JPMorgan, Kotak, Nomura, and UBS across equity capital markets and a recently expanded InvIT practice. <br><br>Instruction scores are Rao\'s strongest RISE metric, although she also scores well in the sophistication indicators. Her approach to pricing approach stands out. Pricing benchmarks are set at the partnership level but adjusted for client importance and strategic value.<br><br>One of the younger practitioners in this cohort, Rao\'s willingness to move into new sectors before they become crowded is what her client and deal flow numbers appear to suggest.'
+      'Priyadarshini Rao\'s client score is among the highest in this cohort at Cyril Amarchand Mangaldas. Her base includes ICICI Prudential AMC, ICICI Bank, Blackstone, JPMorgan, Kotak, Nomura, and UBS across equity capital markets and a recently expanded InvIT practice.',
+      'Instruction scores are Rao\'s strongest RISE metric, although she also scores well in the sophistication indicators. Her approach to pricing approach stands out. Pricing benchmarks are set at the partnership level but adjusted for client importance and strategic value.',
+      'One of the younger practitioners in this cohort, Rao\'s willingness to move into new sectors before they become crowded is what her client and deal flow numbers appear to suggest.'
     ],
     recentCases: [
       {
@@ -2910,7 +2928,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Based in Bangalore, Reuben Chacko co-leads CAM\'s South India capital markets team. Chacko is a very forward thinking lawyer and heavy AI user. He is also actively involved in recruitment and now assesses law students for their AI familiarity and proficiency. Other external roles include doing guest lectures in law schools (capital markets / securities law) a few times per year.<br><br>In the RISE rating, his highest scores are in the instructions and sophistication set of indicators. His standout sub indicator is his usage of AI and data, where he is a keen experimenter. One of his use cases was to use AI to identify lender consent requirements (change of shareholding/management/control) across hundreds of bulky financing agreements (common for NBFC/MFI issuers). He predicts it has saved ~60–70% of time versus manual review.<br><br>Chacko also scores very strongly on work complexity: he works in highly regulated sectors such as pharma and healthcare where IPOs/QIPs are challenging, and due diligence involves extensive operational approvals and compliance review. Recent deals include Anthem Biosciences IPO and Biocon Limited\'s QIP.'
+      'Based in Bangalore, Reuben Chacko co-leads CAM\'s South India capital markets team. Chacko is a very forward thinking lawyer and heavy AI user. He is also actively involved in recruitment and now assesses law students for their AI familiarity and proficiency. Other external roles include doing guest lectures in law schools (capital markets / securities law) a few times per year.',
+      'In the RISE rating, his highest scores are in the instructions and sophistication set of indicators. His standout sub indicator is his usage of AI and data, where he is a keen experimenter. One of his use cases was to use AI to identify lender consent requirements (change of shareholding/management/control) across hundreds of bulky financing agreements (common for NBFC/MFI issuers). He predicts it has saved ~60–70% of time versus manual review.',
+      'Chacko also scores very strongly on work complexity: he works in highly regulated sectors such as pharma and healthcare where IPOs/QIPs are challenging, and due diligence involves extensive operational approvals and compliance review. Recent deals include Anthem Biosciences IPO and Biocon Limited\'s QIP.'
     ],
     recentCases: [
       {
@@ -2996,7 +3016,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Sandip Bhagat is one of the most experienced practitioners in Indian capital markets, with his name above the door and a three-decade career spanning US securities law, Indian transaction structuring, and active involvement in SEBI\'s Primary Markets Committee. <br><br>His instruction scores are his strongest RISE metric and he scores highest for client base and deal value, built on long-standing relationships with major domestic and international investment banks including ICICI, Axis, Citi, Goldman Sachs, and Morgan Stanley. <br><br>Notable recent work includes advising Prudential as sole selling shareholder in the ICICI Prudential AMC IPO, a transaction with meaningful cross-border complexity given Prudential\'s UK and Hong Kong listings.'
+      'Sandip Bhagat is one of the most experienced practitioners in Indian capital markets, with his name above the door and a three-decade career spanning US securities law, Indian transaction structuring, and active involvement in SEBI\'s Primary Markets Committee.',
+      'His instruction scores are his strongest RISE metric and he scores highest for client base and deal value, built on long-standing relationships with major domestic and international investment banks including ICICI, Axis, Citi, Goldman Sachs, and Morgan Stanley.',
+      'Notable recent work includes advising Prudential as sole selling shareholder in the ICICI Prudential AMC IPO, a transaction with meaningful cross-border complexity given Prudential\'s UK and Hong Kong listings.'
     ],
     recentCases: [
       {
@@ -3211,7 +3233,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Vijay Parthasarathi  leads a 25-lawyer practice and his instruction scores are his strongest metric, with consistently high-value mandates. <br><br>His practice covers technology, fintech, consumer and retail, real estate, renewables, and NBFCs. Both the recent PhonePe IPO, where his team represented PhonePe in September 2025, and the Brookfield REIT QIP, one of the largest real estate QIPs completed in India in December 2025, are standout recent matters, alongside a Piramal Group reverse merger listing that required navigating listing mechanics without a traditional IPO process.'
+      'Vijay Parthasarathi  leads a 25-lawyer practice and his instruction scores are his strongest metric, with consistently high-value mandates.',
+      'His practice covers technology, fintech, consumer and retail, real estate, renewables, and NBFCs. Both the recent PhonePe IPO, where his team represented PhonePe in September 2025, and the Brookfield REIT QIP, one of the largest real estate QIPs completed in India in December 2025, are standout recent matters, alongside a Piramal Group reverse merger listing that required navigating listing mechanics without a traditional IPO process.'
     ],
     recentCases: [
       {
@@ -3297,7 +3320,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Vishal Yaduvanshi\'s  instruction scores are his strongest RISE metric. and he scores particularly highly for the quality of his client base, with a consistent track record of high-value mandates. His work includes PhonePe, the largest Indian payments gateway company at a $1.5bn IPO and $10 to $15bn valuation, and Physics Wallah, the first education technology company to go public in India at approximately $500mn, a listing that he says has materially restored market confidence in the edtech sector. <br><br>Yaduvanshi is passionate about building cohesive teams. He runs quarterly social evenings and monthly meetings focused on the bigger picture rather than transactions, an approach he sees as central to retaining good people in a competitive market.'
+      'Vishal Yaduvanshi\'s  instruction scores are his strongest RISE metric. and he scores particularly highly for the quality of his client base, with a consistent track record of high-value mandates. His work includes PhonePe, the largest Indian payments gateway company at a $1.5bn IPO and $10 to $15bn valuation, and Physics Wallah, the first education technology company to go public in India at approximately $500mn, a listing that he says has materially restored market confidence in the edtech sector.',
+      'Yaduvanshi is passionate about building cohesive teams. He runs quarterly social evenings and monthly meetings focused on the bigger picture rather than transactions, an approach he sees as central to retaining good people in a competitive market.'
     ],
     recentCases: [
       {
@@ -3340,7 +3364,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Dutt has an integrated securities law practice, and deep understanding of how SEBI and SAT will rule on certain matters, enhancing the quality of his diligence and disclosures for clients. His highest RISE metric is in instructions. Key clients include mid-sized investment banks such as Ecmoris, MK Capital, IIFL, Centrum, Dam Capital, and Motilal Oswal, with Motilal Oswal and IIFL gaining a lion\'s share of medium-sized deals (in the 500-1,000 crore range) over the last 18 months.<br><br>Dutt\'s other high-scoring sub indicator was in the development of junior lawyers. Training extends beyond capital markets, reflecting the firm\'s philosophy of \"holistic lawyering\". For example, capital markets lawyers review banking laws and attend sessions on labour codes and the new Securities Market Code. Dutt emphasises that capital markets is a practical discipline with a steep learning curve in the first 12-18 months. The firm consciously ensures that juniors understand the rationale behind templates rather than simply relying on precedent-driven drafting.<br><br>Significant recent matters included a CNC manufacturer IPO notable for its high-profile client list including Apple, Ferrari, Rolls Royce and defence manufacturers.'
+      'Dutt has an integrated securities law practice, and deep understanding of how SEBI and SAT will rule on certain matters, enhancing the quality of his diligence and disclosures for clients. His highest RISE metric is in instructions. Key clients include mid-sized investment banks such as Ecmoris, MK Capital, IIFL, Centrum, Dam Capital, and Motilal Oswal, with Motilal Oswal and IIFL gaining a lion\'s share of medium-sized deals (in the 500-1,000 crore range) over the last 18 months.',
+      'Dutt\'s other high-scoring sub indicator was in the development of junior lawyers. Training extends beyond capital markets, reflecting the firm\'s philosophy of \"holistic lawyering\". For example, capital markets lawyers review banking laws and attend sessions on labour codes and the new Securities Market Code. Dutt emphasises that capital markets is a practical discipline with a steep learning curve in the first 12-18 months. The firm consciously ensures that juniors understand the rationale behind templates rather than simply relying on precedent-driven drafting.',
+      'Significant recent matters included a CNC manufacturer IPO notable for its high-profile client list including Apple, Ferrari, Rolls Royce and defence manufacturers.'
     ],
     recentCases: [
       {
@@ -3426,7 +3452,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Sitting on SEBI standing committees for business trust regulation is unusual for a partner at Pratichi Mishra\'s career stage, and that proactive and direct regulatory engagement is what her sophistication scores and the quality of her infrastructure advisory work appear to reflect. <br><br>Instructions are Mishra\'s strongest RISE metric. High scores for client base and deal value are built on some of India\'s largest infrastructure transactions including a road-sector investment of approximately $1.1bn and multiple fundraises exceeding $500mn. Her practice spans the full lifecycle of infrastructure and real estate platforms rather than a single stage of capital markets work, which is itself a differentiator.<br><br>Mishra also scores highly in terms of the way she runs her practice. With her associates, she involves them in conferences and policy related work, including regulatory research and drafting. They are required to write monitor and analyse regulatory updates within 24 to 48 hours of changes, a training philosophy that mirrors her own relationship with the regulatory process.'
+      'Sitting on SEBI standing committees for business trust regulation is unusual for a partner at Pratichi Mishra\'s career stage, and that proactive and direct regulatory engagement is what her sophistication scores and the quality of her infrastructure advisory work appear to reflect.',
+      'Instructions are Mishra\'s strongest RISE metric. High scores for client base and deal value are built on some of India\'s largest infrastructure transactions including a road-sector investment of approximately $1.1bn and multiple fundraises exceeding $500mn. Her practice spans the full lifecycle of infrastructure and real estate platforms rather than a single stage of capital markets work, which is itself a differentiator.',
+      'Mishra also scores highly in terms of the way she runs her practice. With her associates, she involves them in conferences and policy related work, including regulatory research and drafting. They are required to write monitor and analyse regulatory updates within 24 to 48 hours of changes, a training philosophy that mirrors her own relationship with the regulatory process.'
     ],
     recentCases: [
       {
@@ -3469,7 +3497,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Abhay Joshi\'s strongest RISE metric is instructions, driven by the exceptional complexity of mandates he handles for a high-quality client roster. His portfolio includes IREL India, Bridgestone India, SKF India, Ecozen Solutions, Corteva Agriscience, and United Breweries. His practice is defined by these layered enforcement matters rather than routine market-share analysis, reflecting a deep institutional understanding of Indian competition law.<br><br>Joshi differentiates himself through his \"quiet achiever\" status; while his reputation score is more minimal, his work on sophisticated regulatory intersections is notable. He recently defended IREL in a monopoly abuse case, arguing that strategic policy context justifies market position. His work for United Breweries involved navigating a highly regulated industry to address complex business issues regarding the sharing of commercially sensitive pricing and production data. Having transitioned from a background in M&A and private equity, Joshi also leverages a growing strand of data privacy work. He believes this forward-facing approach, treating privacy as a non-price parameter in competition analysis, is essential for modern market power mandates.'
+      'Abhay Joshi\'s strongest RISE metric is instructions, driven by the exceptional complexity of mandates he handles for a high-quality client roster. His portfolio includes IREL India, Bridgestone India, SKF India, Ecozen Solutions, Corteva Agriscience, and United Breweries. His practice is defined by these layered enforcement matters rather than routine market-share analysis, reflecting a deep institutional understanding of Indian competition law.',
+      'Joshi differentiates himself through his \"quiet achiever\" status; while his reputation score is more minimal, his work on sophisticated regulatory intersections is notable. He recently defended IREL in a monopoly abuse case, arguing that strategic policy context justifies market position. His work for United Breweries involved navigating a highly regulated industry to address complex business issues regarding the sharing of commercially sensitive pricing and production data. Having transitioned from a background in M&A and private equity, Joshi also leverages a growing strand of data privacy work. He believes this forward-facing approach, treating privacy as a non-price parameter in competition analysis, is essential for modern market power mandates.'
     ],
     recentCases: [
       {
@@ -3512,7 +3541,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Abir Roy at Sarvada Legal occupies an unusual position in the Indian competition market: an enforcement-led practice running approximately 80% contentious work, with a distinct concentration on the complainant side in big tech platform cases at a time when most comparable complexity sits within larger full-service firms.<br><br>Abir\'s work on Google, Apple and app ecosystem matters involves technical arguments around platform economics, data flows and jurisdictional overlap with data protection, with data accumulation treated as a source of dominance rather than a separate regulatory question. A notable feature is his representation of app developer communities acting collectively against dominant platforms, requiring coordination of multi-party complainant strategies across long-running, multi-forum disputes. He argues his own matters and maintains full file ownership throughout, a model that suits the litigation-control and forum-strategy dimension of enforcement work but operates from a smaller platform than the full-service practices handling comparable complexity.'
+      'Abir Roy at Sarvada Legal occupies an unusual position in the Indian competition market: an enforcement-led practice running approximately 80% contentious work, with a distinct concentration on the complainant side in big tech platform cases at a time when most comparable complexity sits within larger full-service firms.',
+      'Abir\'s work on Google, Apple and app ecosystem matters involves technical arguments around platform economics, data flows and jurisdictional overlap with data protection, with data accumulation treated as a source of dominance rather than a separate regulatory question. A notable feature is his representation of app developer communities acting collectively against dominant platforms, requiring coordination of multi-party complainant strategies across long-running, multi-forum disputes. He argues his own matters and maintains full file ownership throughout, a model that suits the litigation-control and forum-strategy dimension of enforcement work but operates from a smaller platform than the full-service practices handling comparable complexity.'
     ],
     recentCases: [
       {
@@ -3598,7 +3628,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Placed 15th in the 2026 RISE competition list, Anisha Chand has high sophistication and experience scores. Within the sophistication score, Chand\'s attention to talent development and approach to pricing reflect a practice with little attrition rate and encouragement to junior lawyers to experiment AI within upskilling courses. Chand\'s instruction scores with client quality and mandate value as the leading contributing metrics. Her instructions profile points to consistent flow from large strategic and sponsor-led transactions, with the team among the most active in Indian merger control by filing volume and particularly prominent in long-form notifications.<br><br>The practice is notable for sitting where scale and complexity meet: form-two filings, borderline-modification matters and transactions where the work centres on data-heavy advocacy to avoid remedies rather than reacting to a clearance problem already in motion. Beyond merger control, Chand maintains a full-spectrum competition practice spanning cartel matters, leniency work, complainant-side mandates and compliance programmes for global platforms, with a developing strand of advisory at the competition-privacy intersection.'
+      'Placed 15th in the 2026 RISE competition list, Anisha Chand has high sophistication and experience scores. Within the sophistication score, Chand\'s attention to talent development and approach to pricing reflect a practice with little attrition rate and encouragement to junior lawyers to experiment AI within upskilling courses. Chand\'s instruction scores with client quality and mandate value as the leading contributing metrics. Her instructions profile points to consistent flow from large strategic and sponsor-led transactions, with the team among the most active in Indian merger control by filing volume and particularly prominent in long-form notifications.',
+      'The practice is notable for sitting where scale and complexity meet: form-two filings, borderline-modification matters and transactions where the work centres on data-heavy advocacy to avoid remedies rather than reacting to a clearance problem already in motion. Beyond merger control, Chand maintains a full-spectrum competition practice spanning cartel matters, leniency work, complainant-side mandates and compliance programmes for global platforms, with a developing strand of advisory at the competition-privacy intersection.'
     ],
     recentCases: [
       {
@@ -3641,7 +3672,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Anshuman Sakle’s reputation is defined by exceptional visibility; he is one of the most frequently quoted practitioners in the legal press and maintains an excellent profile across international legal directories and peer mentions. His instructions score is equally robust, reflecting a high-volume, high-complexity practice that handled 17 major transactions in 2025 for a prestigious client roster including Torrent Pharmaceuticals, Mahindra & Mahindra, Haldiram Snack Foods, Interpublic Group (IPG), Wilmar International, and American Axle & Manufacturing.<br><br>Based in Mumbai, Sakle’s practice typically splits 75% toward merger control and 25% toward enforcement, though he notes this ratio fluctuates with the Commission’s investigative cycles. He differentiates himself through a culture of team continuity; by giving associates early client-facing responsibility, he maintains notably low attrition rates. This stability, combined with his long-standing engagement with the CCI, provides clients with reliable regulatory navigation across diverse sectors such as pharma, financial services, and oil and gas.'
+      'Anshuman Sakle’s reputation is defined by exceptional visibility; he is one of the most frequently quoted practitioners in the legal press and maintains an excellent profile across international legal directories and peer mentions. His instructions score is equally robust, reflecting a high-volume, high-complexity practice that handled 17 major transactions in 2025 for a prestigious client roster including Torrent Pharmaceuticals, Mahindra & Mahindra, Haldiram Snack Foods, Interpublic Group (IPG), Wilmar International, and American Axle & Manufacturing.',
+      'Based in Mumbai, Sakle’s practice typically splits 75% toward merger control and 25% toward enforcement, though he notes this ratio fluctuates with the Commission’s investigative cycles. He differentiates himself through a culture of team continuity; by giving associates early client-facing responsibility, he maintains notably low attrition rates. This stability, combined with his long-standing engagement with the CCI, provides clients with reliable regulatory navigation across diverse sectors such as pharma, financial services, and oil and gas.'
     ],
     recentCases: [
       {
@@ -3684,7 +3716,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Aparna Mehra ranks within the top 20 of the RISE competition list, with her strongest metric being reputation. This standing is driven by consistent recognition across legal directories and a notable social media presence, alongside a solid profile among her peers. Her instructions score is also robust; while she maintains an understated profile, she remains a trusted advisor for high-caliber clients including ArcelorMittal, Bain Capital Investors, Jindal Steel & Power, Rolls-Royce India, and Vedanta Limited.<br><br>As one of the first generation of Indian competition specialists with two decades of experience, Mehra\'s practice has a distinct cross-border character. She is frequently sought out as local counsel by firms in Japan, Brussels, London, and New York for specialist mandates. She believes her practice is valued for its reliability and deep system-level understanding of Indian merger control. This expertise is evident in her analysis of deal value thresholds and evolving green channel filing behaviors, reflecting a sophisticated grasp of the regulatory landscape that transcends individual mandates.'
+      'Aparna Mehra ranks within the top 20 of the RISE competition list, with her strongest metric being reputation. This standing is driven by consistent recognition across legal directories and a notable social media presence, alongside a solid profile among her peers. Her instructions score is also robust; while she maintains an understated profile, she remains a trusted advisor for high-caliber clients including ArcelorMittal, Bain Capital Investors, Jindal Steel & Power, Rolls-Royce India, and Vedanta Limited.',
+      'As one of the first generation of Indian competition specialists with two decades of experience, Mehra\'s practice has a distinct cross-border character. She is frequently sought out as local counsel by firms in Japan, Brussels, London, and New York for specialist mandates. She believes her practice is valued for its reliability and deep system-level understanding of Indian merger control. This expertise is evident in her analysis of deal value thresholds and evolving green channel filing behaviors, reflecting a sophisticated grasp of the regulatory landscape that transcends individual mandates.'
     ],
     recentCases: [
       {
@@ -3813,7 +3846,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Bharat Budholia ranks 10th in the RISE competition rating, with instructions serving as his strongest metric. This standing is driven by a prestigious client roster and a near-equal balance between high volume and technical complexity. Based in Mumbai, Budholia is structurally positioned at the center of the city\'s private equity deal flow, representing heavyweights such as KKR and TPG, alongside Mankind Pharma, Citibank, Siemens, Qube Cinema, the BCCI, and the IATA.<br><br>His reputation is exceptionally high, supported by strong peer recommendations and a consistent profile across legal directories and the legal press. Approximately 60% of his work focuses on merger control, where he differentiates himself by rejecting template-driven filings in favour of bespoke, sector-specific narratives. Within the sophistication category, his use of technology is a practical marker of quality; he has developed searchable databases of past advisory case law and sector-specific notes to ensure institutional consistency.'
+      'Bharat Budholia ranks 10th in the RISE competition rating, with instructions serving as his strongest metric. This standing is driven by a prestigious client roster and a near-equal balance between high volume and technical complexity. Based in Mumbai, Budholia is structurally positioned at the center of the city\'s private equity deal flow, representing heavyweights such as KKR and TPG, alongside Mankind Pharma, Citibank, Siemens, Qube Cinema, the BCCI, and the IATA.',
+      'His reputation is exceptionally high, supported by strong peer recommendations and a consistent profile across legal directories and the legal press. Approximately 60% of his work focuses on merger control, where he differentiates himself by rejecting template-driven filings in favour of bespoke, sector-specific narratives. Within the sophistication category, his use of technology is a practical marker of quality; he has developed searchable databases of past advisory case law and sector-specific notes to ensure institutional consistency.'
     ],
     recentCases: [
       {
@@ -3942,7 +3976,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Ela Bali\'s achieves an exceptionally high RISE instructions score that distinguishes her within the cohort. This standing is driven by a prestigious client roster and her involvement in highly complex, contentious mandates. She represents global investors and corporations, including Temasek, EQT, Hyundai, Ford Motor Company, Alpha Wave Global, and IHC Abu Dhabi. A standout example of her high-value work is the Temasek and Alpha Wave investment in Haldiram\'s, one of the largest transactions in India\'s FMCG sector.<br><br>Her practice is split evenly between merger control and enforcement, with notable instructions including the MakeMyTrip-Oyo MFN matter and the Hyundai spare parts aftermarket litigation. Bali\'s sophistication score is her second-strongest metric, reflecting her expert use of AI tools for research and document summarization alongside JSA\'s internal knowledge management systems. While she remains a high achiever in terms of mandate complexity and volume, her reputation score reflects a distinctly more moderate public presencm with only some profile across legal directories.'
+      'Ela Bali\'s achieves an exceptionally high RISE instructions score that distinguishes her within the cohort. This standing is driven by a prestigious client roster and her involvement in highly complex, contentious mandates. She represents global investors and corporations, including Temasek, EQT, Hyundai, Ford Motor Company, Alpha Wave Global, and IHC Abu Dhabi. A standout example of her high-value work is the Temasek and Alpha Wave investment in Haldiram\'s, one of the largest transactions in India\'s FMCG sector.',
+      'Her practice is split evenly between merger control and enforcement, with notable instructions including the MakeMyTrip-Oyo MFN matter and the Hyundai spare parts aftermarket litigation. Bali\'s sophistication score is her second-strongest metric, reflecting her expert use of AI tools for research and document summarization alongside JSA\'s internal knowledge management systems. While she remains a high achiever in terms of mandate complexity and volume, her reputation score reflects a distinctly more moderate public presencm with only some profile across legal directories.'
     ],
     recentCases: [
       {
@@ -3985,7 +4020,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Gaurav Desai\'s highest RISE metrics are in experience, driven by a practice where clients value his grounded, operational approach to mandates. His instructions score is equally robust, reflecting a portfolio of work for sovereign wealth funds, leading automotive manufacturers, and major financial institutions, including Fairfax and HDFC Capital Advisors. He also regularly advises global conglomerates such as Johnson & Johnson.<br><br>Desai splits his practice between corporate M&A and competition law, with a primary focus on merger control. He differentiates himself through his practical analysis of India\'s deal value thresholds; he notes that while these were designed for digital and asset-light transactions, they are increasingly capturing traditional brick-and-mortar sectors in ways the CCI did not fully anticipate. This sophisticated regulatory reading is shaped by his direct involvement in live filing activity rather than surface-level observation. While his profile remains understated relative to some peers, his work reflects a practitioner deeply embedded in the operational reality of Indian merger control and high-stakes transactional strategy.'
+      'Gaurav Desai\'s highest RISE metrics are in experience, driven by a practice where clients value his grounded, operational approach to mandates. His instructions score is equally robust, reflecting a portfolio of work for sovereign wealth funds, leading automotive manufacturers, and major financial institutions, including Fairfax and HDFC Capital Advisors. He also regularly advises global conglomerates such as Johnson & Johnson.',
+      'Desai splits his practice between corporate M&A and competition law, with a primary focus on merger control. He differentiates himself through his practical analysis of India\'s deal value thresholds; he notes that while these were designed for digital and asset-light transactions, they are increasingly capturing traditional brick-and-mortar sectors in ways the CCI did not fully anticipate. This sophisticated regulatory reading is shaped by his direct involvement in live filing activity rather than surface-level observation. While his profile remains understated relative to some peers, his work reflects a practitioner deeply embedded in the operational reality of Indian merger control and high-stakes transactional strategy.'
     ],
     recentCases: [
       {
@@ -4028,7 +4064,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Based in Mumbai, Gauri Chhabra occupies a unique position in the Indian competition market as a senior partner deeply embedded in the city\'s private equity and strategic M&A ecosystem. Her highest RISE metric is sophistication, driven by her exceptional commitment to talent development. She differentiates herself through her leadership of a close-knit, eight-associate team that has remained with her since their graduation, moving as a unit from her previous firm. Chhabra fosters this institutional depth through biweekly meetings and by encouraging her team to engage in deep research and thought leadership.<br><br>Her instructions score is equally strong, characterized by high-complexity mandates for a prestigious client roster despite a more focused volume of work. She acts for major PE and sponsor-led clients, including Blackstone, WestBridge, and the Ontario Teachers\' Pension Plan, and has represented Petronas and JSW. Her practice, which is approximately 65% merger control, is noted for its responsiveness. This was recently evidenced in the Carlisle and Roop-Highway matter, where her team secured clearance in an unusually compressed timeframe despite managing over 50 product overlaps.'
+      'Based in Mumbai, Gauri Chhabra occupies a unique position in the Indian competition market as a senior partner deeply embedded in the city\'s private equity and strategic M&A ecosystem. Her highest RISE metric is sophistication, driven by her exceptional commitment to talent development. She differentiates herself through her leadership of a close-knit, eight-associate team that has remained with her since their graduation, moving as a unit from her previous firm. Chhabra fosters this institutional depth through biweekly meetings and by encouraging her team to engage in deep research and thought leadership.',
+      'Her instructions score is equally strong, characterized by high-complexity mandates for a prestigious client roster despite a more focused volume of work. She acts for major PE and sponsor-led clients, including Blackstone, WestBridge, and the Ontario Teachers\' Pension Plan, and has represented Petronas and JSW. Her practice, which is approximately 65% merger control, is noted for its responsiveness. This was recently evidenced in the Carlisle and Roop-Highway matter, where her team secured clearance in an unusually compressed timeframe despite managing over 50 product overlaps.'
     ],
     recentCases: [
       {
@@ -4157,7 +4194,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'The Google Android TV settlement sits at the centre of Hemangini Dadwal\'s recent experience at AZB: understood to be the first order under India\'s new commitments and settlements regime, and the first product investigation globally, it is a matter that places her close to where Indian competition law is actively being designed rather than merely applied. Ranking 14th in the overall RISE competition standings, Dadwal\'s profile is anchored by high scores in both instructions and experience. These metrics reflect an exceptional client roster and a high volume of work for global leaders including Google, LEGO, Syngenta, Shell, GSK, Bharti Airtel, Nestle, and Expedia.<br><br>Beyond case execution, Dadwal engages actively with how the Commission is approaching privacy, AI, and effects-based abuse analysis, giving her profile a policy-facing dimension alongside transactional work. Her reputation is equally strong, supported by a significant number of peer mentions and a consistent profile across major legal directories.'
+      'The Google Android TV settlement sits at the centre of Hemangini Dadwal\'s recent experience at AZB: understood to be the first order under India\'s new commitments and settlements regime, and the first product investigation globally, it is a matter that places her close to where Indian competition law is actively being designed rather than merely applied. Ranking 14th in the overall RISE competition standings, Dadwal\'s profile is anchored by high scores in both instructions and experience. These metrics reflect an exceptional client roster and a high volume of work for global leaders including Google, LEGO, Syngenta, Shell, GSK, Bharti Airtel, Nestle, and Expedia.',
+      'Beyond case execution, Dadwal engages actively with how the Commission is approaching privacy, AI, and effects-based abuse analysis, giving her profile a policy-facing dimension alongside transactional work. Her reputation is equally strong, supported by a significant number of peer mentions and a consistent profile across major legal directories.'
     ],
     recentCases: [
       {
@@ -4200,7 +4238,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Ranking 5th overall in the RISE competition rating, Karan Singh Chandhiok is a standout leader in the market and current head of the Competition Bar of India. He achieves a perfect score for complexity within his instructions metrics, a result of a practice built on high-stakes enforcement and first-of-its-kind advocacy. His reputation is equally dominant, marked by widespread peer respect and a top-tier profile across legal directories.<br><br>Chandhiok\'s roster includes global giants such as Google, Intel, Samsung, Indorama Ventures, and Nissan. He serves as group competition counsel for JSW, managing their expansive filings across infrastructure, energy, and steel. For Google, his firm notably achieved a nearly Rs. 80bn penalty reduction in the Play Store case and was entrusted with the post-decision compliance process for Android. By prioritising leniency mandates and multi-jurisdictional enforcement over routine merger volume, he has carved out a position as the specialist for India\'s most demanding competition hurdles.'
+      'Ranking 5th overall in the RISE competition rating, Karan Singh Chandhiok is a standout leader in the market and current head of the Competition Bar of India. He achieves a perfect score for complexity within his instructions metrics, a result of a practice built on high-stakes enforcement and first-of-its-kind advocacy. His reputation is equally dominant, marked by widespread peer respect and a top-tier profile across legal directories.',
+      'Chandhiok\'s roster includes global giants such as Google, Intel, Samsung, Indorama Ventures, and Nissan. He serves as group competition counsel for JSW, managing their expansive filings across infrastructure, energy, and steel. For Google, his firm notably achieved a nearly Rs. 80bn penalty reduction in the Play Store case and was entrusted with the post-decision compliance process for Android. By prioritising leniency mandates and multi-jurisdictional enforcement over routine merger volume, he has carved out a position as the specialist for India\'s most demanding competition hurdles.'
     ],
     recentCases: [
       {
@@ -4243,7 +4282,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Based in Mumbai, Kirthi Srinivas maintains a very high instructions score, placing him among the top tier for this metric. This standing is driven by a high volume of work and a prestigious client roster that leans toward private equity heavyweights like KKR, Bain, and Premji Invest, alongside corporate mandates for JSW Steel, Cube Highways, and Jumbotail. His experience score is equally robust, reflecting a practice focused on complex, regulator-facing transactions rather than routine filings.<br><br>Srinivas\'s practice runs approximately 70/30 in favour of merger control over enforcement. A standout mandate is the KKR and Singtel data center transaction, which he notes as the first CCI review of the data center market to have conditions imposed. He believes his value lies in navigating the CCI\'s internal dynamics and review style, especially during technically complicated filings and compressed timelines. While he is a \"quiet achiever\" with a more measured reputation score across peer mentions and legal directories, his profile is anchored by consistent execution and the sheer scale of the portfolios he manages.'
+      'Based in Mumbai, Kirthi Srinivas maintains a very high instructions score, placing him among the top tier for this metric. This standing is driven by a high volume of work and a prestigious client roster that leans toward private equity heavyweights like KKR, Bain, and Premji Invest, alongside corporate mandates for JSW Steel, Cube Highways, and Jumbotail. His experience score is equally robust, reflecting a practice focused on complex, regulator-facing transactions rather than routine filings.',
+      'Srinivas\'s practice runs approximately 70/30 in favour of merger control over enforcement. A standout mandate is the KKR and Singtel data center transaction, which he notes as the first CCI review of the data center market to have conditions imposed. He believes his value lies in navigating the CCI\'s internal dynamics and review style, especially during technically complicated filings and compressed timelines. While he is a \"quiet achiever\" with a more measured reputation score across peer mentions and legal directories, his profile is anchored by consistent execution and the sheer scale of the portfolios he manages.'
     ],
     recentCases: [
       {
@@ -4415,7 +4455,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Nisha Kaur Uberoi at JSA is the highest-ranked practitioner in this RISE competition ranking, achieving the highest instruction score in the cohort and a reputation score that places her among the most visible competition lawyers in the Indian market. Clients select her specifically for the competition piece on major transactions, often independently of the firm handling the broader deal, and bring difficult matters to her team.<br><br>Her matters include Apple\'s challenge to the CCI\'s penalty regime, major cartel defence work and multibillion-dollar merger control mandates for clients including Schneider, GIC and Nippon Steel. Complexity is a consistent feature: securing behavioural rather than divestment remedies, clearing difficult transactions without phase-two review, and working across the intersection of law, economics and commercial strategy. She has built a large specialist competition team and trains juniors to think as regulators as well as advisers, a deliberate investment in institutional depth which prevails over technology-led efficiency.'
+      'Nisha Kaur Uberoi at JSA is the highest-ranked practitioner in this RISE competition ranking, achieving the highest instruction score in the cohort and a reputation score that places her among the most visible competition lawyers in the Indian market. Clients select her specifically for the competition piece on major transactions, often independently of the firm handling the broader deal, and bring difficult matters to her team.',
+      'Her matters include Apple\'s challenge to the CCI\'s penalty regime, major cartel defence work and multibillion-dollar merger control mandates for clients including Schneider, GIC and Nippon Steel. Complexity is a consistent feature: securing behavioural rather than divestment remedies, clearing difficult transactions without phase-two review, and working across the intersection of law, economics and commercial strategy. She has built a large specialist competition team and trains juniors to think as regulators as well as advisers, a deliberate investment in institutional depth which prevails over technology-led efficiency.'
     ],
     recentCases: [
       {
@@ -4501,7 +4542,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Rahul Goel\'s profile is defined by an exceptional instructions score, specifically achieving a perfect metric for the complexity of his mandates. His practice is built around high-stakes enforcement and appellate competition disputes rather than filing volume, representing leading clients across the packaging, pharma, media, and publishing sectors. <br><br>The practice runs approximately 80% enforcement, with Goel often acting for complainant-side app developers in platform investigations against Google and Apple. While there is a notable disconnect with his reputation scores, likely reflecting the boutique nature of his firm, he differentiates himself through a specialist litigation model, arguing his own matters and maintaining total file mastery'
+      'Rahul Goel\'s profile is defined by an exceptional instructions score, specifically achieving a perfect metric for the complexity of his mandates. His practice is built around high-stakes enforcement and appellate competition disputes rather than filing volume, representing leading clients across the packaging, pharma, media, and publishing sectors.',
+      'The practice runs approximately 80% enforcement, with Goel often acting for complainant-side app developers in platform investigations against Google and Apple. While there is a notable disconnect with his reputation scores, likely reflecting the boutique nature of his firm, he differentiates himself through a specialist litigation model, arguing his own matters and maintaining total file mastery'
     ],
     recentCases: [
       {
@@ -4673,7 +4715,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Rohan Arora\'s highest performance is found in both his RISE instructions and experience scores, reflecting his consistent involvement in high-scale mandates within a team of approximately 50 competition lawyers. His instructions are anchored by a top-tier client roster that includes global technology and investment heavyweights such as Microsoft, Meta, Uber, Bain Capital, Alpha Wave Ventures, and Apollo Healthcare. Clients provide Arora with exceptionally strong scores across all RISE experience metrics, valuing his execution-focused approach and sustained exposure to large-scale, complex matters.<br><br>Within the sophistication category, Arora differentiates himself through a significant investment in talent development. He is actively involved in training the firm\'s junior lawyers, focusing on sharpening soft skills and integrating AI tools into daily practice to enhance efficiency. His high scores for client quality and team leadership point to a practitioner with deep operational credibility. His practice remains balanced across merger control and enforcement, where he is recognized for his ability to navigate the capacity and breadth required for India\'s most resource-intensive competition mandates.'
+      'Rohan Arora\'s highest performance is found in both his RISE instructions and experience scores, reflecting his consistent involvement in high-scale mandates within a team of approximately 50 competition lawyers. His instructions are anchored by a top-tier client roster that includes global technology and investment heavyweights such as Microsoft, Meta, Uber, Bain Capital, Alpha Wave Ventures, and Apollo Healthcare. Clients provide Arora with exceptionally strong scores across all RISE experience metrics, valuing his execution-focused approach and sustained exposure to large-scale, complex matters.',
+      'Within the sophistication category, Arora differentiates himself through a significant investment in talent development. He is actively involved in training the firm\'s junior lawyers, focusing on sharpening soft skills and integrating AI tools into daily practice to enhance efficiency. His high scores for client quality and team leadership point to a practitioner with deep operational credibility. His practice remains balanced across merger control and enforcement, where he is recognized for his ability to navigate the capacity and breadth required for India\'s most resource-intensive competition mandates.'
     ],
     recentCases: [
       {
@@ -4759,7 +4802,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Placed in the top 5 of the RISE competition rating, Samir Gandhi\'s highest scores are in instructions and experience. Although Gandhi performs well across all the RISE reputation metrics, his Instruction metrics reflect a busy practice of complex work for top-tier, sophisticated and typically global clients. From his performance within the experience score, clients appear to trust and enjoy working with Gandhi and award him top or near-top marks across the board.<br><br>His practice spans merger control, enforcement and competition litigation, with a distinctively commercial style of advice that centres on outcomes: knowing when to negotiate, when to litigate and how to preserve credibility before the CCI. Particularly strong on matters sitting at the intersection of competition law, including merger remedies in insolvency contexts and the overlap between antitrust, privacy, data and IP.<br><br>Gandhi also appears comparatively advanced among Indian competition practitioners in deploying technology within the practice, using AI-assisted workflows and internal knowledge systems to handle large volumes of client data and filing trends, while keeping partner judgement central to the advice.'
+      'Placed in the top 5 of the RISE competition rating, Samir Gandhi\'s highest scores are in instructions and experience. Although Gandhi performs well across all the RISE reputation metrics, his Instruction metrics reflect a busy practice of complex work for top-tier, sophisticated and typically global clients. From his performance within the experience score, clients appear to trust and enjoy working with Gandhi and award him top or near-top marks across the board.',
+      'His practice spans merger control, enforcement and competition litigation, with a distinctively commercial style of advice that centres on outcomes: knowing when to negotiate, when to litigate and how to preserve credibility before the CCI. Particularly strong on matters sitting at the intersection of competition law, including merger remedies in insolvency contexts and the overlap between antitrust, privacy, data and IP.',
+      'Gandhi also appears comparatively advanced among Indian competition practitioners in deploying technology within the practice, using AI-assisted workflows and internal knowledge systems to handle large volumes of client data and filing trends, while keeping partner judgement central to the advice.'
     ],
     recentCases: [
       {
@@ -4802,7 +4847,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Shweta Shroff Chopra\'s highest RISE metric is sophistication, where she scores exceptionally well across all indicators. She is a prominent advocate for AI usage, specifically leveraging platforms like Harvey to build knowledge vaults that synthesize legal positions and train younger lawyers. Her approach to talent development is equally distinctive; she believes that true expertise is solidified through the act of writing and explaining, and she actively mentors her team in creating market-leading thought leadership.<br><br>Her instructions score is also robust, reflecting an almost full-scoring list of high-caliber clients. She manages a high volume of work for major entities including Reliance Industries, Nestle, Flipkart, Pepsico, and the JK Group. Approximately 90% of the firm\'s India competition referrals from international heavyweights like Latham, Freshfields, Skadden, and Kirkland flow through her practice. Formerly a UK finance lawyer, Chopra now splits her practice evenly between merger control and enforcement, increasingly focusing on overall strategy and client stewardship.'
+      'Shweta Shroff Chopra\'s highest RISE metric is sophistication, where she scores exceptionally well across all indicators. She is a prominent advocate for AI usage, specifically leveraging platforms like Harvey to build knowledge vaults that synthesize legal positions and train younger lawyers. Her approach to talent development is equally distinctive; she believes that true expertise is solidified through the act of writing and explaining, and she actively mentors her team in creating market-leading thought leadership.',
+      'Her instructions score is also robust, reflecting an almost full-scoring list of high-caliber clients. She manages a high volume of work for major entities including Reliance Industries, Nestle, Flipkart, Pepsico, and the JK Group. Approximately 90% of the firm\'s India competition referrals from international heavyweights like Latham, Freshfields, Skadden, and Kirkland flow through her practice. Formerly a UK finance lawyer, Chopra now splits her practice evenly between merger control and enforcement, increasingly focusing on overall strategy and client stewardship.'
     ],
     recentCases: [
       {
@@ -4888,7 +4934,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Sonam Mathur builds her profile in RISE rise competition ranking on the quality and complexity of mandates rather than their volume, with instructions serving as her strongest metric. She represents a high-caliber roster of clients, including Apollo Tyres, Peak XV Partners, WestBridge, HSBC, and Generali. Notably, she is lead counsel for Match Group as the informant in a major enforcement case against Apple. This matter involves sophisticated challenges to the CCI\'s penalty powers and multiple rounds of litigation escalated to the Delhi High Court, making it one of the most closely watched antitrust proceedings in India.<br><br>Her experience scores reflect high client satisfaction, particularly regarding the tailored services she provides. While her reputation scores are not as high as her instruction metrics, she maintains a strong presence across legal directories and the legal press, where she is frequently quoted.'
+      'Sonam Mathur builds her profile in RISE rise competition ranking on the quality and complexity of mandates rather than their volume, with instructions serving as her strongest metric. She represents a high-caliber roster of clients, including Apollo Tyres, Peak XV Partners, WestBridge, HSBC, and Generali. Notably, she is lead counsel for Match Group as the informant in a major enforcement case against Apple. This matter involves sophisticated challenges to the CCI\'s penalty powers and multiple rounds of litigation escalated to the Delhi High Court, making it one of the most closely watched antitrust proceedings in India.',
+      'Her experience scores reflect high client satisfaction, particularly regarding the tailored services she provides. While her reputation scores are not as high as her instruction metrics, she maintains a strong presence across legal directories and the legal press, where she is frequently quoted.'
     ],
     recentCases: [
       {
@@ -4974,7 +5021,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Vaibhav Choukse has excellent instruction and experience metrics. His high scores are driven by a \"star class\" of international clients and the consistent complexity of the mandates he completes. His experience score is particularly notable for his leadership, expertise, and service quality, as well as the strength of his professional network. As an Equity Partner at JSA, Choukse divides his time equally between merger control and enforcement, managing a client base that is 70-80% international. Key instructions include Temasek Holdings, Hyundai Motors, GlaxoSmithKline, EQT, Interpublic and Ford Motor Company.<br><br>Choukse believes in a structured, institutional approach to competition law, frequently integrating economists and forensic specialists into his team. Notably, JSA was among the first firms to file a merger notification under India’s deal-value threshold rules, positioning the practice at the forefront of matters where the law is still being operationalized. Combined with regular market-facing publications, this strategy ensures his practice is built for institutional credibility and technical depth.  and technical depth.'
+      'Vaibhav Choukse has excellent instruction and experience metrics. His high scores are driven by a \"star class\" of international clients and the consistent complexity of the mandates he completes. His experience score is particularly notable for his leadership, expertise, and service quality, as well as the strength of his professional network. As an Equity Partner at JSA, Choukse divides his time equally between merger control and enforcement, managing a client base that is 70-80% international. Key instructions include Temasek Holdings, Hyundai Motors, GlaxoSmithKline, EQT, Interpublic and Ford Motor Company.',
+      'Choukse believes in a structured, institutional approach to competition law, frequently integrating economists and forensic specialists into his team. Notably, JSA was among the first firms to file a merger notification under India’s deal-value threshold rules, positioning the practice at the forefront of matters where the law is still being operationalized. Combined with regular market-facing publications, this strategy ensures his practice is built for institutional credibility and technical depth.  and technical depth.'
     ],
     recentCases: [
       {
@@ -5060,7 +5108,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Yaman Verma ranks as the seventh-placed competition practitioner in this RISE rating, reflecting a position at the absolute top of the market. His strongest metric is instructions, where he holds a nearly perfect score driven by exceptional client quality and the high volume of complex mandates he manages. He represents many of the largest digital and industrial entities in India, including WhatsApp, Meta, Microsoft, Flipkart, and Coal India Limited. Verma is a lead partner for WhatsApp and Meta in their major Indian litigations and a key advisor to Microsoft in high-profile abuse-of-dominance challenges.<br><br>Performances across both the RISE experience and sophistication metrics follow closely. Within sophistication, Verma’s data usage is particularly notable; he leads the real-time collection and analysis of competition decisions to inform strategy. His practice spans the full competition spectrum, from phase-two merger reviews and remedies to landmark constitutional challenges. Verma also maintains a high profile across legal directories and receives strong peer recommendations.'
+      'Yaman Verma ranks as the seventh-placed competition practitioner in this RISE rating, reflecting a position at the absolute top of the market. His strongest metric is instructions, where he holds a nearly perfect score driven by exceptional client quality and the high volume of complex mandates he manages. He represents many of the largest digital and industrial entities in India, including WhatsApp, Meta, Microsoft, Flipkart, and Coal India Limited. Verma is a lead partner for WhatsApp and Meta in their major Indian litigations and a key advisor to Microsoft in high-profile abuse-of-dominance challenges.',
+      'Performances across both the RISE experience and sophistication metrics follow closely. Within sophistication, Verma’s data usage is particularly notable; he leads the real-time collection and analysis of competition decisions to inform strategy. His practice spans the full competition spectrum, from phase-two merger reviews and remedies to landmark constitutional challenges. Verma also maintains a high profile across legal directories and receives strong peer recommendations.'
     ],
     recentCases: [
       {
@@ -5104,7 +5153,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 9
     },
     bio: [
-      'Anu Monga achieves the second-highest experience score in her cohort, rated particularly strongly by clients for her expertise, commerciality, and communication. Instruction scores are her second strongest RISE metric, driven by advisory work for multiple Indian ministries on policy and by representing the Government of India before foreign authorities including in the US, Canada and China.<br><br>She co-leads the youngest firm in this ranking of top international trade lawyers, formed only in 2020. Perhaps partly from the agility of being a smaller, younger firm, AnantLaw is the only Indian firm using the global legal research platform VLex. It is also a signal of the practice\'s orientation toward international standards.<br><br>Complementary specialisations across international trade, competition law, and disputes, combined with deep government advisory work, produce a practice that is as politically attuned as it is technically grounded.'
+      'Anu Monga achieves the second-highest experience score in her cohort, rated particularly strongly by clients for her expertise, commerciality, and communication. Instruction scores are her second strongest RISE metric, driven by advisory work for multiple Indian ministries on policy and by representing the Government of India before foreign authorities including in the US, Canada and China.',
+      'She co-leads the youngest firm in this ranking of top international trade lawyers, formed only in 2020. Perhaps partly from the agility of being a smaller, younger firm, AnantLaw is the only Indian firm using the global legal research platform VLex. It is also a signal of the practice\'s orientation toward international standards.',
+      'Complementary specialisations across international trade, competition law, and disputes, combined with deep government advisory work, produce a practice that is as politically attuned as it is technically grounded.'
     ],
     recentCases: [
       {
@@ -6051,7 +6102,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Ajinkya Gunjan Mishra carries some of the highest news and social media scores in this cohort, writing throughout 2025 on topics including the effects of US tariffs and opportunities for India\'s defence sector. His instruction record in the same year includes a rare disputed benefits case under the India-Japan CEPA, one of India\'s most active trade corridors in Asia-Pacific.<br><br>Appearances for Mishra relating to trade remedies are largely concentrated in Indian forums across all levels, including the Supreme Court, primarily for multinationals, whom he also acts for on an advisory basis.<br><br>An MBA from the Indian Institute of Foreign Trade, taken thirteen years ago when that combination was uncommon for a mid-career trade lawyer, signals a commercial orientation that has shaped how he has approached mandates since.'
+      'Ajinkya Gunjan Mishra carries some of the highest news and social media scores in this cohort, writing throughout 2025 on topics including the effects of US tariffs and opportunities for India\'s defence sector. His instruction record in the same year includes a rare disputed benefits case under the India-Japan CEPA, one of India\'s most active trade corridors in Asia-Pacific.',
+      'Appearances for Mishra relating to trade remedies are largely concentrated in Indian forums across all levels, including the Supreme Court, primarily for multinationals, whom he also acts for on an advisory basis.',
+      'An MBA from the Indian Institute of Foreign Trade, taken thirteen years ago when that combination was uncommon for a mid-career trade lawyer, signals a commercial orientation that has shaped how he has approached mandates since.'
     ],
     recentCases: [
       {
@@ -6094,7 +6147,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Ankur Sharma at Lakshmikumaran & Sridharan has established a leading position in sanctions and carbon border adjustment mechanism advisory, two of the fastest-moving sub-practice areas in international trade, at a moment when most practitioners are still developing their footing in both. Sharma scores in the top 5 for the RISE instructions metric as a result of his expertise in these frontier specialisms.<br><br>Sharma\'s talent development for junior lawyers is also strong, with training structured around emerging laws paired with business development strategy. A background in engineering rather than the accountancy qualifications more common among trade lawyers gives him a mathematical foundation that he applies directly to the economic analysis that CBAM work demands.'
+      'Ankur Sharma at Lakshmikumaran & Sridharan has established a leading position in sanctions and carbon border adjustment mechanism advisory, two of the fastest-moving sub-practice areas in international trade, at a moment when most practitioners are still developing their footing in both. Sharma scores in the top 5 for the RISE instructions metric as a result of his expertise in these frontier specialisms.',
+      'Sharma\'s talent development for junior lawyers is also strong, with training structured around emerging laws paired with business development strategy. A background in engineering rather than the accountancy qualifications more common among trade lawyers gives him a mathematical foundation that he applies directly to the economic analysis that CBAM work demands.'
     ],
     recentCases: [
       {
@@ -6137,7 +6191,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Anuradha RV at Clarus Law Associates has built a practice on policy and high-level advisory rather than the anti-dumping foundation more common for a trade lawyer. Her work is focused more on services and sustainability commitments as well as investment commitments in bilateral investment treaties, and her clientele includes government bodies and industry associations.<br><br>She consults with the International Trade Center in Geneva, supporting countries on trade policy development and WTO accession, a mandate profile that operates at a different level of the market to most practitioners here. She is a prolific writer and teacher alongside her practice, co-authoring articles with economists on India\'s trade policies for publications including the Hindustan Times and Mint, a combination that reinforces both her external profile and technical proficiency in emerging sub-practice areas of trade law.<br><br>Talent development is a strong sub-indicator, with associates rotated across trade, investment, and policy to broaden exposure and match availability to workflow.'
+      'Anuradha RV at Clarus Law Associates has built a practice on policy and high-level advisory rather than the anti-dumping foundation more common for a trade lawyer. Her work is focused more on services and sustainability commitments as well as investment commitments in bilateral investment treaties, and her clientele includes government bodies and industry associations.',
+      'She consults with the International Trade Center in Geneva, supporting countries on trade policy development and WTO accession, a mandate profile that operates at a different level of the market to most practitioners here. She is a prolific writer and teacher alongside her practice, co-authoring articles with economists on India\'s trade policies for publications including the Hindustan Times and Mint, a combination that reinforces both her external profile and technical proficiency in emerging sub-practice areas of trade law.',
+      'Talent development is a strong sub-indicator, with associates rotated across trade, investment, and policy to broaden exposure and match availability to workflow.'
     ],
     recentCases: [
       {
@@ -6223,7 +6279,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Atul Sharma at Sarvada is the strongest-performing practitioner from a boutique in this cohort, driven by peer recommendations and a mandate profile that includes acting as lead counsel for the Government of India in active WTO disputes and representing a Saudi Arabian chemical corporation before the US Department of Commerce in third-country trade remedy proceedings unrelated to India.<br><br>His score for the pricing RISE metric is the highest, underpinned by structured scoping systems and deferred payment arrangements aligned to client billing cycles, a commercial flexibility that larger firms rarely offer.<br><br>A practical differentiator in his client service is working directly through clients\' SAP and Oracle systems to extract and reconcile raw data for filings, reducing the burden on client teams and improving the accuracy of submissions.'
+      'Atul Sharma at Sarvada is the strongest-performing practitioner from a boutique in this cohort, driven by peer recommendations and a mandate profile that includes acting as lead counsel for the Government of India in active WTO disputes and representing a Saudi Arabian chemical corporation before the US Department of Commerce in third-country trade remedy proceedings unrelated to India.',
+      'His score for the pricing RISE metric is the highest, underpinned by structured scoping systems and deferred payment arrangements aligned to client billing cycles, a commercial flexibility that larger firms rarely offer.',
+      'A practical differentiator in his client service is working directly through clients\' SAP and Oracle systems to extract and reconcile raw data for filings, reducing the burden on client teams and improving the accuracy of submissions.'
     ],
     recentCases: [
       {
@@ -6266,7 +6324,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Ayush Mehrotra at Khaitan & Co scores highest in the cohort for technology and data use, leveraging the firm\'s ask.Kai tool across legal research, drafting, and large-scale data processing, with efficiency gains reportedly applied directly to competitive pricing and faster turnaround for clients.<br><br>He is a partner in one of the larger indirect tax practices within a full-service Indian firm, integrating customs, GST, excise, and WTO-linked advisory into a practice that also covers sanctions-driven supply chain restructuring for Indian entities affected by US designations across multiple jurisdictions.<br><br>A standout recent matter saw Mehrotra secure a reduction of an ASEAN FTA-related demand from over $1.2bn to approximately Rs 11bn, with High Court proceedings ongoing.'
+      'Ayush Mehrotra at Khaitan & Co scores highest in the cohort for technology and data use, leveraging the firm\'s ask.Kai tool across legal research, drafting, and large-scale data processing, with efficiency gains reportedly applied directly to competitive pricing and faster turnaround for clients.',
+      'He is a partner in one of the larger indirect tax practices within a full-service Indian firm, integrating customs, GST, excise, and WTO-linked advisory into a practice that also covers sanctions-driven supply chain restructuring for Indian entities affected by US designations across multiple jurisdictions.',
+      'A standout recent matter saw Mehrotra secure a reduction of an ASEAN FTA-related demand from over $1.2bn to approximately Rs 11bn, with High Court proceedings ongoing.'
     ],
     recentCases: [
       {
@@ -6309,7 +6369,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Devinder Bagia at Lakshmikumaran & Sridharan ranks third overall for the RISE international trade rankings. This is one behind V Lakshmikumaran, the founding and managing partner of LKS, whom Bagia acts as second in command to for international trade matters, a position that reflects both seniority and the breadth of his mandate oversight.<br><br>He scores strongly on the instructions RISE metric, with a client base concentrated in petrochemicals, chemicals, pharmaceuticals, metals, and glass fibre, spanning the globe as well as Saudi Arabian, US, and Chinese clients across India\'s most active import sectors.<br><br>A standout recent matter involved a petrochemical company in trade remedy proceedings before the DGTR, where he successfully deployed rarely made arguments for cost adjustments including from start-up and shutdown costs. His technology adoption is at an earlier stage than some peers, using Copilot selectively for research, though the firm is developing a bespoke AI tool for the practice.'
+      'Devinder Bagia at Lakshmikumaran & Sridharan ranks third overall for the RISE international trade rankings. This is one behind V Lakshmikumaran, the founding and managing partner of LKS, whom Bagia acts as second in command to for international trade matters, a position that reflects both seniority and the breadth of his mandate oversight.',
+      'He scores strongly on the instructions RISE metric, with a client base concentrated in petrochemicals, chemicals, pharmaceuticals, metals, and glass fibre, spanning the globe as well as Saudi Arabian, US, and Chinese clients across India\'s most active import sectors.',
+      'A standout recent matter involved a petrochemical company in trade remedy proceedings before the DGTR, where he successfully deployed rarely made arguments for cost adjustments including from start-up and shutdown costs. His technology adoption is at an earlier stage than some peers, using Copilot selectively for research, though the firm is developing a bespoke AI tool for the practice.'
     ],
     recentCases: [
       {
@@ -6352,7 +6414,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'International trade experts are rare, and rarer still in India\'s largest five firms. Dhruv Gupta is an exception to this rule, ranking fourth overall in the RISE ratings and third for the sophistication of his practice. He scores highly in these sophistication RISE metrics for his advanced use of AI tools for data analysis, and a holistic approach to training junior lawyers, which factors in commercial, political and technical training in structured and unstructured sessions.<br><br>His focus on the steel industry, one of the most litigated and politically sensitive areas of international trade law, gives his practice a distinct sectoral depth. Gupta acts for these clients both at home and abroad, working on cases in the EU and in Brazil since the beginning of 2024, in addition to cases held before domestic forums.'
+      'International trade experts are rare, and rarer still in India\'s largest five firms. Dhruv Gupta is an exception to this rule, ranking fourth overall in the RISE ratings and third for the sophistication of his practice. He scores highly in these sophistication RISE metrics for his advanced use of AI tools for data analysis, and a holistic approach to training junior lawyers, which factors in commercial, political and technical training in structured and unstructured sessions.',
+      'His focus on the steel industry, one of the most litigated and politically sensitive areas of international trade law, gives his practice a distinct sectoral depth. Gupta acts for these clients both at home and abroad, working on cases in the EU and in Brazil since the beginning of 2024, in addition to cases held before domestic forums.'
     ],
     recentCases: [
       {
@@ -6395,7 +6458,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Mayank Jain at Khaitan & Co leads a trade practice anchored in customs work across a range of industry sectors, supplemented by trade remedy matters and a developing policy advocacy capability, having joined from trade and tax specialists Lakshmikumaran & Sridharan.<br><br>His closest client relationship is with steel giant Jindal Stainless, and a recent standout matter saw him secure a zero duty margin for a Chinese steel exporter in an anti-dumping investigation before the DGTR, the only exporter in the proceedings to achieve that outcome.<br><br>Jain provided comments to multiple articles in business publications in 2025 on trade matters, and scores highly in the RISE news media metric for his public profile.'
+      'Mayank Jain at Khaitan & Co leads a trade practice anchored in customs work across a range of industry sectors, supplemented by trade remedy matters and a developing policy advocacy capability, having joined from trade and tax specialists Lakshmikumaran & Sridharan.',
+      'His closest client relationship is with steel giant Jindal Stainless, and a recent standout matter saw him secure a zero duty margin for a Chinese steel exporter in an anti-dumping investigation before the DGTR, the only exporter in the proceedings to achieve that outcome.',
+      'Jain provided comments to multiple articles in business publications in 2025 on trade matters, and scores highly in the RISE news media metric for his public profile.'
     ],
     recentCases: [
       {
@@ -6438,7 +6503,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Rajat Agarwal at Vertices Partners focuses on high-value trade disputes arising from rapid regulatory change and sanctions list movements, where stranded cargo can carry nine-figure exposure.<br><br>He has expanded the firm\'s practice into Dubai and Colombo to service rerouted trade flows across the Indian Ocean corridor, building those positions through direct relationship development with regulators in each market.<br><br>Technology and talent development are both strong sub-indicators: he is a prolific user of AI across research, drafting, and analysis, and his internal training programmes teach the technical aspects of trade law alongside the wider geopolitical context, on the basis that practitioners who understand only the law are poorly equipped for the environment his clients are operating in.'
+      'Rajat Agarwal at Vertices Partners focuses on high-value trade disputes arising from rapid regulatory change and sanctions list movements, where stranded cargo can carry nine-figure exposure.',
+      'He has expanded the firm\'s practice into Dubai and Colombo to service rerouted trade flows across the Indian Ocean corridor, building those positions through direct relationship development with regulators in each market.',
+      'Technology and talent development are both strong sub-indicators: he is a prolific user of AI across research, drafting, and analysis, and his internal training programmes teach the technical aspects of trade law alongside the wider geopolitical context, on the basis that practitioners who understand only the law are poorly equipped for the environment his clients are operating in.'
     ],
     recentCases: [
       {
@@ -6481,7 +6548,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Reena Khair scores strongly on the instructions RISE metric. Her record includes a rare nil duty and price undertaking outcome for a major Russian petrochemical exporter in Indian anti-dumping proceedings, and subsidy investigations involving Chinese exporters where she secured participation from multiple parties and challenged the countervailability of technology-linked schemes, two outcomes that illustrate the depth of her trade remedy advocacy.<br><br>She combines that work with ongoing High Court and tribunal litigation, representing both exporters and domestic industries across the same matters. An increasingly significant part of her practice is drafting trade contracts designed to address tariff shocks, sanctions, and supply chain disruptions, work that has grown directly out of the current geopolitical environment.'
+      'Reena Khair scores strongly on the instructions RISE metric. Her record includes a rare nil duty and price undertaking outcome for a major Russian petrochemical exporter in Indian anti-dumping proceedings, and subsidy investigations involving Chinese exporters where she secured participation from multiple parties and challenged the countervailability of technology-linked schemes, two outcomes that illustrate the depth of her trade remedy advocacy.',
+      'She combines that work with ongoing High Court and tribunal litigation, representing both exporters and domestic industries across the same matters. An increasingly significant part of her practice is drafting trade contracts designed to address tariff shocks, sanctions, and supply chain disruptions, work that has grown directly out of the current geopolitical environment.'
     ],
     recentCases: [
       {
@@ -6524,7 +6592,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'Sanjay Notani at Economic Laws Practice is the highest-rated RISE lawyer in international trade and achieves the strongest combined reputation in this cohort when peer recommendations, directory recognition, and media presence are taken together.<br><br>His instructions scores sit alongside reputation as his highest RISE metrics at the head of one of India\'s largest and most comprehensive trade practices. His advisory work spans some of the most consequential mandates in the market: he has advised foreign governments in the recently concluded FTAs, including representing India in their WTO dispute. His client profile also spans strategic sectors navigating US and EU sanctions, export controls, and national security supply chains in semiconductors and rare earths, through to tariff policy, sustainability regulations, and data centre advisory to government, placing him at the intersection of trade law, geopolitics, and emerging regulatory frontiers.'
+      'Sanjay Notani at Economic Laws Practice is the highest-rated RISE lawyer in international trade and achieves the strongest combined reputation in this cohort when peer recommendations, directory recognition, and media presence are taken together.',
+      'His instructions scores sit alongside reputation as his highest RISE metrics at the head of one of India\'s largest and most comprehensive trade practices. His advisory work spans some of the most consequential mandates in the market: he has advised foreign governments in the recently concluded FTAs, including representing India in their WTO dispute. His client profile also spans strategic sectors navigating US and EU sanctions, export controls, and national security supply chains in semiconductors and rare earths, through to tariff policy, sustainability regulations, and data centre advisory to government, placing him at the intersection of trade law, geopolitics, and emerging regulatory frontiers.'
     ],
     recentCases: [
       {
@@ -6567,7 +6636,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 0
     },
     bio: [
-      'Seetharaman Sampath at Sarvada Legal scores strongly on the instructions and reputation RISE metrics, with a significant presence in directories and news media, and a mandate profile which includes complex third-country representations entirely unrelated to India.<br><br>He represents exporters in anti-dumping investigations before US and Indonesian authorities without instructing local counsel, applying WTO trade remedy principles directly across jurisdictions, an approach that requires both technical depth and confidence in unfamiliar regulatory environments.<br><br>Sampath handles 10 to 12 significant trade remedy investigations annually and has developed a continuous dumping-margin monitoring model for major clients that shifts the practice from reactive defence to predictive risk management, a material change in how those clients approach trade exposure.'
+      'Seetharaman Sampath at Sarvada Legal scores strongly on the instructions and reputation RISE metrics, with a significant presence in directories and news media, and a mandate profile which includes complex third-country representations entirely unrelated to India.',
+      'He represents exporters in anti-dumping investigations before US and Indonesian authorities without instructing local counsel, applying WTO trade remedy principles directly across jurisdictions, an approach that requires both technical depth and confidence in unfamiliar regulatory environments.',
+      'Sampath handles 10 to 12 significant trade remedy investigations annually and has developed a continuous dumping-margin monitoring model for major clients that shifts the practice from reactive defence to predictive risk management, a material change in how those clients approach trade exposure.'
     ],
     recentCases: [
       {
@@ -6610,7 +6681,8 @@ export const lawyers: BaseLawyer[] = [
       leadership: 8
     },
     bio: [
-      'Udayan Choksi joined Veritas Legal in April 2025 to head the customs, international trade, and indirect tax practice, bringing dual qualifications in law and chartered accountancy alongside experience at a Big Four consultancy, his own firm, and several of India\'s largest practices.<br><br>His practice is near full-service across classification, valuation, WTO issues, trade remedies, and the growing area of export controls. Recent work includes supply chain restructuring for garments and jewellery clients responding to US tariffs, pharmaceutical advisory on the Make in India programme, and securing a zero dumping margin for a Canadian manufacturer after two High Court interventions. He is among the more prolific technology users in this cohort, trialling Legora alongside Jurisphere for drafting and research, though yet to commit to either.'
+      'Udayan Choksi joined Veritas Legal in April 2025 to head the customs, international trade, and indirect tax practice, bringing dual qualifications in law and chartered accountancy alongside experience at a Big Four consultancy, his own firm, and several of India\'s largest practices.',
+      'His practice is near full-service across classification, valuation, WTO issues, trade remedies, and the growing area of export controls. Recent work includes supply chain restructuring for garments and jewellery clients responding to US tariffs, pharmaceutical advisory on the Make in India programme, and securing a zero dumping margin for a Canadian manufacturer after two High Court interventions. He is among the more prolific technology users in this cohort, trialling Legora alongside Jurisphere for drafting and research, though yet to commit to either.'
     ],
     recentCases: [
       {
@@ -6653,7 +6725,9 @@ export const lawyers: BaseLawyer[] = [
       leadership: 10
     },
     bio: [
-      'V Lakshmikumaran receives more peer mentions than any other lawyer in this cohort, a margin that reflects decades at the top of the Indian international trade market and a reputation that extends well beyond the practitioners he competes with directly.<br><br>Despite this length of tenure, Lakshmikumaran continues to act at the top level of trade law, and comes second in the overall RISE ranking for international trade. He advises the Government of India on a pro bono basis in FTA negotiations, travelling with trade delegations to talks with the EU, UK, Switzerland, Norway, and Australia, a contribution to Indian trade policy that sits alongside his commercial practice rather than replacing it.<br><br>The firm he founded and leads is among the largest and most comprehensive trade practices in the country, and his structured hybrid training programme for junior lawyers, combining scheduled partner lectures with early matter involvement, has shaped a generation of Indian trade practitioners.'
+      'V Lakshmikumaran receives more peer mentions than any other lawyer in this cohort, a margin that reflects decades at the top of the Indian international trade market and a reputation that extends well beyond the practitioners he competes with directly.',
+      'Despite this length of tenure, Lakshmikumaran continues to act at the top level of trade law, and comes second in the overall RISE ranking for international trade. He advises the Government of India on a pro bono basis in FTA negotiations, travelling with trade delegations to talks with the EU, UK, Switzerland, Norway, and Australia, a contribution to Indian trade policy that sits alongside his commercial practice rather than replacing it.',
+      'The firm he founded and leads is among the largest and most comprehensive trade practices in the country, and his structured hybrid training programme for junior lawyers, combining scheduled partner lectures with early matter involvement, has shaped a generation of Indian trade practitioners.'
     ],
     recentCases: [
       {
