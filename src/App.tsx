@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navigation } from './components/Navigation';
 import { SplashPage } from './components/SplashPage';
 import { LoginPage } from './components/LoginPage';
@@ -177,6 +178,7 @@ export default function App() {
         />
       )}
       {renderPage()}
+      <Analytics />
     </div>
   );
 }
