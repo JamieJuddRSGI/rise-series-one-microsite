@@ -209,8 +209,8 @@ export const lawyers: Lawyer[] = mergeLawyersWithPracticeData(
 export { articles } from './articleData';
 
 export const reportMetadata = {
-  title: 'Resight India: RISE Lawyers in Private Capital',
-  publishDate: 'November 2025',
-  year: '2025',
+  title: 'Resight India: RISE Lawyers 2026',
+  publishDate: 'April 2026',
+  year: '2026',
   totalLawyers: lawyers.length,
 };

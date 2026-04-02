@@ -778,7 +778,7 @@ export const rawPracticeData = [
         complexity: 9.8
       },
       {
-        id: 'IND02504',
+        id: 'IND08607',
         totalScore: 7.8,
         reputationScore: 8.1,
         peers: 7.9,
@@ -890,7 +890,7 @@ export const rawPracticeData = [
         complexity: 9
       },
       {
-        id: 'IND07512',
+        id: 'IND08608',
         totalScore: 6,
         reputationScore: 3.2,
         peers: 0,
@@ -1010,10 +1010,10 @@ export const rawPracticeData = [
         newsMedia: 7.4,
         socialMedia: 9.4,
         instructionScore: 8.7,
-        volume: 0,
-        value: 0,
+        volume: 9.6,
+        value: 8.3,
         clients: 8.7,
-        complexity: 0
+        complexity: 8.6
       },
       {
         id: 'IND00540',
@@ -1040,7 +1040,7 @@ export const rawPracticeData = [
         instructionScore: 7.6,
         volume: 7.6,
         value: 9.7,
-        clients: 0,
+        clients: 7.6,
         complexity: 9
       },
       {
@@ -1086,7 +1086,7 @@ export const rawPracticeData = [
         complexity: 9.8
       },
       {
-        id: 'IND07515',
+        id: 'IND08609',
         totalScore: 5.2,
         reputationScore: 2.8,
         peers: 1,
@@ -1100,7 +1100,7 @@ export const rawPracticeData = [
         complexity: 7.3
       },
       {
-        id: 'IND07574',
+        id: 'IND08610',
         totalScore: 5.2,
         reputationScore: 1.7,
         peers: 0,
@@ -1339,7 +1339,7 @@ export const rawPracticeData = [
         instructionScore: 7.7,
         volume: 9.3,
         value: 9.5,
-        clients: 0,
+        clients: 8.8,
         complexity: 8.2
       },
       {
@@ -1651,7 +1651,7 @@ export const rawPracticeData = [
         complexity: 8.2
       },
       {
-        id: 'IND07590',
+        id: 'IND08611',
         totalScore: 4.9,
         reputationScore: 2.7,
         peers: 0,
@@ -1683,20 +1683,6 @@ export const rawPracticeData = [
   {
     practiceArea: 'Debt Capital Markets',
     data: [
-      {
-        id: 'IND00552',
-        totalScore: 5.6,
-        reputationScore: 3,
-        peers: 0,
-        directories: 5.3,
-        newsMedia: 6.8,
-        socialMedia: 8.7,
-        instructionScore: 7.6,
-        volume: 7.6,
-        value: 7.2,
-        clients: 9.2,
-        complexity: 7.2
-      },
       {
         id: 'IND00120',
         totalScore: 8.8,
@@ -1740,6 +1726,20 @@ export const rawPracticeData = [
         complexity: 8.5
       },
       {
+        id: 'IND02940',
+        totalScore: 7.5,
+        reputationScore: 6.6,
+        peers: 5.5,
+        directories: 7.7,
+        newsMedia: 7.9,
+        socialMedia: 8.5,
+        instructionScore: 9.1,
+        volume: 9.6,
+        value: 7.4,
+        clients: 10,
+        complexity: 9.2
+      },
+      {
         id: 'IND04763',
         totalScore: 7,
         reputationScore: 6.2,
@@ -1752,20 +1752,6 @@ export const rawPracticeData = [
         value: 7.3,
         clients: 9.8,
         complexity: 8.2
-      },
-      {
-        id: 'IND02940',
-        totalScore: 6.9,
-        reputationScore: 6.6,
-        peers: 5.5,
-        directories: 7.7,
-        newsMedia: 7.9,
-        socialMedia: 8.5,
-        instructionScore: 7.6,
-        volume: 9.6,
-        value: 0,
-        clients: 10,
-        complexity: 9.2
       },
       {
         id: 'IND02962',
@@ -1782,7 +1768,21 @@ export const rawPracticeData = [
         complexity: 9
       },
       {
-        id: 'IND07528',
+        id: 'IND00398',
+        totalScore: 6,
+        reputationScore: 3,
+        peers: 0,
+        directories: 4.7,
+        newsMedia: 7.5,
+        socialMedia: 9.2,
+        instructionScore: 8.1,
+        volume: 8.5,
+        value: 7.7,
+        clients: 8.8,
+        complexity: 7.8
+      },
+      {
+        id: 'IND08612',
         totalScore: 5.9,
         reputationScore: 3.9,
         peers: 0,
@@ -1794,6 +1794,20 @@ export const rawPracticeData = [
         value: 8.7,
         clients: 7.4,
         complexity: 9.2
+      },
+      {
+        id: 'IND00552',
+        totalScore: 5.6,
+        reputationScore: 3,
+        peers: 0,
+        directories: 5.3,
+        newsMedia: 6.8,
+        socialMedia: 8.7,
+        instructionScore: 7.6,
+        volume: 7.6,
+        value: 7.2,
+        clients: 9.2,
+        complexity: 7.2
       },
       {
         id: 'IND02534',
@@ -1808,20 +1822,6 @@ export const rawPracticeData = [
         value: 6.6,
         clients: 0,
         complexity: 9.8
-      },
-      {
-        id: 'IND00398',
-        totalScore: 5.3,
-        reputationScore: 3,
-        peers: 0,
-        directories: 4.7,
-        newsMedia: 7.5,
-        socialMedia: 9.2,
-        instructionScore: 6.2,
-        volume: 0,
-        value: 0,
-        clients: 8.8,
-        complexity: 0
       },
       {
         id: 'IND02750',
@@ -2221,7 +2221,7 @@ export const rawPracticeData = [
         complexity: 7
       },
       {
-        id: 'IND07656',
+        id: 'IND08613',
         totalScore: 6.1,
         reputationScore: 5.3,
         peers: 4.1,
@@ -2478,7 +2478,7 @@ export const rawPracticeData = [
         complexity: 7
       },
       {
-        id: 'IND07527',
+        id: 'IND08614',
         totalScore: 7.1,
         reputationScore: 6.3,
         peers: 5,
@@ -2506,18 +2506,18 @@ export const rawPracticeData = [
         complexity: 8
       },
       {
-        id: 'IND07530',
+        id: 'IND08615',
         totalScore: 6.6,
         reputationScore: 4.7,
         peers: 3.5,
         directories: 6,
         newsMedia: 5.2,
         socialMedia: 7.7,
-        instructionScore: 8.1,
-        volume: 0,
+        instructionScore: 8,
+        volume: 6.9,
         value: 0,
-        clients: 0,
-        complexity: 0
+        clients: 9.7,
+        complexity: 8
       },
       {
         id: 'IND02052',
@@ -2674,7 +2674,7 @@ export const rawPracticeData = [
         complexity: 5
       },
       {
-        id: 'IND07526',
+        id: 'IND08616',
         totalScore: 3.1,
         reputationScore: 1.8,
         peers: 0,
@@ -2698,7 +2698,7 @@ export const rawPracticeData = [
         reputationScore: 9.3,
         peers: 9,
         directories: 9.6,
-        newsMedia: 10,
+        newsMedia: 9.8,
         socialMedia: 10,
         instructionScore: 9.8,
         volume: 10,
@@ -2763,7 +2763,7 @@ export const rawPracticeData = [
         complexity: 8.8
       },
       {
-        id: 'IND07689',
+        id: 'IND08618',
         totalScore: 7.2,
         reputationScore: 6,
         peers: 3.8,
@@ -2777,7 +2777,7 @@ export const rawPracticeData = [
         complexity: 9.3
       },
       {
-        id: 'IND07621',
+        id: 'IND08619',
         totalScore: 6.4,
         reputationScore: 4.1,
         peers: 0,
@@ -2791,7 +2791,7 @@ export const rawPracticeData = [
         complexity: 8.5
       },
       {
-        id: 'IND07657',
+        id: 'IND08620',
         totalScore: 6.2,
         reputationScore: 4.1,
         peers: 0,
@@ -2805,12 +2805,12 @@ export const rawPracticeData = [
         complexity: 9.3
       },
       {
-        id: 'IND07570',
+        id: 'IND08621',
         totalScore: 6.1,
         reputationScore: 3.4,
         peers: 0,
         directories: 7.5,
-        newsMedia: 6.5,
+        newsMedia: 10,
         socialMedia: 9.1,
         instructionScore: 8.9,
         volume: 8.9,

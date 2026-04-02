@@ -33,7 +33,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentPage, onNavigate,
               alt="Resight India Logo" 
               className="h-16 w-auto object-contain"
             />
-            <span className="hidden sm:block" style={{ color: '#000000' }}>RISE Lawyers in Private Capital</span>
+            <span className="hidden sm:block" style={{ color: '#000000' }}>RISE Lawyers 2026</span>
           </button>
 
           {/* Desktop Navigation */}
